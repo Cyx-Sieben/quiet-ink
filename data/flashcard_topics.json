@@ -1,0 +1,2117 @@
+[
+  {
+    "week": 1,
+    "title": "Emotions and Moods",
+    "description": "Precise words for how people feel, from quiet contentment to intense joy.",
+    "cards": [
+      {
+        "term": "wistful",
+        "type": "adjective",
+        "meaning": "Having or showing a gentle, slightly sad longing, often for something in the past.",
+        "examples": [
+          "She gave a wistful smile as she looked through her old photographs."
+        ]
+      },
+      {
+        "term": "elated",
+        "type": "adjective",
+        "meaning": "Extremely happy and excited, usually because of something good that has happened.",
+        "examples": [
+          "The team was elated when the proposal was approved."
+        ]
+      },
+      {
+        "term": "melancholy",
+        "type": "noun / adjective",
+        "meaning": "A deep, quiet sadness that lasts, often without an obvious cause.",
+        "examples": [
+          "A soft melancholy settled over the town once the festival had ended."
+        ]
+      },
+      {
+        "term": "irritable",
+        "type": "adjective",
+        "meaning": "Easily annoyed or made angry.",
+        "examples": [
+          "Lack of sleep made him irritable all morning."
+        ]
+      },
+      {
+        "term": "content",
+        "type": "adjective",
+        "meaning": "Quietly satisfied and at peace with what you have.",
+        "examples": [
+          "She was content with a simple life and a good book."
+        ]
+      },
+      {
+        "term": "apprehensive",
+        "type": "adjective",
+        "meaning": "Worried or nervous that something bad may happen.",
+        "examples": [
+          "Many staff were apprehensive about the restructuring."
+        ]
+      },
+      {
+        "term": "on edge",
+        "type": "idiom",
+        "meaning": "Nervous and unable to relax.",
+        "examples": [
+          "Everyone was on edge while we waited for the results."
+        ]
+      },
+      {
+        "term": "over the moon",
+        "type": "idiom",
+        "meaning": "Extremely pleased and happy.",
+        "examples": [
+          "My parents were over the moon when I passed my exams."
+        ]
+      },
+      {
+        "term": "in low spirits",
+        "type": "phrase",
+        "meaning": "Feeling sad and lacking energy.",
+        "examples": [
+          "He has been in low spirits since his best friend moved away."
+        ]
+      },
+      {
+        "term": "euphoric",
+        "type": "adjective",
+        "meaning": "Feeling intense happiness and excitement, often for a short time.",
+        "examples": [
+          "The crowd was euphoric after the final whistle."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 2,
+    "title": "Workplace Communication",
+    "description": "Everyday phrases for meetings, emails and teamwork in a professional setting.",
+    "cards": [
+      {
+        "term": "touch base",
+        "type": "idiom",
+        "meaning": "To make brief contact with someone to share an update.",
+        "examples": [
+          "Let's touch base on Friday to review our progress."
+        ]
+      },
+      {
+        "term": "follow up",
+        "type": "phrasal verb",
+        "meaning": "To take further action after an earlier contact or meeting.",
+        "examples": [
+          "I will follow up with the client after the meeting."
+        ]
+      },
+      {
+        "term": "loop someone in",
+        "type": "phrasal verb",
+        "meaning": "To include someone in a conversation or email thread so they stay informed.",
+        "examples": [
+          "Please loop me in on any emails about the budget."
+        ]
+      },
+      {
+        "term": "on the same page",
+        "type": "idiom",
+        "meaning": "Sharing the same understanding of a situation or plan.",
+        "examples": [
+          "Before we start, let's make sure we are all on the same page."
+        ]
+      },
+      {
+        "term": "bandwidth",
+        "type": "noun (informal, business)",
+        "meaning": "The time or energy a person has available to take on work.",
+        "examples": [
+          "I'm afraid I don't have the bandwidth to lead another project this month."
+        ]
+      },
+      {
+        "term": "circle back",
+        "type": "phrasal verb",
+        "meaning": "To return to a topic later.",
+        "examples": [
+          "We can circle back to the pricing question next week."
+        ]
+      },
+      {
+        "term": "action item",
+        "type": "noun",
+        "meaning": "A specific task agreed during a meeting, usually with an owner and a deadline.",
+        "examples": [
+          "Each action item should have a clear owner and due date."
+        ]
+      },
+      {
+        "term": "stakeholder",
+        "type": "noun",
+        "meaning": "A person or group with an interest in, or affected by, an organisation or project.",
+        "examples": [
+          "We interviewed key stakeholders before drafting the communication plan."
+        ]
+      },
+      {
+        "term": "transparent",
+        "type": "adjective",
+        "meaning": "Open and honest, with nothing important hidden.",
+        "examples": [
+          "Management tried to be transparent about the reasons for the change."
+        ]
+      },
+      {
+        "term": "concise",
+        "type": "adjective",
+        "meaning": "Brief but clear and complete.",
+        "examples": [
+          "Keep your update concise; the director only has five minutes."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 3,
+    "title": "Academic Writing",
+    "description": "Formal vocabulary that helps you argue, evaluate and support claims in essays and reports.",
+    "cards": [
+      {
+        "term": "substantiate",
+        "type": "verb",
+        "meaning": "To provide evidence that supports a claim.",
+        "examples": [
+          "You need to substantiate this claim with recent data."
+        ]
+      },
+      {
+        "term": "synthesise",
+        "type": "verb",
+        "meaning": "To combine ideas from different sources into a single, coherent whole. (American spelling: synthesize)",
+        "examples": [
+          "A strong literature review synthesises findings rather than listing them."
+        ]
+      },
+      {
+        "term": "coherent",
+        "type": "adjective",
+        "meaning": "Logical, well organised and easy to follow.",
+        "examples": [
+          "Each paragraph should build a coherent argument."
+        ]
+      },
+      {
+        "term": "hedge",
+        "type": "verb",
+        "meaning": "To use cautious language so that a claim is not stated too strongly.",
+        "examples": [
+          "Researchers often hedge their conclusions with words such as 'may' and 'suggest'."
+        ]
+      },
+      {
+        "term": "empirical",
+        "type": "adjective",
+        "meaning": "Based on observation, experiment or experience rather than theory alone.",
+        "examples": [
+          "The study provides empirical evidence for the effect."
+        ]
+      },
+      {
+        "term": "in light of",
+        "type": "phrase",
+        "meaning": "Considering or because of (new information).",
+        "examples": [
+          "In light of these findings, the policy should be reviewed."
+        ]
+      },
+      {
+        "term": "to a large extent",
+        "type": "phrase",
+        "meaning": "Mostly; in many ways but not completely.",
+        "examples": [
+          "The audit was, to a large extent, successful."
+        ]
+      },
+      {
+        "term": "notwithstanding",
+        "type": "preposition (formal)",
+        "meaning": "Despite; without being prevented by.",
+        "examples": [
+          "Notwithstanding its limitations, the study offers useful insights."
+        ]
+      },
+      {
+        "term": "premise",
+        "type": "noun",
+        "meaning": "An idea or statement that an argument is based on.",
+        "examples": [
+          "The argument rests on the premise that staff read every memo."
+        ]
+      },
+      {
+        "term": "critique",
+        "type": "noun / verb",
+        "meaning": "A detailed analysis and judgement of a work or idea; to give such an analysis.",
+        "examples": [
+          "Write a critique of the survey design, noting its strengths and weaknesses."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 4,
+    "title": "The Art of Persuasion",
+    "description": "Language for convincing others, building arguments and winning people over.",
+    "cards": [
+      {
+        "term": "compelling",
+        "type": "adjective",
+        "meaning": "So convincing or interesting that it holds your attention.",
+        "examples": [
+          "She made a compelling case for flexible working hours."
+        ]
+      },
+      {
+        "term": "rhetoric",
+        "type": "noun",
+        "meaning": "The art of persuasive speaking or writing; sometimes used negatively for language that sounds impressive but lacks substance.",
+        "examples": [
+          "The speech relied more on rhetoric than on evidence."
+        ]
+      },
+      {
+        "term": "win someone over",
+        "type": "phrasal verb",
+        "meaning": "To persuade someone to support you or agree with you.",
+        "examples": [
+          "Her honesty won over the sceptical audience."
+        ]
+      },
+      {
+        "term": "appeal to",
+        "type": "phrasal verb",
+        "meaning": "To try to persuade by focusing on a particular feeling, value or reason.",
+        "examples": [
+          "The advertisement appeals to parents' desire to keep their children safe."
+        ]
+      },
+      {
+        "term": "sway",
+        "type": "verb",
+        "meaning": "To influence someone's opinion or decision.",
+        "examples": [
+          "Personal stories can sway an audience more than statistics."
+        ]
+      },
+      {
+        "term": "counterargument",
+        "type": "noun",
+        "meaning": "An argument that opposes another argument.",
+        "examples": [
+          "Address the strongest counterargument before you conclude."
+        ]
+      },
+      {
+        "term": "concede",
+        "type": "verb",
+        "meaning": "To admit, often reluctantly, that something is true.",
+        "examples": [
+          "He conceded that the costs were higher than expected."
+        ]
+      },
+      {
+        "term": "make a case for",
+        "type": "phrase",
+        "meaning": "To give reasons in support of something.",
+        "examples": [
+          "The report makes a case for investing in staff training."
+        ]
+      },
+      {
+        "term": "cogent",
+        "type": "adjective",
+        "meaning": "Clear, logical and convincing.",
+        "examples": [
+          "She presented a cogent argument for reform."
+        ]
+      },
+      {
+        "term": "talk someone round",
+        "type": "phrasal verb (British)",
+        "meaning": "To persuade someone to change their mind.",
+        "examples": [
+          "It took an hour, but we finally talked him round."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 5,
+    "title": "Nature and the Seasons",
+    "description": "Descriptive words for landscapes, plants and the turning of the year.",
+    "cards": [
+      {
+        "term": "verdant",
+        "type": "adjective (literary)",
+        "meaning": "Green with grass or growing plants.",
+        "examples": [
+          "We drove through verdant hills covered in tea plantations."
+        ]
+      },
+      {
+        "term": "dappled",
+        "type": "adjective",
+        "meaning": "Marked with patches of light and shade, or spots of colour.",
+        "examples": [
+          "We walked along a path dappled with sunlight."
+        ]
+      },
+      {
+        "term": "foliage",
+        "type": "noun",
+        "meaning": "The leaves of a plant or tree, considered together.",
+        "examples": [
+          "The autumn foliage turned the valley red and gold."
+        ]
+      },
+      {
+        "term": "bloom",
+        "type": "verb / noun",
+        "meaning": "To produce flowers; a flower or the state of flowering.",
+        "examples": [
+          "The cherry trees bloom for only a few weeks each spring."
+        ]
+      },
+      {
+        "term": "wither",
+        "type": "verb",
+        "meaning": "To become dry, weak and shrunken.",
+        "examples": [
+          "Without water, the plants began to wither."
+        ]
+      },
+      {
+        "term": "solstice",
+        "type": "noun",
+        "meaning": "The day with the longest or shortest period of daylight in the year.",
+        "examples": [
+          "The June solstice is the longest day of the year in the Northern Hemisphere."
+        ]
+      },
+      {
+        "term": "dormant",
+        "type": "adjective",
+        "meaning": "Alive but temporarily inactive or not growing.",
+        "examples": [
+          "Many trees remain dormant through the winter."
+        ]
+      },
+      {
+        "term": "lush",
+        "type": "adjective",
+        "meaning": "Growing thickly, richly and healthily.",
+        "examples": [
+          "The garden was lush after weeks of rain."
+        ]
+      },
+      {
+        "term": "equinox",
+        "type": "noun",
+        "meaning": "One of the two times each year when day and night are roughly equal in length.",
+        "examples": [
+          "At the equinox, day and night are roughly equal everywhere on Earth."
+        ]
+      },
+      {
+        "term": "a breath of fresh air",
+        "type": "idiom",
+        "meaning": "Something new and refreshing that improves a situation.",
+        "examples": [
+          "Her ideas were a breath of fresh air in a dull meeting."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 6,
+    "title": "Cities and Travel",
+    "description": "Words and phrases for exploring places, planning journeys and describing cities.",
+    "cards": [
+      {
+        "term": "bustling",
+        "type": "adjective",
+        "meaning": "Full of busy, energetic activity.",
+        "examples": [
+          "We explored a bustling night market in the old town."
+        ]
+      },
+      {
+        "term": "off the beaten track",
+        "type": "idiom",
+        "meaning": "Far from popular or well-known places.",
+        "examples": [
+          "They stayed in a quiet village off the beaten track."
+        ]
+      },
+      {
+        "term": "itinerary",
+        "type": "noun",
+        "meaning": "A planned route or schedule for a journey.",
+        "examples": [
+          "Our itinerary includes three days in Melaka."
+        ]
+      },
+      {
+        "term": "wanderlust",
+        "type": "noun",
+        "meaning": "A strong desire to travel.",
+        "examples": [
+          "Her wanderlust took her across six continents."
+        ]
+      },
+      {
+        "term": "layover",
+        "type": "noun",
+        "meaning": "A short stop between parts of a journey, especially between flights.",
+        "examples": [
+          "We had a four-hour layover in Doha."
+        ]
+      },
+      {
+        "term": "cosmopolitan",
+        "type": "adjective",
+        "meaning": "Including people and influences from many different countries and cultures.",
+        "examples": [
+          "Kuala Lumpur is a cosmopolitan city with food from around the world."
+        ]
+      },
+      {
+        "term": "set off",
+        "type": "phrasal verb",
+        "meaning": "To begin a journey.",
+        "examples": [
+          "We set off before sunrise to avoid the traffic."
+        ]
+      },
+      {
+        "term": "urban sprawl",
+        "type": "noun",
+        "meaning": "The uncontrolled spread of a city into the surrounding countryside.",
+        "examples": [
+          "Urban sprawl has replaced much of the old farmland."
+        ]
+      },
+      {
+        "term": "landmark",
+        "type": "noun",
+        "meaning": "A building or place that is easy to recognise and helps people know where they are.",
+        "examples": [
+          "The twin towers are the city's most famous landmark."
+        ]
+      },
+      {
+        "term": "get around",
+        "type": "phrasal verb",
+        "meaning": "To travel from place to place.",
+        "examples": [
+          "It is easy to get around the city by train."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 7,
+    "title": "Time and Patience",
+    "description": "Expressions about timing, waiting and the passing of time.",
+    "cards": [
+      {
+        "term": "in the nick of time",
+        "type": "idiom",
+        "meaning": "Just before it is too late.",
+        "examples": [
+          "We submitted the report in the nick of time."
+        ]
+      },
+      {
+        "term": "fleeting",
+        "type": "adjective",
+        "meaning": "Lasting for a very short time.",
+        "examples": [
+          "We caught a fleeting glimpse of the eagle before it vanished."
+        ]
+      },
+      {
+        "term": "ephemeral",
+        "type": "adjective",
+        "meaning": "Lasting a very short time; more formal or poetic than 'brief'.",
+        "examples": [
+          "Fame on social media is often ephemeral."
+        ]
+      },
+      {
+        "term": "bide your time",
+        "type": "idiom",
+        "meaning": "To wait patiently for the right moment to act.",
+        "examples": [
+          "She bided her time until a senior position became available."
+        ]
+      },
+      {
+        "term": "protracted",
+        "type": "adjective",
+        "meaning": "Lasting longer than expected or usual.",
+        "examples": [
+          "The negotiations were protracted and exhausting."
+        ]
+      },
+      {
+        "term": "in due course",
+        "type": "phrase",
+        "meaning": "At the appropriate time; eventually.",
+        "examples": [
+          "You will receive your results in due course."
+        ]
+      },
+      {
+        "term": "perseverance",
+        "type": "noun",
+        "meaning": "Continued effort to achieve something despite difficulty or delay.",
+        "examples": [
+          "Learning a language well requires perseverance."
+        ]
+      },
+      {
+        "term": "time flies",
+        "type": "idiom",
+        "meaning": "Time seems to pass very quickly.",
+        "examples": [
+          "Time flies when you enjoy your work."
+        ]
+      },
+      {
+        "term": "hold on",
+        "type": "phrasal verb",
+        "meaning": "To wait for a short time; or to keep going in a difficult situation.",
+        "examples": [
+          "Hold on, I'll check the schedule."
+        ]
+      },
+      {
+        "term": "interim",
+        "type": "noun / adjective",
+        "meaning": "The period between two events; temporary, for that period.",
+        "examples": [
+          "In the interim, Sarah will manage the team."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 8,
+    "title": "Money and Value",
+    "description": "Vocabulary for spending, saving and judging what something is worth.",
+    "cards": [
+      {
+        "term": "frugal",
+        "type": "adjective",
+        "meaning": "Careful with money and avoiding waste.",
+        "examples": [
+          "Living frugally helped her save for a master's degree."
+        ]
+      },
+      {
+        "term": "extravagant",
+        "type": "adjective",
+        "meaning": "Spending much more than is necessary or sensible.",
+        "examples": [
+          "The launch party was extravagant for a small start-up."
+        ]
+      },
+      {
+        "term": "make ends meet",
+        "type": "idiom",
+        "meaning": "To have just enough money to pay for what you need.",
+        "examples": [
+          "Many families struggle to make ends meet."
+        ]
+      },
+      {
+        "term": "a rip-off",
+        "type": "noun (informal)",
+        "meaning": "Something that costs far more than it is worth.",
+        "examples": [
+          "Twenty ringgit for a bottle of water is a rip-off."
+        ]
+      },
+      {
+        "term": "affluent",
+        "type": "adjective",
+        "meaning": "Wealthy; having plenty of money.",
+        "examples": [
+          "They grew up in an affluent neighbourhood."
+        ]
+      },
+      {
+        "term": "invaluable",
+        "type": "adjective",
+        "meaning": "Extremely useful. Note: it does not mean 'without value'.",
+        "examples": [
+          "Her advice was invaluable during my first year at university."
+        ]
+      },
+      {
+        "term": "splash out",
+        "type": "phrasal verb (British, informal)",
+        "meaning": "To spend a lot of money on something enjoyable.",
+        "examples": [
+          "We splashed out on a nice dinner to celebrate."
+        ]
+      },
+      {
+        "term": "cost an arm and a leg",
+        "type": "idiom",
+        "meaning": "To be very expensive.",
+        "examples": [
+          "That new laptop cost an arm and a leg."
+        ]
+      },
+      {
+        "term": "budget",
+        "type": "verb / noun",
+        "meaning": "To plan how you will spend money; a plan of income and spending.",
+        "examples": [
+          "Students should budget carefully for the semester."
+        ]
+      },
+      {
+        "term": "worthwhile",
+        "type": "adjective",
+        "meaning": "Worth the time, money or effort spent.",
+        "examples": [
+          "The extra training proved worthwhile."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 9,
+    "title": "Conflict and Resolution",
+    "description": "Words for disagreements and the ways people settle them.",
+    "cards": [
+      {
+        "term": "tension",
+        "type": "noun",
+        "meaning": "A strained feeling between people or groups that may lead to conflict.",
+        "examples": [
+          "There was tension between the two departments."
+        ]
+      },
+      {
+        "term": "clear the air",
+        "type": "idiom",
+        "meaning": "To remove misunderstanding or bad feeling by talking openly.",
+        "examples": [
+          "A frank conversation helped to clear the air."
+        ]
+      },
+      {
+        "term": "compromise",
+        "type": "noun / verb",
+        "meaning": "An agreement in which each side gives up something it wanted.",
+        "examples": [
+          "After hours of discussion, they reached a compromise."
+        ]
+      },
+      {
+        "term": "escalate",
+        "type": "verb",
+        "meaning": "To become more serious or intense.",
+        "examples": [
+          "The disagreement escalated into a formal complaint."
+        ]
+      },
+      {
+        "term": "mediate",
+        "type": "verb",
+        "meaning": "To help two opposing sides reach an agreement.",
+        "examples": [
+          "HR was asked to mediate between the manager and her team."
+        ]
+      },
+      {
+        "term": "bury the hatchet",
+        "type": "idiom",
+        "meaning": "To end a quarrel and become friendly again.",
+        "examples": [
+          "After years of rivalry, the two writers buried the hatchet."
+        ]
+      },
+      {
+        "term": "grievance",
+        "type": "noun",
+        "meaning": "A complaint about being treated unfairly.",
+        "examples": [
+          "Staff can raise a grievance through the official process."
+        ]
+      },
+      {
+        "term": "at odds",
+        "type": "phrase",
+        "meaning": "In disagreement or conflict.",
+        "examples": [
+          "The two reports are at odds over the cause of the decline."
+        ]
+      },
+      {
+        "term": "reconcile",
+        "type": "verb",
+        "meaning": "To restore friendly relations; or to make two ideas fit together.",
+        "examples": [
+          "They reconciled after a long silence."
+        ]
+      },
+      {
+        "term": "common ground",
+        "type": "phrase",
+        "meaning": "Opinions or interests shared by people who otherwise disagree.",
+        "examples": [
+          "Despite their differences, they found common ground on safety."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 10,
+    "title": "Memory and Nostalgia",
+    "description": "Language for remembering, forgetting and longing for the past.",
+    "cards": [
+      {
+        "term": "nostalgia",
+        "type": "noun",
+        "meaning": "A sentimental longing for a happy time in the past.",
+        "examples": [
+          "The old song filled her with nostalgia."
+        ]
+      },
+      {
+        "term": "reminisce",
+        "type": "verb",
+        "meaning": "To talk or think with pleasure about past experiences.",
+        "examples": [
+          "We spent the evening reminiscing about our school days."
+        ]
+      },
+      {
+        "term": "vivid",
+        "type": "adjective",
+        "meaning": "Very clear, detailed and bright in the mind.",
+        "examples": [
+          "I have a vivid memory of my first day at university."
+        ]
+      },
+      {
+        "term": "hazy",
+        "type": "adjective",
+        "meaning": "Unclear or vague.",
+        "examples": [
+          "My memories of that trip are hazy."
+        ]
+      },
+      {
+        "term": "ring a bell",
+        "type": "idiom",
+        "meaning": "To sound familiar.",
+        "examples": [
+          "The name rings a bell, but I can't remember where we met."
+        ]
+      },
+      {
+        "term": "on the tip of my tongue",
+        "type": "idiom",
+        "meaning": "Almost remembered but not quite.",
+        "examples": [
+          "His name is on the tip of my tongue."
+        ]
+      },
+      {
+        "term": "commemorate",
+        "type": "verb",
+        "meaning": "To honour and remember an important person or event.",
+        "examples": [
+          "A plaque commemorates the founders of the school."
+        ]
+      },
+      {
+        "term": "evocative",
+        "type": "adjective",
+        "meaning": "Bringing strong images, memories or feelings to mind.",
+        "examples": [
+          "The writer's descriptions of the coast are wonderfully evocative."
+        ]
+      },
+      {
+        "term": "jog someone's memory",
+        "type": "idiom",
+        "meaning": "To help someone remember something.",
+        "examples": [
+          "Looking at the photos might jog your memory."
+        ]
+      },
+      {
+        "term": "bygone",
+        "type": "adjective",
+        "meaning": "Belonging to an earlier time.",
+        "examples": [
+          "The film captures the charm of a bygone era."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 11,
+    "title": "Art and Creativity",
+    "description": "Words for making things, finding inspiration and judging creative work.",
+    "cards": [
+      {
+        "term": "muse",
+        "type": "noun",
+        "meaning": "A person or thing that inspires an artist or writer.",
+        "examples": [
+          "The sea was her muse for many years."
+        ]
+      },
+      {
+        "term": "aesthetic",
+        "type": "noun / adjective",
+        "meaning": "A set of ideas about beauty or style; relating to beauty and appearance.",
+        "examples": [
+          "The app has a clean, minimalist aesthetic."
+        ]
+      },
+      {
+        "term": "juxtaposition",
+        "type": "noun",
+        "meaning": "Placing two different things side by side to highlight the contrast between them.",
+        "examples": [
+          "The juxtaposition of old and new buildings is striking."
+        ]
+      },
+      {
+        "term": "avant-garde",
+        "type": "adjective / noun",
+        "meaning": "New, experimental and ahead of its time, especially in the arts.",
+        "examples": [
+          "The gallery shows avant-garde work by young artists."
+        ]
+      },
+      {
+        "term": "think outside the box",
+        "type": "idiom",
+        "meaning": "To think creatively and in an original way.",
+        "examples": [
+          "We need to think outside the box to solve this problem."
+        ]
+      },
+      {
+        "term": "masterpiece",
+        "type": "noun",
+        "meaning": "An outstanding work of art; a person's best work.",
+        "examples": [
+          "Many critics consider the novel her masterpiece."
+        ]
+      },
+      {
+        "term": "improvise",
+        "type": "verb",
+        "meaning": "To create or perform something without preparation.",
+        "examples": [
+          "When the slides failed, she improvised brilliantly."
+        ]
+      },
+      {
+        "term": "derivative",
+        "type": "adjective",
+        "meaning": "Copying the ideas of others too closely; not original.",
+        "examples": [
+          "Critics found the album derivative and predictable."
+        ]
+      },
+      {
+        "term": "flair",
+        "type": "noun",
+        "meaning": "A natural talent for something; stylishness.",
+        "examples": [
+          "He has a flair for graphic design."
+        ]
+      },
+      {
+        "term": "in the eye of the beholder",
+        "type": "idiom",
+        "meaning": "From 'beauty is in the eye of the beholder': beauty is a matter of personal opinion.",
+        "examples": [
+          "Whether the building is beautiful is in the eye of the beholder."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 12,
+    "title": "Food and Flavour",
+    "description": "Descriptive words for taste, texture and the pleasure of eating.",
+    "cards": [
+      {
+        "term": "savoury",
+        "type": "adjective",
+        "meaning": "Salty or spicy rather than sweet. (American spelling: savory)",
+        "examples": [
+          "I prefer savoury snacks to sweets."
+        ]
+      },
+      {
+        "term": "tangy",
+        "type": "adjective",
+        "meaning": "Having a sharp, pleasantly sour taste.",
+        "examples": [
+          "The tangy tamarind sauce balanced the rich fish."
+        ]
+      },
+      {
+        "term": "aromatic",
+        "type": "adjective",
+        "meaning": "Having a strong, pleasant smell.",
+        "examples": [
+          "The curry was rich with aromatic spices such as star anise and cinnamon."
+        ]
+      },
+      {
+        "term": "bland",
+        "type": "adjective",
+        "meaning": "Lacking strong flavour; dull.",
+        "examples": [
+          "The soup was bland, so I added some chilli."
+        ]
+      },
+      {
+        "term": "succulent",
+        "type": "adjective",
+        "meaning": "Juicy and tender in a pleasant way.",
+        "examples": [
+          "The grilled chicken was succulent and perfectly seasoned."
+        ]
+      },
+      {
+        "term": "palate",
+        "type": "noun",
+        "meaning": "A person's sense of taste.",
+        "examples": [
+          "The tasting menu was designed to delight the palate."
+        ]
+      },
+      {
+        "term": "whet your appetite",
+        "type": "idiom",
+        "meaning": "To make you want more of something.",
+        "examples": [
+          "The trailer whetted my appetite for the film."
+        ]
+      },
+      {
+        "term": "a piece of cake",
+        "type": "idiom",
+        "meaning": "Something very easy to do.",
+        "examples": [
+          "The first quiz was a piece of cake."
+        ]
+      },
+      {
+        "term": "wholesome",
+        "type": "adjective",
+        "meaning": "Good for your health; also morally good.",
+        "examples": [
+          "She cooks simple, wholesome meals for her family."
+        ]
+      },
+      {
+        "term": "moreish",
+        "type": "adjective (British, informal)",
+        "meaning": "So tasty that you want to keep eating more.",
+        "examples": [
+          "These crackers are dangerously moreish."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 13,
+    "title": "Technology and the Digital World",
+    "description": "Vocabulary for devices, software and life online.",
+    "cards": [
+      {
+        "term": "obsolete",
+        "type": "adjective",
+        "meaning": "No longer used because something newer has replaced it.",
+        "examples": [
+          "Fax machines are almost obsolete in most offices."
+        ]
+      },
+      {
+        "term": "cutting-edge",
+        "type": "adjective",
+        "meaning": "The newest and most advanced.",
+        "examples": [
+          "The lab uses cutting-edge equipment."
+        ]
+      },
+      {
+        "term": "user-friendly",
+        "type": "adjective",
+        "meaning": "Easy for people to use or understand.",
+        "examples": [
+          "The new portal is far more user-friendly than the old one."
+        ]
+      },
+      {
+        "term": "glitch",
+        "type": "noun",
+        "meaning": "A small, sudden fault in a system or machine.",
+        "examples": [
+          "A glitch in the system delayed payments for a day."
+        ]
+      },
+      {
+        "term": "streamline",
+        "type": "verb",
+        "meaning": "To make a process simpler and more efficient.",
+        "examples": [
+          "The software streamlines the approval process."
+        ]
+      },
+      {
+        "term": "back up",
+        "type": "phrasal verb",
+        "meaning": "To make a copy of data so it is not lost.",
+        "examples": [
+          "Always back up your work before installing an update."
+        ]
+      },
+      {
+        "term": "digital footprint",
+        "type": "noun",
+        "meaning": "The record of data a person leaves behind through their online activity.",
+        "examples": [
+          "Be careful what you post; your digital footprint can last for years."
+        ]
+      },
+      {
+        "term": "troubleshoot",
+        "type": "verb",
+        "meaning": "To find and fix problems in a system.",
+        "examples": [
+          "The IT team spent the morning troubleshooting the network."
+        ]
+      },
+      {
+        "term": "intuitive",
+        "type": "adjective",
+        "meaning": "Easy to understand and use without instructions.",
+        "examples": [
+          "The interface is so intuitive that no training is needed."
+        ]
+      },
+      {
+        "term": "go viral",
+        "type": "phrase",
+        "meaning": "To spread very quickly and widely online.",
+        "examples": [
+          "Her video went viral overnight."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 14,
+    "title": "Health and Wellbeing",
+    "description": "Words for looking after the body and mind.",
+    "cards": [
+      {
+        "term": "burnout",
+        "type": "noun",
+        "meaning": "Physical and emotional exhaustion caused by long-term stress.",
+        "examples": [
+          "Long hours led to burnout among the nurses."
+        ]
+      },
+      {
+        "term": "sedentary",
+        "type": "adjective",
+        "meaning": "Involving a lot of sitting and little physical activity.",
+        "examples": [
+          "A sedentary lifestyle increases several health risks."
+        ]
+      },
+      {
+        "term": "recuperate",
+        "type": "verb",
+        "meaning": "To recover from illness, injury or tiredness.",
+        "examples": [
+          "He took a week off to recuperate after surgery."
+        ]
+      },
+      {
+        "term": "holistic",
+        "type": "adjective",
+        "meaning": "Treating the whole person or system, not just one part.",
+        "examples": [
+          "The clinic takes a holistic approach to patient care."
+        ]
+      },
+      {
+        "term": "under the weather",
+        "type": "idiom",
+        "meaning": "Slightly ill.",
+        "examples": [
+          "I'm feeling a bit under the weather today."
+        ]
+      },
+      {
+        "term": "resilient",
+        "type": "adjective",
+        "meaning": "Able to recover quickly from difficulties.",
+        "examples": [
+          "Children are often more resilient than adults expect."
+        ]
+      },
+      {
+        "term": "unwind",
+        "type": "verb",
+        "meaning": "To relax after a period of work or stress.",
+        "examples": [
+          "I unwind by walking in the park after work."
+        ]
+      },
+      {
+        "term": "fit as a fiddle",
+        "type": "idiom",
+        "meaning": "In very good health.",
+        "examples": [
+          "My grandfather is eighty and still fit as a fiddle."
+        ]
+      },
+      {
+        "term": "moderation",
+        "type": "noun",
+        "meaning": "The habit of avoiding excess.",
+        "examples": [
+          "Sweets are fine in moderation."
+        ]
+      },
+      {
+        "term": "mindful",
+        "type": "adjective",
+        "meaning": "Consciously aware of something; attentive to the present moment.",
+        "examples": [
+          "Try to be mindful of your posture when you work at a desk."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 15,
+    "title": "Friendship and Loyalty",
+    "description": "Language for close bonds, trust and the people who stand by us.",
+    "cards": [
+      {
+        "term": "confidant",
+        "type": "noun",
+        "meaning": "A person you trust with private thoughts and secrets. (Often spelled 'confidante' for a woman.)",
+        "examples": [
+          "She has been my confidante since primary school."
+        ]
+      },
+      {
+        "term": "steadfast",
+        "type": "adjective",
+        "meaning": "Firm, loyal and unwavering.",
+        "examples": [
+          "He remained a steadfast friend through difficult times."
+        ]
+      },
+      {
+        "term": "hit it off",
+        "type": "idiom",
+        "meaning": "To like each other immediately.",
+        "examples": [
+          "We hit it off on the first day of orientation."
+        ]
+      },
+      {
+        "term": "fair-weather friend",
+        "type": "idiom",
+        "meaning": "A friend who is only there when things are going well.",
+        "examples": [
+          "When I lost my job, I learned who my fair-weather friends were."
+        ]
+      },
+      {
+        "term": "camaraderie",
+        "type": "noun",
+        "meaning": "Mutual trust and friendship among people who spend a lot of time together.",
+        "examples": [
+          "There was a strong camaraderie among the volunteers."
+        ]
+      },
+      {
+        "term": "drift apart",
+        "type": "phrasal verb",
+        "meaning": "To gradually become less close.",
+        "examples": [
+          "We drifted apart after university."
+        ]
+      },
+      {
+        "term": "stand by someone",
+        "type": "phrasal verb",
+        "meaning": "To support someone, especially in a difficult situation.",
+        "examples": [
+          "Her friends stood by her throughout the crisis."
+        ]
+      },
+      {
+        "term": "rapport",
+        "type": "noun",
+        "meaning": "A friendly relationship in which people understand each other well.",
+        "examples": [
+          "A good lecturer builds rapport with students."
+        ]
+      },
+      {
+        "term": "a shoulder to cry on",
+        "type": "idiom",
+        "meaning": "Someone who listens and comforts you when you are upset.",
+        "examples": [
+          "He was always there as a shoulder to cry on."
+        ]
+      },
+      {
+        "term": "go back a long way",
+        "type": "idiom",
+        "meaning": "To have known each other for a long time.",
+        "examples": [
+          "Mei and I go back a long way."
+        ]
+      }
+    ]
+  },
+  {
+    "week": 16,
+    "title": "Decision Making",
+    "description": "Words for weighing options, choosing and committing.",
+    "cards": []
+  },
+  {
+    "week": 17,
+    "title": "Ambition and Drive",
+    "description": "Vocabulary for goals, motivation and the hunger to achieve.",
+    "cards": []
+  },
+  {
+    "week": 18,
+    "title": "Failure and Resilience",
+    "description": "Language for setbacks, recovery and trying again.",
+    "cards": []
+  },
+  {
+    "week": 19,
+    "title": "Weather and Atmosphere",
+    "description": "Words for skies, storms and the mood a place creates.",
+    "cards": []
+  },
+  {
+    "week": 20,
+    "title": "Etiquette and Manners",
+    "description": "Phrases for politeness, social rules and graceful behaviour.",
+    "cards": []
+  },
+  {
+    "week": 21,
+    "title": "Leadership",
+    "description": "Words for guiding people, setting direction and earning respect.",
+    "cards": []
+  },
+  {
+    "week": 22,
+    "title": "Teamwork",
+    "description": "Language for cooperation, shared goals and working well together.",
+    "cards": []
+  },
+  {
+    "week": 23,
+    "title": "Meetings and Negotiation",
+    "description": "Phrases for discussing, bargaining and reaching agreements.",
+    "cards": []
+  },
+  {
+    "week": 24,
+    "title": "Feedback and Criticism",
+    "description": "Words for giving and receiving comments with tact.",
+    "cards": []
+  },
+  {
+    "week": 25,
+    "title": "Public Speaking",
+    "description": "Vocabulary for presenting, holding attention and speaking with confidence.",
+    "cards": []
+  },
+  {
+    "week": 26,
+    "title": "Storytelling",
+    "description": "Words for plot, character and the craft of telling a good story.",
+    "cards": []
+  },
+  {
+    "week": 27,
+    "title": "Describing Character",
+    "description": "Adjectives and phrases for people's personalities.",
+    "cards": []
+  },
+  {
+    "week": 28,
+    "title": "Describing Appearance",
+    "description": "Precise words for how people and things look.",
+    "cards": []
+  },
+  {
+    "week": 29,
+    "title": "Light and Colour",
+    "description": "Words for brightness, shade and the many tones of colour.",
+    "cards": []
+  },
+  {
+    "week": 30,
+    "title": "Sound and Silence",
+    "description": "Vocabulary for noises, voices and quiet.",
+    "cards": []
+  },
+  {
+    "week": 31,
+    "title": "The Ocean",
+    "description": "Words for the sea, its creatures and its moods.",
+    "cards": []
+  },
+  {
+    "week": 32,
+    "title": "Mountains and Landscapes",
+    "description": "Language for high places, valleys and wide open land.",
+    "cards": []
+  },
+  {
+    "week": 33,
+    "title": "Home and Belonging",
+    "description": "Words for comfort, place and feeling at home.",
+    "cards": []
+  },
+  {
+    "week": 34,
+    "title": "Family Life",
+    "description": "Vocabulary for relatives, upbringing and household life.",
+    "cards": []
+  },
+  {
+    "week": 35,
+    "title": "Love and Romance",
+    "description": "Words for affection, attraction and lasting relationships.",
+    "cards": []
+  },
+  {
+    "week": 36,
+    "title": "Grief and Loss",
+    "description": "Gentle language for sadness, mourning and remembrance.",
+    "cards": []
+  },
+  {
+    "week": 37,
+    "title": "Hope and Optimism",
+    "description": "Words for looking forward and believing in better days.",
+    "cards": []
+  },
+  {
+    "week": 38,
+    "title": "Fear and Courage",
+    "description": "Language for anxiety, bravery and facing what scares us.",
+    "cards": []
+  },
+  {
+    "week": 39,
+    "title": "Honesty and Deception",
+    "description": "Words for truth, lies and everything in between.",
+    "cards": []
+  },
+  {
+    "week": 40,
+    "title": "Power and Influence",
+    "description": "Neutral vocabulary for authority, control and influence in society.",
+    "cards": []
+  },
+  {
+    "week": 41,
+    "title": "Law and Justice",
+    "description": "Words for rules, courts and fairness.",
+    "cards": []
+  },
+  {
+    "week": 42,
+    "title": "Media and Journalism",
+    "description": "Vocabulary for news, reporting and public information.",
+    "cards": []
+  },
+  {
+    "week": 43,
+    "title": "Marketing and Advertising",
+    "description": "Words for brands, campaigns and persuading customers.",
+    "cards": []
+  },
+  {
+    "week": 44,
+    "title": "Business Strategy",
+    "description": "Language for planning, competition and growth.",
+    "cards": []
+  },
+  {
+    "week": 45,
+    "title": "Entrepreneurship",
+    "description": "Words for starting and running a new venture.",
+    "cards": []
+  },
+  {
+    "week": 46,
+    "title": "Personal Finance",
+    "description": "Vocabulary for budgets, debt, saving and investing wisely.",
+    "cards": []
+  },
+  {
+    "week": 47,
+    "title": "Economics in Everyday Life",
+    "description": "Words for prices, markets and how money moves.",
+    "cards": []
+  },
+  {
+    "week": 48,
+    "title": "Science and Discovery",
+    "description": "Language for experiments, evidence and breakthroughs.",
+    "cards": []
+  },
+  {
+    "week": 49,
+    "title": "Space and the Universe",
+    "description": "Words for stars, planets and the vastness beyond Earth.",
+    "cards": []
+  },
+  {
+    "week": 50,
+    "title": "The Human Body",
+    "description": "Vocabulary for anatomy, movement and physical sensation.",
+    "cards": []
+  },
+  {
+    "week": 51,
+    "title": "The Mind and Thinking",
+    "description": "Words for thought, reasoning and mental processes.",
+    "cards": []
+  },
+  {
+    "week": 52,
+    "title": "Learning and Education",
+    "description": "Language for studying, teaching and growing knowledge.",
+    "cards": []
+  },
+  {
+    "week": 53,
+    "title": "Books and Reading",
+    "description": "Words for literature, genres and the habit of reading.",
+    "cards": []
+  },
+  {
+    "week": 54,
+    "title": "Poetry and Language",
+    "description": "Vocabulary for rhythm, imagery and the beauty of words.",
+    "cards": []
+  },
+  {
+    "week": 55,
+    "title": "Music",
+    "description": "Words for melody, rhythm and the experience of listening.",
+    "cards": []
+  },
+  {
+    "week": 56,
+    "title": "Film and Theatre",
+    "description": "Language for performance, scenes and the stage.",
+    "cards": []
+  },
+  {
+    "week": 57,
+    "title": "Fashion and Style",
+    "description": "Words for clothing, taste and personal style.",
+    "cards": []
+  },
+  {
+    "week": 58,
+    "title": "Architecture and Design",
+    "description": "Vocabulary for buildings, space and form.",
+    "cards": []
+  },
+  {
+    "week": 59,
+    "title": "Gardens and Plants",
+    "description": "Words for growing things and green spaces.",
+    "cards": []
+  },
+  {
+    "week": 60,
+    "title": "Animals and Wildlife",
+    "description": "Language for creatures, habitats and behaviour.",
+    "cards": []
+  },
+  {
+    "week": 61,
+    "title": "Environment and Climate",
+    "description": "Words for the planet, pollution and climate change.",
+    "cards": []
+  },
+  {
+    "week": 62,
+    "title": "Sustainability",
+    "description": "Vocabulary for living and working with less waste.",
+    "cards": []
+  },
+  {
+    "week": 63,
+    "title": "Urban Life",
+    "description": "Words for the rhythm, crowds and pressures of the city.",
+    "cards": []
+  },
+  {
+    "week": 64,
+    "title": "Rural Life",
+    "description": "Language for villages, farming and the countryside.",
+    "cards": []
+  },
+  {
+    "week": 65,
+    "title": "Sports and Competition",
+    "description": "Words for games, rivalry and fair play.",
+    "cards": []
+  },
+  {
+    "week": 66,
+    "title": "Games and Play",
+    "description": "Vocabulary for fun, rules and playful moods.",
+    "cards": []
+  },
+  {
+    "week": 67,
+    "title": "Humour and Wit",
+    "description": "Words for jokes, irony and clever remarks.",
+    "cards": []
+  },
+  {
+    "week": 68,
+    "title": "Gossip and Rumour",
+    "description": "Language for talk, whispers and spreading news.",
+    "cards": []
+  },
+  {
+    "week": 69,
+    "title": "Social Media",
+    "description": "Vocabulary for posting, sharing and online communities.",
+    "cards": []
+  },
+  {
+    "week": 70,
+    "title": "Privacy and Surveillance",
+    "description": "Words for personal data, monitoring and boundaries.",
+    "cards": []
+  },
+  {
+    "week": 71,
+    "title": "Ethics and Morality",
+    "description": "Language for right, wrong and difficult choices.",
+    "cards": []
+  },
+  {
+    "week": 72,
+    "title": "Philosophy Basics",
+    "description": "Key words for big questions about knowledge and existence.",
+    "cards": []
+  },
+  {
+    "week": 73,
+    "title": "Belief and Faith",
+    "description": "Respectful vocabulary for spirituality, belief and doubt.",
+    "cards": []
+  },
+  {
+    "week": 74,
+    "title": "History and Heritage",
+    "description": "Words for the past, records and what we inherit.",
+    "cards": []
+  },
+  {
+    "week": 75,
+    "title": "Culture and Tradition",
+    "description": "Language for customs, rituals and shared identity.",
+    "cards": []
+  },
+  {
+    "week": 76,
+    "title": "Festivals and Celebrations",
+    "description": "Words for festivities, gatherings and special days.",
+    "cards": []
+  },
+  {
+    "week": 77,
+    "title": "Migration and Identity",
+    "description": "Vocabulary for moving between places and cultures.",
+    "cards": []
+  },
+  {
+    "week": 78,
+    "title": "Change and Transformation",
+    "description": "Words for growth, shifts and becoming something new.",
+    "cards": []
+  },
+  {
+    "week": 79,
+    "title": "Beginnings and Endings",
+    "description": "Language for starts, finishes and transitions.",
+    "cards": []
+  },
+  {
+    "week": 80,
+    "title": "Routine and Habit",
+    "description": "Words for daily patterns and the things we repeat.",
+    "cards": []
+  },
+  {
+    "week": 81,
+    "title": "Productivity",
+    "description": "Vocabulary for getting things done efficiently.",
+    "cards": []
+  },
+  {
+    "week": 82,
+    "title": "Procrastination",
+    "description": "Words for delay, avoidance and finally starting.",
+    "cards": []
+  },
+  {
+    "week": 83,
+    "title": "Stress and Pressure",
+    "description": "Language for tension, overload and coping.",
+    "cards": []
+  },
+  {
+    "week": 84,
+    "title": "Rest and Relaxation",
+    "description": "Words for slowing down and recharging.",
+    "cards": []
+  },
+  {
+    "week": 85,
+    "title": "Sleep and Dreams",
+    "description": "Vocabulary for night, rest and the dreaming mind.",
+    "cards": []
+  },
+  {
+    "week": 86,
+    "title": "Solitude",
+    "description": "Words for being alone, peacefully or painfully.",
+    "cards": []
+  },
+  {
+    "week": 87,
+    "title": "Curiosity",
+    "description": "Language for wonder, questions and the urge to explore.",
+    "cards": []
+  },
+  {
+    "week": 88,
+    "title": "Wisdom",
+    "description": "Words for good judgement and hard-earned understanding.",
+    "cards": []
+  },
+  {
+    "week": 89,
+    "title": "Kindness and Generosity",
+    "description": "Vocabulary for giving, caring and compassion.",
+    "cards": []
+  },
+  {
+    "week": 90,
+    "title": "Gratitude",
+    "description": "Words for thankfulness and appreciation.",
+    "cards": []
+  },
+  {
+    "week": 91,
+    "title": "Pride and Humility",
+    "description": "Language for self-respect, arrogance and modesty.",
+    "cards": []
+  },
+  {
+    "week": 92,
+    "title": "Jealousy and Envy",
+    "description": "Words for wanting what others have.",
+    "cards": []
+  },
+  {
+    "week": 93,
+    "title": "Anger",
+    "description": "Vocabulary for irritation, rage and calming down.",
+    "cards": []
+  },
+  {
+    "week": 94,
+    "title": "Joy and Delight",
+    "description": "Words for happiness in all its shades.",
+    "cards": []
+  },
+  {
+    "week": 95,
+    "title": "Surprise",
+    "description": "Language for the unexpected and how we react to it.",
+    "cards": []
+  },
+  {
+    "week": 96,
+    "title": "Confusion and Clarity",
+    "description": "Words for puzzlement and understanding.",
+    "cards": []
+  },
+  {
+    "week": 97,
+    "title": "Agreement and Disagreement",
+    "description": "Phrases for agreeing, objecting and finding middle ground.",
+    "cards": []
+  },
+  {
+    "week": 98,
+    "title": "Cause and Effect",
+    "description": "Linking language for reasons and results.",
+    "cards": []
+  },
+  {
+    "week": 99,
+    "title": "Comparing and Contrasting",
+    "description": "Words for similarities and differences.",
+    "cards": []
+  },
+  {
+    "week": 100,
+    "title": "Describing Trends and Data",
+    "description": "Vocabulary for charts, figures and changes over time.",
+    "cards": []
+  },
+  {
+    "week": 101,
+    "title": "Hedging and Cautious Language",
+    "description": "Words that make academic claims careful and precise.",
+    "cards": []
+  },
+  {
+    "week": 102,
+    "title": "Linking Words and Transitions",
+    "description": "Connectors that guide readers from one idea to the next.",
+    "cards": []
+  },
+  {
+    "week": 103,
+    "title": "Formal Emails",
+    "description": "Phrases for polite, professional correspondence.",
+    "cards": []
+  },
+  {
+    "week": 104,
+    "title": "Apologies and Excuses",
+    "description": "Language for saying sorry and explaining mistakes.",
+    "cards": []
+  },
+  {
+    "week": 105,
+    "title": "Requests and Offers",
+    "description": "Polite ways to ask for and offer help.",
+    "cards": []
+  },
+  {
+    "week": 106,
+    "title": "Complaints and Customer Service",
+    "description": "Words for problems, complaints and resolutions.",
+    "cards": []
+  },
+  {
+    "week": 107,
+    "title": "Job Hunting and Interviews",
+    "description": "Vocabulary for applications, interviews and careers.",
+    "cards": []
+  },
+  {
+    "week": 108,
+    "title": "Office Life",
+    "description": "Words for the daily rhythm of work.",
+    "cards": []
+  },
+  {
+    "week": 109,
+    "title": "Remote Work",
+    "description": "Language for working from home and online collaboration.",
+    "cards": []
+  },
+  {
+    "week": 110,
+    "title": "Projects and Deadlines",
+    "description": "Words for planning, milestones and delivery.",
+    "cards": []
+  },
+  {
+    "week": 111,
+    "title": "Problem Solving",
+    "description": "Vocabulary for analysing issues and finding solutions.",
+    "cards": []
+  },
+  {
+    "week": 112,
+    "title": "Innovation",
+    "description": "Words for new ideas, invention and change.",
+    "cards": []
+  },
+  {
+    "week": 113,
+    "title": "Risk and Uncertainty",
+    "description": "Language for danger, doubt and unknown outcomes.",
+    "cards": []
+  },
+  {
+    "week": 114,
+    "title": "Luck and Chance",
+    "description": "Words for fortune, coincidence and probability.",
+    "cards": []
+  },
+  {
+    "week": 115,
+    "title": "Success",
+    "description": "Vocabulary for achievement and recognition.",
+    "cards": []
+  },
+  {
+    "week": 116,
+    "title": "Trust",
+    "description": "Words for reliability, faith in others and betrayal.",
+    "cards": []
+  },
+  {
+    "week": 117,
+    "title": "Relationships at Work",
+    "description": "Language for colleagues, bosses and office politics.",
+    "cards": []
+  },
+  {
+    "week": 118,
+    "title": "Body Language",
+    "description": "Words for gestures, posture and silent signals.",
+    "cards": []
+  },
+  {
+    "week": 119,
+    "title": "Tone of Voice",
+    "description": "Vocabulary for how something is said, not just what.",
+    "cards": []
+  },
+  {
+    "week": 120,
+    "title": "Ways of Speaking",
+    "description": "Precise verbs for talking, from whisper to proclaim.",
+    "cards": []
+  },
+  {
+    "week": 121,
+    "title": "Ways of Moving",
+    "description": "Verbs for walking, running and every movement between.",
+    "cards": []
+  },
+  {
+    "week": 122,
+    "title": "Ways of Looking",
+    "description": "Verbs for seeing, from glance to scrutinise.",
+    "cards": []
+  },
+  {
+    "week": 123,
+    "title": "Laughter and Tears",
+    "description": "Words for laughing, crying and everything in between.",
+    "cards": []
+  },
+  {
+    "week": 124,
+    "title": "Size and Quantity",
+    "description": "Vocabulary for amounts, scale and proportion.",
+    "cards": []
+  },
+  {
+    "week": 125,
+    "title": "Speed and Slowness",
+    "description": "Words for pace, haste and lingering.",
+    "cards": []
+  },
+  {
+    "week": 126,
+    "title": "Beauty and Ugliness",
+    "description": "Language for attractiveness and its opposite.",
+    "cards": []
+  },
+  {
+    "week": 127,
+    "title": "Order and Chaos",
+    "description": "Words for neatness, mess and disorder.",
+    "cards": []
+  },
+  {
+    "week": 128,
+    "title": "Old and New",
+    "description": "Vocabulary for age, novelty and the passage of time.",
+    "cards": []
+  },
+  {
+    "week": 129,
+    "title": "Secrets and Mysteries",
+    "description": "Words for hidden things and the unknown.",
+    "cards": []
+  },
+  {
+    "week": 130,
+    "title": "Journeys and Adventure",
+    "description": "Language for quests, exploration and discovery.",
+    "cards": []
+  },
+  {
+    "week": 131,
+    "title": "Night",
+    "description": "Words for darkness, stars and late hours.",
+    "cards": []
+  },
+  {
+    "week": 132,
+    "title": "Morning",
+    "description": "Vocabulary for dawn, waking and fresh starts.",
+    "cards": []
+  },
+  {
+    "week": 133,
+    "title": "Rain",
+    "description": "Words for showers, storms and wet days.",
+    "cards": []
+  },
+  {
+    "week": 134,
+    "title": "Fire and Heat",
+    "description": "Language for flames, warmth and burning.",
+    "cards": []
+  },
+  {
+    "week": 135,
+    "title": "Cold and Winter",
+    "description": "Words for frost, chill and the cold season.",
+    "cards": []
+  },
+  {
+    "week": 136,
+    "title": "Water and Rivers",
+    "description": "Vocabulary for flowing water and its many forms.",
+    "cards": []
+  },
+  {
+    "week": 137,
+    "title": "The Sky",
+    "description": "Words for clouds, horizons and the open air.",
+    "cards": []
+  },
+  {
+    "week": 138,
+    "title": "Cooking Verbs",
+    "description": "Precise verbs for preparing food.",
+    "cards": []
+  },
+  {
+    "week": 139,
+    "title": "Shopping and Consumerism",
+    "description": "Words for buying, bargains and consumer culture.",
+    "cards": []
+  },
+  {
+    "week": 140,
+    "title": "Health Care and Medicine",
+    "description": "Vocabulary for treatment, symptoms and recovery.",
+    "cards": []
+  },
+  {
+    "week": 141,
+    "title": "Volunteering and Community",
+    "description": "Words for service, belonging and helping others.",
+    "cards": []
+  },
+  {
+    "week": 142,
+    "title": "Childhood",
+    "description": "Language for growing up and early memories.",
+    "cards": []
+  },
+  {
+    "week": 143,
+    "title": "Ageing",
+    "description": "Words for getting older, experience and maturity.",
+    "cards": []
+  },
+  {
+    "week": 144,
+    "title": "Freedom and Constraint",
+    "description": "Vocabulary for liberty, limits and choice.",
+    "cards": []
+  },
+  {
+    "week": 145,
+    "title": "Words for Writers",
+    "description": "The language writers use to talk about their craft.",
+    "cards": []
+  },
+  {
+    "week": 146,
+    "title": "Critical Thinking",
+    "description": "Words for analysing, questioning and evaluating ideas.",
+    "cards": []
+  },
+  {
+    "week": 147,
+    "title": "Research Methods",
+    "description": "Vocabulary for data collection, analysis and validity.",
+    "cards": []
+  },
+  {
+    "week": 148,
+    "title": "Communication Audits",
+    "description": "Key terms for evaluating how organisations communicate.",
+    "cards": []
+  },
+  {
+    "week": 149,
+    "title": "Reflection and Self-Awareness",
+    "description": "Words for looking inward and understanding yourself.",
+    "cards": []
+  },
+  {
+    "week": 150,
+    "title": "Looking Ahead",
+    "description": "Language for plans, hopes and the future.",
+    "cards": []
+  }
+]

@@ -1,0 +1,366 @@
+[
+  {
+    "id": "w001",
+    "name": "Wabi-sabi",
+    "field": "Japanese aesthetics",
+    "explanation": "A Japanese way of seeing beauty in things that are imperfect, impermanent and incomplete. It values the worn edge of a bowl, moss on a stone, or the faded colour of old wood, and it is closely linked to Zen Buddhist ideas about transience.",
+    "prompt": "Describe an imperfect object you own and explain why its flaws make it more valuable to you."
+  },
+  {
+    "id": "w002",
+    "name": "Kintsugi",
+    "field": "Japanese craft",
+    "explanation": "The Japanese art of repairing broken pottery with lacquer mixed with gold or another precious metal. Instead of hiding the cracks, the repair makes them visible, so the history of the break becomes part of the object's beauty.",
+    "prompt": "Write about a time something in your life broke and was repaired. What did the 'gold seams' teach you?"
+  },
+  {
+    "id": "w003",
+    "name": "The Michelangelo effect",
+    "field": "Psychology of relationships",
+    "explanation": "A term from relationship research (Drigotas and colleagues, 1999) describing how close partners can 'sculpt' each other towards their ideal selves, much as Michelangelo spoke of freeing a figure from stone. Supportive partners treat us as the person we hope to become, and this can help us grow.",
+    "prompt": "Write a letter to someone who has helped shape you into a better version of yourself."
+  },
+  {
+    "id": "w004",
+    "name": "The Pygmalion effect",
+    "field": "Psychology",
+    "explanation": "The idea that higher expectations from others can lead to better performance. It is associated with a 1968 classroom study by Rosenthal and Jacobson, although later researchers have debated how strong and reliable the effect is.",
+    "prompt": "Argue whether a teacher's expectations can truly change a student's results. Use an example from your own experience."
+  },
+  {
+    "id": "w005",
+    "name": "Sonder",
+    "field": "Invented word",
+    "explanation": "A word coined by John Koenig in 'The Dictionary of Obscure Sorrows' for the realisation that every passer-by has a life as vivid and complex as your own. It is a modern invention rather than a traditional dictionary word, but it names a feeling many people recognise.",
+    "prompt": "Sit in a public place in your mind and describe three strangers, imagining the full lives behind their faces."
+  },
+  {
+    "id": "w006",
+    "name": "The Overton window",
+    "field": "Political science",
+    "explanation": "The range of ideas that the public considers acceptable to discuss at a given time. It is named after Joseph Overton, a policy analyst, and suggests that ideas can move from 'unthinkable' to 'popular' as public opinion shifts.",
+    "prompt": "Choose an idea that was once unthinkable but is now normal. Explain how you think the window moved."
+  },
+  {
+    "id": "w007",
+    "name": "Hygge",
+    "field": "Danish culture",
+    "explanation": "A Danish and Norwegian word for a feeling of cosy comfort, warmth and contentment, often shared with others. It is commonly linked with candles, warm drinks and slow evenings, especially during long winters.",
+    "prompt": "Describe your perfect moment of hygge in a Malaysian setting, with all five senses."
+  },
+  {
+    "id": "w008",
+    "name": "Ikigai",
+    "field": "Japanese concept",
+    "explanation": "A Japanese word often translated as 'a reason for being' or the thing that makes life worth living. A popular Western diagram links it to what you love, what you are good at, what the world needs and what you can be paid for, although this diagram is a later interpretation rather than the original Japanese meaning.",
+    "prompt": "What gives you a reason to get up in the morning? Write honestly, even if the answer is small."
+  },
+  {
+    "id": "w009",
+    "name": "Mono no aware",
+    "field": "Japanese literature",
+    "explanation": "A Japanese phrase describing a gentle sadness at the passing of things, and an awareness that beauty is fleeting. It is often linked with cherry blossoms, which are admired precisely because they fall so quickly.",
+    "prompt": "Write about something beautiful you noticed recently that you know will not last."
+  },
+  {
+    "id": "w010",
+    "name": "Saudade",
+    "field": "Portuguese culture",
+    "explanation": "A Portuguese word for a deep, bittersweet longing for someone or something that is absent and may never return. It mixes love, memory and the pain of missing.",
+    "prompt": "Write about a person, place or time you feel saudade for."
+  },
+  {
+    "id": "w011",
+    "name": "Hiraeth",
+    "field": "Welsh culture",
+    "explanation": "A Welsh word for a homesickness for a home you cannot return to, or perhaps a home that never truly existed. It carries a sense of grief for lost places and pasts.",
+    "prompt": "Describe a place you long for that has changed or disappeared."
+  },
+  {
+    "id": "w012",
+    "name": "Schadenfreude",
+    "field": "German language",
+    "explanation": "A German word for the pleasure some people feel at another person's misfortune. It combines 'Schaden' (harm) and 'Freude' (joy).",
+    "prompt": "Is schadenfreude always wrong? Write a short argument with an honest example."
+  },
+  {
+    "id": "w013",
+    "name": "The Dunning-Kruger effect",
+    "field": "Psychology",
+    "explanation": "A finding from a 1999 study by David Dunning and Justin Kruger suggesting that people with low skill in an area may overestimate their ability, partly because they lack the knowledge to judge their own mistakes. Some later researchers argue that part of the pattern can be explained by statistical effects.",
+    "prompt": "Write about a time you were confident about something you did not yet understand well."
+  },
+  {
+    "id": "w014",
+    "name": "Impostor phenomenon",
+    "field": "Psychology",
+    "explanation": "A pattern, first described by Pauline Clance and Suzanne Imes in 1978, in which capable people doubt their achievements and fear being exposed as a fraud. It is not a medical diagnosis, but it is a widely recognised experience.",
+    "prompt": "Write a kind letter to your future self for the next time you feel like an impostor."
+  },
+  {
+    "id": "w015",
+    "name": "The Zeigarnik effect",
+    "field": "Psychology",
+    "explanation": "The idea that people tend to remember unfinished or interrupted tasks better than completed ones. It is named after the psychologist Bluma Zeigarnik, who studied it in the 1920s, although later replications have produced mixed results.",
+    "prompt": "Describe an unfinished task or story that keeps returning to your mind, and why."
+  },
+  {
+    "id": "w016",
+    "name": "The Ship of Theseus",
+    "field": "Philosophy",
+    "explanation": "An ancient thought experiment: if every plank of a ship is gradually replaced, is it still the same ship? It raises questions about identity and change over time.",
+    "prompt": "You change every year. In what ways are you still the same person you were five years ago?"
+  },
+  {
+    "id": "w017",
+    "name": "Occam's razor",
+    "field": "Philosophy and science",
+    "explanation": "A principle, associated with the medieval philosopher William of Ockham, that suggests choosing the simplest explanation that fits the facts. It is a guide for reasoning, not a law that is always correct.",
+    "prompt": "Write about a situation where the simplest explanation turned out to be right, or wrong."
+  },
+  {
+    "id": "w018",
+    "name": "Chekhov's gun",
+    "field": "Literature",
+    "explanation": "A principle of storytelling, linked to the Russian writer Anton Chekhov, that every important detail in a story should have a purpose. If a gun appears in the first act, it should be fired later.",
+    "prompt": "Write a short story of about 200 words in which one small detail introduced early becomes important at the end."
+  },
+  {
+    "id": "w019",
+    "name": "Flow",
+    "field": "Psychology",
+    "explanation": "A state of complete absorption in an activity, described by psychologist Mihaly Csikszentmihalyi. In flow, people lose track of time because the challenge matches their skill.",
+    "prompt": "Describe the last time you were in flow. What were you doing, and what broke the spell?"
+  },
+  {
+    "id": "w020",
+    "name": "Sisu",
+    "field": "Finnish culture",
+    "explanation": "A Finnish concept of stubborn determination, courage and resilience in the face of hardship, especially when success seems unlikely.",
+    "prompt": "Write about a moment when you kept going even though giving up would have been easier."
+  },
+  {
+    "id": "w021",
+    "name": "Lagom",
+    "field": "Swedish culture",
+    "explanation": "A Swedish word meaning 'just the right amount': not too much and not too little. It is often used to describe a balanced, moderate way of living.",
+    "prompt": "Where in your life do you need more lagom? Write a reflection on balance."
+  },
+  {
+    "id": "w022",
+    "name": "Ubuntu",
+    "field": "Southern African philosophy",
+    "explanation": "A concept from Nguni Bantu languages, often summarised as 'I am because we are'. It emphasises shared humanity, community and the idea that a person becomes fully human through relationships with others.",
+    "prompt": "Write about a community that shaped who you are."
+  },
+  {
+    "id": "w023",
+    "name": "Amor fati",
+    "field": "Stoic philosophy",
+    "explanation": "A Latin phrase meaning 'love of fate', associated with Stoic ideas and later with Friedrich Nietzsche. It describes accepting, and even embracing, everything that happens, including suffering and loss.",
+    "prompt": "Write about something you did not choose but have learned to accept, or even love."
+  },
+  {
+    "id": "w024",
+    "name": "Memento mori",
+    "field": "Classical and Christian art",
+    "explanation": "A Latin phrase meaning 'remember that you will die'. It appears in art and philosophy as a reminder to live meaningfully because life is short.",
+    "prompt": "If you remembered daily that time is limited, what would you change this week?"
+  },
+  {
+    "id": "w025",
+    "name": "The Stockdale paradox",
+    "field": "Leadership",
+    "explanation": "A term popularised by business writer Jim Collins, based on the experience of James Stockdale, an American prisoner of war. It describes holding unwavering faith that you will succeed while also facing the harshest facts of your current reality.",
+    "prompt": "Write about a challenge where you needed both hope and honesty about how hard things were."
+  },
+  {
+    "id": "w026",
+    "name": "The frequency illusion",
+    "field": "Cognitive psychology",
+    "explanation": "The experience of noticing something everywhere soon after you first learn about it, also called the Baader-Meinhof phenomenon. It happens because your attention has changed, not because the thing has suddenly become more common.",
+    "prompt": "After learning a new word, did you start seeing it everywhere? Write about what your attention reveals."
+  },
+  {
+    "id": "w027",
+    "name": "The Ben Franklin effect",
+    "field": "Social psychology",
+    "explanation": "The idea that people may come to like someone more after doing them a favour. It is named after an anecdote in Benjamin Franklin's autobiography about winning over a rival by borrowing a book from him.",
+    "prompt": "Write about a relationship that improved after you asked someone for help."
+  },
+  {
+    "id": "w028",
+    "name": "The Streisand effect",
+    "field": "Media and the internet",
+    "explanation": "The way an attempt to hide or remove information online can cause it to spread more widely. It is named after a 2003 case involving a photograph of Barbra Streisand's house.",
+    "prompt": "Write a short argument about when it is wise, and unwise, to respond to criticism publicly."
+  },
+  {
+    "id": "w029",
+    "name": "The butterfly effect",
+    "field": "Chaos theory",
+    "explanation": "The idea that a very small change in a complex system can lead to large effects later. It comes from the work of meteorologist Edward Lorenz, who used the image of a butterfly's wings affecting the weather.",
+    "prompt": "Trace one small decision in your past that led to a big change in your life."
+  },
+  {
+    "id": "w030",
+    "name": "The sunk cost fallacy",
+    "field": "Behavioural economics",
+    "explanation": "The tendency to continue with something because of what you have already invested, such as time or money, even when stopping would be wiser.",
+    "prompt": "Write about something you continued for too long because you had already put so much into it."
+  },
+  {
+    "id": "w031",
+    "name": "Kaizen",
+    "field": "Japanese business philosophy",
+    "explanation": "A Japanese word meaning 'improvement', used for the practice of making small, continuous improvements over time, especially in workplaces.",
+    "prompt": "Design a small, daily habit that could improve your writing by one percent each week."
+  },
+  {
+    "id": "w032",
+    "name": "Ma",
+    "field": "Japanese aesthetics",
+    "explanation": "A Japanese concept of meaningful space or pause, such as the empty space in a room, the silence between notes, or the gap in a conversation. The emptiness gives shape to what surrounds it.",
+    "prompt": "Write about the value of silence or empty space in your daily life."
+  },
+  {
+    "id": "w033",
+    "name": "Komorebi",
+    "field": "Japanese language",
+    "explanation": "A Japanese word for sunlight filtering through the leaves of trees. It names a small, beautiful moment that English needs a whole phrase to describe.",
+    "prompt": "Describe a simple scene of light in such vivid detail that a reader could see it."
+  },
+  {
+    "id": "w034",
+    "name": "The spotlight effect",
+    "field": "Social psychology",
+    "explanation": "The tendency to overestimate how much other people notice our appearance or behaviour. Studies by Thomas Gilovich and colleagues showed that people usually pay far less attention to us than we think.",
+    "prompt": "Write about a moment of embarrassment, then retell it from the point of view of someone who barely noticed."
+  },
+  {
+    "id": "w035",
+    "name": "Parkinson's law",
+    "field": "Management",
+    "explanation": "The observation, made by C. Northcote Parkinson in 1955, that 'work expands so as to fill the time available for its completion'.",
+    "prompt": "Write about how deadlines shape the way you work, with an honest example."
+  },
+  {
+    "id": "w036",
+    "name": "The halo effect",
+    "field": "Social psychology",
+    "explanation": "The tendency for one positive impression of a person, such as their appearance, to influence how we judge their other qualities. The term was introduced by psychologist Edward Thorndike in 1920.",
+    "prompt": "Write about a time your first impression of someone turned out to be wrong."
+  },
+  {
+    "id": "w037",
+    "name": "Cognitive dissonance",
+    "field": "Psychology",
+    "explanation": "The discomfort people feel when they hold two conflicting beliefs, or when their actions conflict with their values. Psychologist Leon Festinger developed the theory in the 1950s.",
+    "prompt": "Write about a habit that conflicts with something you believe. How do you live with the gap?"
+  },
+  {
+    "id": "w038",
+    "name": "Tsundoku",
+    "field": "Japanese language",
+    "explanation": "A Japanese word for buying books and letting them pile up without reading them.",
+    "prompt": "Write a short, humorous piece about the unread books (or saved articles) in your life."
+  },
+  {
+    "id": "w039",
+    "name": "Weltschmerz",
+    "field": "German language",
+    "explanation": "A German word meaning 'world-pain': a weary sadness caused by comparing the world as it is with how it ought to be.",
+    "prompt": "Write about something in the world that troubles you, and one small way you could respond."
+  },
+  {
+    "id": "w040",
+    "name": "Fernweh",
+    "field": "German language",
+    "explanation": "A German word for a longing for faraway places you have never visited, sometimes described as the opposite of homesickness.",
+    "prompt": "Describe a place you have never been but long to see, and what you hope to find there."
+  },
+  {
+    "id": "w041",
+    "name": "The uncanny valley",
+    "field": "Robotics and aesthetics",
+    "explanation": "An idea proposed by roboticist Masahiro Mori in 1970: as robots or images become more human-like, people like them more, until they become almost but not quite human, when they suddenly feel eerie.",
+    "prompt": "Write about technology that feels a little too human. Where should the line be?"
+  },
+  {
+    "id": "w042",
+    "name": "The allegory of the cave",
+    "field": "Philosophy",
+    "explanation": "A story in Plato's 'Republic' in which prisoners see only shadows on a cave wall and mistake them for reality. One prisoner escapes, sees the real world, and struggles to explain it to the others.",
+    "prompt": "Write about a moment when you realised that what you believed was only a 'shadow' of the truth."
+  },
+  {
+    "id": "w043",
+    "name": "The absurd",
+    "field": "Existentialist philosophy",
+    "explanation": "Albert Camus described the absurd as the conflict between our search for meaning and a universe that offers none. In 'The Myth of Sisyphus', he suggests that we must imagine Sisyphus, endlessly pushing his boulder, as happy.",
+    "prompt": "Describe a repetitive task in your life and find a way to imagine yourself happy doing it."
+  },
+  {
+    "id": "w044",
+    "name": "Negative capability",
+    "field": "Literature",
+    "explanation": "A phrase from an 1817 letter by the poet John Keats, describing the ability to remain in uncertainty, mystery and doubt without rushing to find facts or reasons.",
+    "prompt": "Write about a question in your life that you have learned to live with, without needing an answer."
+  },
+  {
+    "id": "w045",
+    "name": "The paradox of choice",
+    "field": "Psychology",
+    "explanation": "An idea popularised by psychologist Barry Schwartz in 2004: having too many options can make people more anxious and less satisfied with their decisions.",
+    "prompt": "Write about a time when too many choices made a decision harder."
+  },
+  {
+    "id": "w046",
+    "name": "The IKEA effect",
+    "field": "Behavioural economics",
+    "explanation": "The tendency to value things more highly when we have helped to make them ourselves. It was named in a 2011 study by Norton, Mochon and Ariely.",
+    "prompt": "Describe something you made yourself that means more to you than anything you could buy."
+  },
+  {
+    "id": "w047",
+    "name": "Hanlon's razor",
+    "field": "Philosophy of everyday life",
+    "explanation": "A saying that advises: never assume bad intentions when carelessness or a simple mistake could explain what happened.",
+    "prompt": "Retell a moment when you assumed someone meant to hurt you, but later learned otherwise."
+  },
+  {
+    "id": "w048",
+    "name": "The hero's journey",
+    "field": "Mythology and storytelling",
+    "explanation": "A story pattern described by scholar Joseph Campbell in 1949, in which a hero leaves the ordinary world, faces trials, and returns transformed. Many films and novels follow versions of this structure.",
+    "prompt": "Write a chapter of your own life as a hero's journey: the call, the trial and the return."
+  },
+  {
+    "id": "w049",
+    "name": "Serendipity",
+    "field": "English language",
+    "explanation": "A word coined by the writer Horace Walpole in 1754 for the happy accident of finding something good without looking for it.",
+    "prompt": "Write about a lucky accident that changed your plans for the better."
+  },
+  {
+    "id": "w050",
+    "name": "The Pareto principle",
+    "field": "Economics and management",
+    "explanation": "Also called the 80/20 rule, it is the observation that roughly 80 percent of effects often come from 20 percent of causes. It is a rough pattern noticed by economist Vilfredo Pareto, not an exact law.",
+    "prompt": "Which 20 percent of your daily activities give you 80 percent of your progress? Reflect and decide."
+  },
+  {
+    "id": "w051",
+    "name": "The Peter principle",
+    "field": "Management",
+    "explanation": "An idea from Laurence J. Peter and Raymond Hull's 1969 book: in organisations, people tend to be promoted until they reach a role they are no longer competent at.",
+    "prompt": "Argue whether good performance should always lead to promotion."
+  },
+  {
+    "id": "w052",
+    "name": "Doctrine of the mean",
+    "field": "Classical philosophy",
+    "explanation": "Aristotle's idea that virtue lies between two extremes. For example, courage sits between cowardice and recklessness, and generosity between stinginess and wastefulness.",
+    "prompt": "Choose one virtue and describe its two extremes using examples from university life."
+  }
+]

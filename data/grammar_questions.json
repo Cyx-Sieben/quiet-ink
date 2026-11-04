@@ -1,0 +1,1458 @@
+[
+  {
+    "id": "g001",
+    "sentence": "She has lived in Penang ____ 2019.",
+    "options": [
+      "since",
+      "for",
+      "from",
+      "at"
+    ],
+    "answer": "since",
+    "explanation": "Use 'since' with a starting point in time (2019). 'For' is used with a length of time, such as 'for five years'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g002",
+    "sentence": "Neither the manager nor the assistants ____ aware of the change.",
+    "options": [
+      "were",
+      "was",
+      "is",
+      "has been"
+    ],
+    "answer": "were",
+    "explanation": "With 'neither...nor', the verb agrees with the noun closest to it. 'Assistants' is plural, so the verb is 'were'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g003",
+    "sentence": "If I ____ about the traffic, I would have left earlier.",
+    "options": [
+      "had known",
+      "knew",
+      "have known",
+      "would know"
+    ],
+    "answer": "had known",
+    "explanation": "This is a third conditional about the past: 'If + past perfect, would have + past participle'. 'Knew' belongs to the second conditional.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g004",
+    "sentence": "The report, together with its appendices, ____ due on Friday.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have been"
+    ],
+    "answer": "is",
+    "explanation": "The subject is 'the report' (singular). Phrases such as 'together with' or 'along with' do not make the subject plural.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g005",
+    "sentence": "She is interested ____ communication research.",
+    "options": [
+      "in",
+      "on",
+      "at",
+      "for"
+    ],
+    "answer": "in",
+    "explanation": "The adjective 'interested' is always followed by 'in'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g006",
+    "sentence": "By the time we arrived, the lecture ____.",
+    "options": [
+      "had already started",
+      "already started",
+      "has already started",
+      "was already start"
+    ],
+    "answer": "had already started",
+    "explanation": "The lecture started before another past action (our arrival), so the past perfect 'had started' shows the earlier action.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g007",
+    "sentence": "Each of the students ____ submitted a draft.",
+    "options": [
+      "has",
+      "have",
+      "are",
+      "were"
+    ],
+    "answer": "has",
+    "explanation": "'Each' is the subject and it is singular, so it takes 'has', even though 'students' is plural.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g008",
+    "sentence": "This is ____ most persuasive argument in the essay.",
+    "options": [
+      "the",
+      "a",
+      "an",
+      "no article"
+    ],
+    "answer": "the",
+    "explanation": "Superlatives such as 'most persuasive' take the definite article 'the' because they identify one specific item.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g009",
+    "sentence": "I look forward to ____ from you.",
+    "options": [
+      "hearing",
+      "hear",
+      "heard",
+      "be hearing"
+    ],
+    "answer": "hearing",
+    "explanation": "In 'look forward to', the word 'to' is a preposition, not part of an infinitive, so it is followed by a gerund (-ing form).",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g010",
+    "sentence": "Hardly ____ the room when the lights went out.",
+    "options": [
+      "had she entered",
+      "she had entered",
+      "did she entered",
+      "she entered"
+    ],
+    "answer": "had she entered",
+    "explanation": "When a sentence begins with a negative adverb such as 'hardly', the subject and auxiliary are inverted: 'Hardly had she entered...when'.",
+    "category": "grammar",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g011",
+    "sentence": "There ____ fewer complaints this year than last year.",
+    "options": [
+      "were",
+      "was",
+      "is",
+      "has"
+    ],
+    "answer": "were",
+    "explanation": "The real subject is 'fewer complaints', which is plural and in the past, so 'there were' is correct.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g012",
+    "sentence": "We had ____ time left, so we skipped the summary.",
+    "options": [
+      "little",
+      "few",
+      "a few",
+      "many"
+    ],
+    "answer": "little",
+    "explanation": "'Time' is uncountable, so it takes 'little' rather than 'few'. 'Little' (without 'a') stresses that the amount was not enough, which explains why the summary was skipped.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g013",
+    "sentence": "The university has updated ____ website.",
+    "options": [
+      "its",
+      "it's",
+      "its'",
+      "it is"
+    ],
+    "answer": "its",
+    "explanation": "'Its' is the possessive form. 'It's' means 'it is' or 'it has', and 'its'' does not exist in standard English.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g014",
+    "sentence": "She speaks English ____ than her brother.",
+    "options": [
+      "more fluently",
+      "more fluent",
+      "fluentlier",
+      "most fluently"
+    ],
+    "answer": "more fluently",
+    "explanation": "The word describes how she speaks, so it must be an adverb (fluently). Comparisons of long adverbs use 'more...than'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g015",
+    "sentence": "Unless you ____ the deadline, your work will not be graded.",
+    "options": [
+      "meet",
+      "will meet",
+      "met",
+      "meeting"
+    ],
+    "answer": "meet",
+    "explanation": "After 'unless' (and 'if') in a first conditional, use the present simple, not 'will'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g016",
+    "sentence": "This is the lecturer ____ book I reviewed.",
+    "options": [
+      "whose",
+      "who's",
+      "whom",
+      "which"
+    ],
+    "answer": "whose",
+    "explanation": "'Whose' shows possession (the lecturer's book). 'Who's' means 'who is' or 'who has'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g017",
+    "sentence": "The participants, ____ were interviewed in person, gave detailed answers.",
+    "options": [
+      "who",
+      "whom",
+      "which",
+      "whose"
+    ],
+    "answer": "who",
+    "explanation": "The relative pronoun is the subject of 'were interviewed' and refers to people, so 'who' is correct. 'Whom' is used for objects.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g018",
+    "sentence": "To ____ it may concern,",
+    "options": [
+      "whom",
+      "who",
+      "which",
+      "whose"
+    ],
+    "answer": "whom",
+    "explanation": "In this fixed formal opening, the pronoun is the object of the preposition 'to', so the object form 'whom' is used.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g019",
+    "sentence": "I wish I ____ more time to edit the report.",
+    "options": [
+      "had",
+      "have",
+      "would have",
+      "will have"
+    ],
+    "answer": "had",
+    "explanation": "'Wish' about a present situation is followed by the past simple ('I wish I had'), which shows the situation is unreal.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g020",
+    "sentence": "The more you practise, ____ your writing becomes.",
+    "options": [
+      "the better",
+      "better",
+      "the best",
+      "more better"
+    ],
+    "answer": "the better",
+    "explanation": "The pattern 'the + comparative..., the + comparative' shows two things changing together: 'The more..., the better...'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g021",
+    "sentence": "She has been working here ____ three years.",
+    "options": [
+      "for",
+      "since",
+      "during",
+      "from"
+    ],
+    "answer": "for",
+    "explanation": "'For' is used with a length of time (three years). 'Since' needs a starting point, such as 'since 2023'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g022",
+    "sentence": "He is used to ____ early for his shift.",
+    "options": [
+      "waking",
+      "wake",
+      "woke",
+      "be waking"
+    ],
+    "answer": "waking",
+    "explanation": "'Be used to' means 'be accustomed to'. Here 'to' is a preposition, so it is followed by a gerund (waking).",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g023",
+    "sentence": "Not only ____ the report late, but it was also incomplete.",
+    "options": [
+      "was",
+      "did",
+      "had",
+      "is"
+    ],
+    "answer": "was",
+    "explanation": "When a sentence begins with 'Not only', the subject and verb are inverted. The main verb is 'be' in the past, so it becomes 'Not only was the report late'.",
+    "category": "grammar",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g024",
+    "sentence": "The results were ____ than we expected.",
+    "options": [
+      "worse",
+      "worst",
+      "more bad",
+      "badder"
+    ],
+    "answer": "worse",
+    "explanation": "The comparative form of 'bad' is irregular: bad, worse, worst. 'Than' signals a comparison, so 'worse' is needed.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g025",
+    "sentence": "Either the students or the teacher ____ the keys.",
+    "options": [
+      "has",
+      "have",
+      "are",
+      "were"
+    ],
+    "answer": "has",
+    "explanation": "With 'either...or', the verb agrees with the nearer subject. 'The teacher' is singular, so 'has' is correct.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g026",
+    "sentence": "She asked me where ____.",
+    "options": [
+      "I lived",
+      "did I live",
+      "do I live",
+      "I do live"
+    ],
+    "answer": "I lived",
+    "explanation": "In reported (indirect) questions, use normal statement word order, with no 'do' or 'did': 'She asked me where I lived'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g027",
+    "sentence": "The survey ____ by 200 employees last month.",
+    "options": [
+      "was completed",
+      "completed",
+      "has completed",
+      "is completing"
+    ],
+    "answer": "was completed",
+    "explanation": "The survey did not do the action; employees completed it. This needs the passive, and 'last month' requires the past: 'was completed'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g028",
+    "sentence": "____ the rain, the event went ahead.",
+    "options": [
+      "Despite",
+      "Although",
+      "Even though",
+      "In spite"
+    ],
+    "answer": "Despite",
+    "explanation": "'Despite' is followed directly by a noun ('the rain'). 'Although' and 'even though' need a full clause, and 'in spite' needs 'of'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g029",
+    "sentence": "He didn't attend the briefing, and ____ did I.",
+    "options": [
+      "neither",
+      "either",
+      "so",
+      "also"
+    ],
+    "answer": "neither",
+    "explanation": "To agree with a negative statement, use 'neither + auxiliary + subject': 'and neither did I'. 'So did I' agrees with a positive statement.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g030",
+    "sentence": "Our team has ____ advice for new interns.",
+    "options": [
+      "some useful",
+      "a useful",
+      "an useful",
+      "many useful"
+    ],
+    "answer": "some useful",
+    "explanation": "'Advice' is uncountable, so it cannot take 'a' or 'many'. Use 'some' or no determiner.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g031",
+    "sentence": "Please send the files to Aisha and ____.",
+    "options": [
+      "me",
+      "I",
+      "myself",
+      "mine"
+    ],
+    "answer": "me",
+    "explanation": "The pronoun is the object of the preposition 'to', so use the object form 'me'. Test it by removing 'Aisha and': 'send the files to me'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g032",
+    "sentence": "The number of applicants ____ increased this year.",
+    "options": [
+      "has",
+      "have",
+      "are",
+      "were"
+    ],
+    "answer": "has",
+    "explanation": "'The number of' refers to a single figure, so it takes a singular verb: 'The number...has increased'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g033",
+    "sentence": "A number of applicants ____ withdrawn.",
+    "options": [
+      "have",
+      "has",
+      "is",
+      "was"
+    ],
+    "answer": "have",
+    "explanation": "'A number of' means 'several' or 'many', so it takes a plural verb: 'A number of applicants have withdrawn'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g034",
+    "sentence": "If it ____ tomorrow, we will move the talk indoors.",
+    "options": [
+      "rains",
+      "will rain",
+      "rained",
+      "would rain"
+    ],
+    "answer": "rains",
+    "explanation": "In a first conditional, the 'if' clause uses the present simple even when it refers to the future.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g035",
+    "sentence": "The manager, along with two supervisors, ____ attending the workshop.",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "have"
+    ],
+    "answer": "is",
+    "explanation": "The subject is 'the manager' (singular). 'Along with two supervisors' is extra information and does not change agreement.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g036",
+    "sentence": "He has ____ finished the analysis; only the conclusion remains.",
+    "options": [
+      "almost",
+      "most",
+      "at most",
+      "utmost"
+    ],
+    "answer": "almost",
+    "explanation": "'Almost' means 'nearly' and modifies the verb 'finished'. 'Most' is not used as an adverb this way, and 'at most' means 'no more than'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g037",
+    "sentence": "This is the ____ interesting talk I have attended.",
+    "options": [
+      "most",
+      "more",
+      "much",
+      "very"
+    ],
+    "answer": "most",
+    "explanation": "'The...I have attended' compares this talk with all others, so the superlative 'most' is required.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g038",
+    "sentence": "Their argument is weak because it ____ on a single source.",
+    "options": [
+      "relies",
+      "rely",
+      "relying",
+      "is rely"
+    ],
+    "answer": "relies",
+    "explanation": "The subject 'it' is third person singular, so the present simple verb takes -s: 'relies'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g039",
+    "sentence": "We need to discuss the issue ____ it becomes a crisis.",
+    "options": [
+      "before",
+      "until",
+      "while",
+      "since"
+    ],
+    "answer": "before",
+    "explanation": "'Before' shows that the discussion should happen earlier than the crisis. 'Until' would mean continuing up to the crisis.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g040",
+    "sentence": "She stopped ____ to her colleague because the meeting had started.",
+    "options": [
+      "talking",
+      "to talk",
+      "talk",
+      "talked"
+    ],
+    "answer": "talking",
+    "explanation": "'Stop + -ing' means to end an activity. 'Stop + to-infinitive' means to pause in order to do something, which does not fit the meaning here.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g041",
+    "sentence": "I remember ____ the email, but I cannot find it now.",
+    "options": [
+      "sending",
+      "to send",
+      "send",
+      "sent"
+    ],
+    "answer": "sending",
+    "explanation": "'Remember + -ing' refers to a memory of something already done. 'Remember to' refers to a task you must not forget.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g042",
+    "sentence": "Remember ____ the door when you leave.",
+    "options": [
+      "to lock",
+      "locking",
+      "lock",
+      "locked"
+    ],
+    "answer": "to lock",
+    "explanation": "This is a reminder about a future task, so use 'remember + to-infinitive'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g043",
+    "sentence": "The findings ____ in the next issue of the journal.",
+    "options": [
+      "will be published",
+      "will publish",
+      "are publishing",
+      "publish"
+    ],
+    "answer": "will be published",
+    "explanation": "The findings are not doing the publishing; they receive the action. The future passive 'will be published' is correct.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g044",
+    "sentence": "____ you need help, ask the librarian.",
+    "options": [
+      "Should",
+      "Would",
+      "Could",
+      "Must"
+    ],
+    "answer": "Should",
+    "explanation": "'Should you need help' is a formal inverted conditional meaning 'If you need help'.",
+    "category": "grammar",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g045",
+    "sentence": "She arrived ____ than expected.",
+    "options": [
+      "earlier",
+      "more early",
+      "earliest",
+      "early"
+    ],
+    "answer": "earlier",
+    "explanation": "'Early' forms its comparative with -er: early, earlier, earliest. 'Than' shows a comparison is needed.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g046",
+    "sentence": "The audit was ____ by the head of department.",
+    "options": [
+      "overseen",
+      "oversaw",
+      "oversee",
+      "overseeing"
+    ],
+    "answer": "overseen",
+    "explanation": "The passive needs 'was + past participle'. The past participle of 'oversee' is 'overseen'; 'oversaw' is the simple past.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g047",
+    "sentence": "My colleague and ____ presented the findings.",
+    "options": [
+      "I",
+      "me",
+      "myself",
+      "mine"
+    ],
+    "answer": "I",
+    "explanation": "The pronoun is part of the subject, so the subject form 'I' is correct. Test it by removing 'my colleague and': 'I presented'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g048",
+    "sentence": "It's time we ____ a decision.",
+    "options": [
+      "made",
+      "make",
+      "will make",
+      "making"
+    ],
+    "answer": "made",
+    "explanation": "After 'It's time + subject', English uses the past simple to suggest that the action should already be happening.",
+    "category": "grammar",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g049",
+    "sentence": "Phones must stay silent ____ the examination.",
+    "options": [
+      "throughout",
+      "through out",
+      "along",
+      "among"
+    ],
+    "answer": "throughout",
+    "explanation": "'Throughout' means 'during the whole of'. It is written as one word.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g050",
+    "sentence": "Between you and ____, the proposal needs more work.",
+    "options": [
+      "me",
+      "I",
+      "myself",
+      "my"
+    ],
+    "answer": "me",
+    "explanation": "'Between' is a preposition, so both pronouns after it must be in the object form: 'between you and me'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g051",
+    "sentence": "The scissors ____ on the desk.",
+    "options": [
+      "are",
+      "is",
+      "was",
+      "has"
+    ],
+    "answer": "are",
+    "explanation": "Nouns such as 'scissors', 'trousers' and 'glasses' are plural in form and take plural verbs.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g052",
+    "sentence": "Mathematics ____ my strongest subject at school.",
+    "options": [
+      "was",
+      "were",
+      "are",
+      "have been"
+    ],
+    "answer": "was",
+    "explanation": "Subjects such as mathematics, physics and economics end in -s but are singular, so they take a singular verb.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g053",
+    "sentence": "Had I known, I ____ you.",
+    "options": [
+      "would have told",
+      "will tell",
+      "would tell",
+      "had told"
+    ],
+    "answer": "would have told",
+    "explanation": "'Had I known' is an inverted third conditional (If I had known). The result clause needs 'would have + past participle'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g054",
+    "sentence": "She is the kind of person ____ you can trust.",
+    "options": [
+      "whom",
+      "whose",
+      "what",
+      "which"
+    ],
+    "answer": "whom",
+    "explanation": "The pronoun is the object of 'trust' and refers to a person, so 'whom' (or 'who' / 'that' in informal use) is correct. 'Which' is for things.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g055",
+    "sentence": "He was accused ____ plagiarism.",
+    "options": [
+      "of",
+      "for",
+      "with",
+      "about"
+    ],
+    "answer": "of",
+    "explanation": "The verb 'accuse' is followed by 'of': accuse someone of something.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g056",
+    "sentence": "The lecture was cancelled ____ the lecturer's illness.",
+    "options": [
+      "due to",
+      "because",
+      "despite",
+      "although"
+    ],
+    "answer": "due to",
+    "explanation": "'Due to' is followed by a noun phrase. 'Because' would need 'of' or a full clause, and 'despite' and 'although' show contrast, not cause.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g057",
+    "sentence": "This method is different ____ the one we used last year.",
+    "options": [
+      "from",
+      "of",
+      "then",
+      "at"
+    ],
+    "answer": "from",
+    "explanation": "'Different from' is the most widely accepted form in formal writing. 'Then' is a time word and is often confused with 'than'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g058",
+    "sentence": "She is good ____ summarising long reports.",
+    "options": [
+      "at",
+      "in",
+      "on",
+      "for"
+    ],
+    "answer": "at",
+    "explanation": "The adjective 'good' is followed by 'at' when it describes a skill.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g059",
+    "sentence": "Our survey received ____ responses than last year's.",
+    "options": [
+      "fewer",
+      "less",
+      "lesser",
+      "little"
+    ],
+    "answer": "fewer",
+    "explanation": "'Responses' is a countable plural noun, so formal English uses 'fewer'. 'Less' is used with uncountable nouns such as 'less time'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g060",
+    "sentence": "The policy, ____ was introduced in 2024, has reduced complaints.",
+    "options": [
+      "which",
+      "that",
+      "who",
+      "what"
+    ],
+    "answer": "which",
+    "explanation": "This is a non-defining clause (extra information between commas), and it refers to a thing, so 'which' is required. 'That' is not used after a comma in this way.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g061",
+    "sentence": "The new policy will ____ all full-time staff.",
+    "options": [
+      "affect",
+      "effect",
+      "infect",
+      "afflict"
+    ],
+    "answer": "affect",
+    "explanation": "'Affect' is usually a verb meaning 'to influence'. 'Effect' is usually a noun meaning 'a result'.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g062",
+    "sentence": "The training had a positive ____ on morale.",
+    "options": [
+      "effect",
+      "affect",
+      "defect",
+      "infect"
+    ],
+    "answer": "effect",
+    "explanation": "A noun is needed after 'a positive'. 'Effect' is the noun meaning 'result' or 'influence'.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g063",
+    "sentence": "Please ____ the attached document for details.",
+    "options": [
+      "refer to",
+      "refer",
+      "reference to",
+      "referring"
+    ],
+    "answer": "refer to",
+    "explanation": "The verb 'refer' needs the preposition 'to' when it means 'look at for information'.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g064",
+    "sentence": "Her speech was so ____ that the audience stayed silent long after it ended.",
+    "options": [
+      "moving",
+      "moved",
+      "movable",
+      "mobile"
+    ],
+    "answer": "moving",
+    "explanation": "Adjectives ending in -ing describe what causes a feeling (the speech). Adjectives ending in -ed describe how people feel (the audience was moved).",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g065",
+    "sentence": "From her tone, I ____ that she was unhappy.",
+    "options": [
+      "inferred",
+      "implied",
+      "inferring",
+      "inference"
+    ],
+    "answer": "inferred",
+    "explanation": "The listener infers (draws a conclusion); the speaker implies (suggests something indirectly). Here 'I' am drawing the conclusion.",
+    "category": "word choice",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g066",
+    "sentence": "We need to ____ the problem before it spreads.",
+    "options": [
+      "address",
+      "undress",
+      "attend",
+      "adhere"
+    ],
+    "answer": "address",
+    "explanation": "To 'address' a problem means to start dealing with it. 'Attend' would need 'to', and 'adhere' means to stick to rules.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g067",
+    "sentence": "The lecturer gave us some useful ____ on our drafts.",
+    "options": [
+      "feedback",
+      "feedbacks",
+      "a feedback",
+      "feedbacking"
+    ],
+    "answer": "feedback",
+    "explanation": "'Feedback' is uncountable, so it has no plural form and cannot take 'a'.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g068",
+    "sentence": "She made a ____ decision after weighing every option.",
+    "options": [
+      "deliberate",
+      "deliberating",
+      "deliberated",
+      "liberal"
+    ],
+    "answer": "deliberate",
+    "explanation": "'Deliberate' as an adjective means 'carefully considered'. It fits a decision made after weighing every option.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g069",
+    "sentence": "The two departments ____ closely on the communication audit.",
+    "options": [
+      "collaborated",
+      "corroborated",
+      "collated",
+      "colluded"
+    ],
+    "answer": "collaborated",
+    "explanation": "'Collaborate' means to work together. 'Collude' also means working together, but secretly and dishonestly, so it is negative.",
+    "category": "word choice",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g070",
+    "sentence": "The witness ____ the victim's account of events.",
+    "options": [
+      "corroborated",
+      "collaborated",
+      "cooperated",
+      "corrected"
+    ],
+    "answer": "corroborated",
+    "explanation": "'Corroborate' means to confirm or support a statement with evidence. It is often confused with 'collaborate'.",
+    "category": "word choice",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g071",
+    "sentence": "Please be ____ when you share confidential information.",
+    "options": [
+      "discreet",
+      "discrete",
+      "descent",
+      "decent"
+    ],
+    "answer": "discreet",
+    "explanation": "'Discreet' means careful and tactful about private matters. 'Discrete' means separate and distinct.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g072",
+    "sentence": "The survey divided responses into four ____ categories.",
+    "options": [
+      "discrete",
+      "discreet",
+      "discern",
+      "discrepant"
+    ],
+    "answer": "discrete",
+    "explanation": "'Discrete' means separate and distinct, which describes categories. 'Discreet' means careful about privacy.",
+    "category": "word choice",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g073",
+    "sentence": "The professor's ____ comments helped me improve.",
+    "options": [
+      "constructive",
+      "destructive",
+      "construction",
+      "constructing"
+    ],
+    "answer": "constructive",
+    "explanation": "'Constructive' feedback is helpful and aims to improve something. It is an adjective, which is needed before the noun 'comments'.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g074",
+    "sentence": "The questionnaire was designed to ____ honest responses.",
+    "options": [
+      "elicit",
+      "illicit",
+      "elect",
+      "eliminate"
+    ],
+    "answer": "elicit",
+    "explanation": "'Elicit' means to draw out a response or information. 'Illicit' is an adjective meaning illegal.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g075",
+    "sentence": "The CEO ____ the importance of clear internal communication.",
+    "options": [
+      "emphasised",
+      "emphasis",
+      "emphatic",
+      "empathised"
+    ],
+    "answer": "emphasised",
+    "explanation": "A past-tense verb is needed. 'Emphasised' (American spelling: emphasized) means 'stressed'. 'Empathised' means 'shared someone's feelings'.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g076",
+    "sentence": "The meeting was ____ until next Tuesday.",
+    "options": [
+      "postponed",
+      "preponed",
+      "pretended",
+      "proposed"
+    ],
+    "answer": "postponed",
+    "explanation": "'Postpone' means to move to a later time. 'Prepone' (to move earlier) is used in Indian English but is not standard in British or American English.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g077",
+    "sentence": "The colour scheme ____ the minimalist layout well.",
+    "options": [
+      "complements",
+      "compliments",
+      "complimentary",
+      "completes"
+    ],
+    "answer": "complements",
+    "explanation": "'Complement' means to go well with or complete something. 'Compliment' means to praise.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g078",
+    "sentence": "Her explanation was ____ and easy to follow.",
+    "options": [
+      "concise",
+      "concession",
+      "consensus",
+      "conscious"
+    ],
+    "answer": "concise",
+    "explanation": "'Concise' means brief but clear. The other options are nouns or have unrelated meanings.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g079",
+    "sentence": "The team reached a ____ after a long debate.",
+    "options": [
+      "consensus",
+      "census",
+      "consent",
+      "consensual"
+    ],
+    "answer": "consensus",
+    "explanation": "'Consensus' means general agreement. A 'census' is an official count of a population.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g080",
+    "sentence": "Our findings ____ that staff prefer face-to-face meetings.",
+    "options": [
+      "suggest",
+      "suggestion",
+      "suggestive",
+      "suggesting"
+    ],
+    "answer": "suggest",
+    "explanation": "A main verb is needed after the plural subject 'findings'. 'Suggest' is the right verb for cautiously presenting results.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g081",
+    "sentence": "Her tone was polite but ____; she would not change her decision.",
+    "options": [
+      "firm",
+      "firmly",
+      "infirm",
+      "confirmed"
+    ],
+    "answer": "firm",
+    "explanation": "After the linking verb 'was', an adjective is needed. 'Firm' means strong and not willing to change.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g082",
+    "sentence": "The new manager is very ____; she always listens to staff concerns.",
+    "options": [
+      "approachable",
+      "approaching",
+      "approached",
+      "reproachable"
+    ],
+    "answer": "approachable",
+    "explanation": "'Approachable' means friendly and easy to talk to.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g083",
+    "sentence": "The instructions were ____, so many staff misunderstood them.",
+    "options": [
+      "ambiguous",
+      "ambitious",
+      "ambient",
+      "amphibious"
+    ],
+    "answer": "ambiguous",
+    "explanation": "'Ambiguous' means open to more than one interpretation, which explains the misunderstanding.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g084",
+    "sentence": "He has a ____ for exaggerating small problems.",
+    "options": [
+      "tendency",
+      "tender",
+      "tendon",
+      "tenancy"
+    ],
+    "answer": "tendency",
+    "explanation": "'A tendency for' or 'a tendency to' describes a habit or likely behaviour.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g085",
+    "sentence": "The memo was written in a ____ tone, which upset several employees.",
+    "options": [
+      "condescending",
+      "condensing",
+      "consenting",
+      "condescended"
+    ],
+    "answer": "condescending",
+    "explanation": "'Condescending' means showing that you think you are better than others. It is the -ing adjective that describes the tone.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g086",
+    "sentence": "Students must ____ to the referencing guidelines.",
+    "options": [
+      "adhere",
+      "adherent",
+      "cohere",
+      "inhere"
+    ],
+    "answer": "adhere",
+    "explanation": "'Adhere to' means to follow rules closely. 'Adherent' is a noun or adjective, not a verb.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g087",
+    "sentence": "She ____ a valuable contribution to the project.",
+    "options": [
+      "made",
+      "did",
+      "took",
+      "gave"
+    ],
+    "answer": "made",
+    "explanation": "The natural collocation is 'make a contribution'. Collocations are word pairs that native speakers commonly use together.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g088",
+    "sentence": "Could you ____ me a favour?",
+    "options": [
+      "do",
+      "make",
+      "give",
+      "take"
+    ],
+    "answer": "do",
+    "explanation": "The fixed expression is 'do someone a favour'.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g089",
+    "sentence": "The speaker ____ attention to the gap in the research.",
+    "options": [
+      "drew",
+      "draw",
+      "drawn",
+      "pulled"
+    ],
+    "answer": "drew",
+    "explanation": "The collocation is 'draw attention to'. The past tense of 'draw' is 'drew'.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g090",
+    "sentence": "Let's ____ a brief look at the figures.",
+    "options": [
+      "take",
+      "make",
+      "do",
+      "give"
+    ],
+    "answer": "take",
+    "explanation": "The collocation is 'take a look' (or 'have a look' in British English).",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g091",
+    "sentence": "The new system has ____ efficiency by twenty percent.",
+    "options": [
+      "increased",
+      "rose",
+      "risen",
+      "arisen"
+    ],
+    "answer": "increased",
+    "explanation": "'Increase' can take an object (increased efficiency). 'Rise' cannot take an object; something rises by itself.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g092",
+    "sentence": "Prices ____ sharply last quarter.",
+    "options": [
+      "rose",
+      "raised",
+      "arose",
+      "risen"
+    ],
+    "answer": "rose",
+    "explanation": "'Rise' (rose, risen) has no object: prices rose. 'Raise' needs an object: the company raised prices. 'Risen' needs 'have'.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g093",
+    "sentence": "Please ____ the books on the shelf.",
+    "options": [
+      "lay",
+      "lie",
+      "lain",
+      "lied"
+    ],
+    "answer": "lay",
+    "explanation": "'Lay' means to put something down and takes an object (the books). 'Lie' means to rest in a flat position and has no object.",
+    "category": "word choice",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g094",
+    "sentence": "I need to ____ down after the long meeting.",
+    "options": [
+      "lie",
+      "lay",
+      "laid",
+      "lain"
+    ],
+    "answer": "lie",
+    "explanation": "'Lie down' means to rest your body in a flat position. It takes no object, so 'lay' is incorrect here.",
+    "category": "word choice",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g095",
+    "sentence": "The proposal was rejected ____ its high cost.",
+    "options": [
+      "because of",
+      "because",
+      "although",
+      "despite"
+    ],
+    "answer": "because of",
+    "explanation": "'Because of' is followed by a noun phrase ('its high cost'). 'Because' alone needs a full clause.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g096",
+    "sentence": "She is ____ to take the lead on this project.",
+    "options": [
+      "eligible",
+      "illegible",
+      "legible",
+      "eligibly"
+    ],
+    "answer": "eligible",
+    "explanation": "'Eligible' means having the right qualifications or meeting the conditions. 'Legible' and 'illegible' describe handwriting.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g097",
+    "sentence": "His handwriting is so messy that it is ____.",
+    "options": [
+      "illegible",
+      "eligible",
+      "ineligible",
+      "legible"
+    ],
+    "answer": "illegible",
+    "explanation": "'Illegible' means impossible to read. 'Ineligible' means not qualified.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g098",
+    "sentence": "The ____ of the report is to evaluate internal communication.",
+    "options": [
+      "purpose",
+      "propose",
+      "porpoise",
+      "purport"
+    ],
+    "answer": "purpose",
+    "explanation": "'Purpose' is the noun meaning 'aim'. 'Propose' is a verb, and a 'porpoise' is a sea animal.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g099",
+    "sentence": "We should ____ his advice and revise the introduction.",
+    "options": [
+      "heed",
+      "heel",
+      "head",
+      "heat"
+    ],
+    "answer": "heed",
+    "explanation": "To 'heed' advice means to pay attention to it and follow it.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g100",
+    "sentence": "The lecturer was ____ by the quality of the final submissions.",
+    "options": [
+      "impressed",
+      "impressive",
+      "impressing",
+      "impression"
+    ],
+    "answer": "impressed",
+    "explanation": "'Impressed' (-ed) describes how a person feels. 'Impressive' (-ive) describes the thing that causes the feeling.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "g101",
+    "sentence": "The ____ reason for the delay was a staff shortage.",
+    "options": [
+      "principal",
+      "principle",
+      "principally",
+      "principled"
+    ],
+    "answer": "principal",
+    "explanation": "'Principal' as an adjective means 'main'. 'Principle' is a noun meaning a rule or belief.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g102",
+    "sentence": "The office ordered new ____, including pens and envelopes.",
+    "options": [
+      "stationery",
+      "stationary",
+      "station",
+      "stationed"
+    ],
+    "answer": "stationery",
+    "explanation": "'Stationery' (with -ery) means writing materials. 'Stationary' (with -ary) means not moving.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "g103",
+    "sentence": "Several staff ____ the dress code by wearing sandals.",
+    "options": [
+      "flouted",
+      "flaunted",
+      "floated",
+      "flattered"
+    ],
+    "answer": "flouted",
+    "explanation": "'Flout' means to openly ignore a rule. 'Flaunt' means to show something off proudly.",
+    "category": "word choice",
+    "difficulty": "hard"
+  },
+  {
+    "id": "g104",
+    "sentence": "The writer used a striking ____ to compare memory to a river.",
+    "options": [
+      "metaphor",
+      "metaphysics",
+      "metamorphosis",
+      "meteor"
+    ],
+    "answer": "metaphor",
+    "explanation": "A 'metaphor' describes one thing as if it were another to suggest a likeness.",
+    "category": "word choice",
+    "difficulty": "medium"
+  }
+]
