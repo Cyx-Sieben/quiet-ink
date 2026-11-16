@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/newsstand.js": {
+      "includeFiles": "public/data/newsstand_feeds.json",
+      "maxDuration": 20
+    }
+  }
+}

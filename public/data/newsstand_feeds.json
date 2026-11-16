@@ -1,0 +1,17 @@
+{
+  "_note": "Public RSS or Atom feeds shown in the Newsstand. Add or remove entries freely. Every Substack newsletter has a feed at https://NAME.substack.com/feed. These URLs were written from memory and could not be checked when this file was made, so open each one in your browser once: if it shows XML text, it works. Feeds that fail are skipped automatically and listed at the bottom of the Newsstand page.",
+  "feeds": [
+    { "name": "Austin Kleon", "url": "https://austinkleon.substack.com/feed", "topic": "Creativity", "verify": true },
+    { "name": "The Marginalian", "url": "https://www.themarginalian.org/feed/", "topic": "Ideas", "verify": true },
+    { "name": "Aeon", "url": "https://aeon.co/feed.rss", "topic": "Philosophy", "verify": true },
+    { "name": "Psyche", "url": "https://psyche.co/feed", "topic": "Psychology", "verify": true },
+    { "name": "Literary Hub", "url": "https://lithub.com/feed/", "topic": "Literature", "verify": true },
+    { "name": "Open Culture", "url": "https://www.openculture.com/feed", "topic": "Culture", "verify": true },
+    { "name": "The Public Domain Review", "url": "https://publicdomainreview.org/rss.xml", "topic": "History", "verify": true },
+    { "name": "Nautilus", "url": "https://nautil.us/feed/", "topic": "Science", "verify": true },
+    { "name": "Daily Stoic", "url": "https://dailystoic.com/feed/", "topic": "Philosophy", "verify": true },
+    { "name": "Merriam-Webster Word of the Day", "url": "https://www.merriam-webster.com/wotd/feed/rss2", "topic": "Language", "verify": true },
+    { "name": "Grammar Girl (Quick and Dirty Tips)", "url": "https://www.quickanddirtytips.com/grammar-girl/feed/", "topic": "Language", "verify": true },
+    { "name": "Big Think", "url": "https://bigthink.com/feed/", "topic": "Ideas", "verify": true }
+  ]
+}

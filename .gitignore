@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.vercel/
+.env
+.env.local
+.DS_Store
+Thumbs.db
+firebase-debug.log
+firestore-debug.log
+.firebase/
