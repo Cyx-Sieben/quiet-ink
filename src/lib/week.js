@@ -21,6 +21,11 @@ export function weekKey(ms = now()) {
   return monday.toISOString().slice(0, 10);
 }
 
+/** Calendar-day key (YYYY-MM-DD) of the given moment, Malaysian time. */
+export function dayKey(ms = now()) {
+  return localNow(ms).toISOString().slice(0, 10);
+}
+
 export function addDays(key, n) {
   const [y, m, d] = key.split('-').map(Number);
   return new Date(Date.UTC(y, m - 1, d + n)).toISOString().slice(0, 10);

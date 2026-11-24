@@ -1,0 +1,842 @@
+[
+  {
+    "id": "s001",
+    "title": "Recommend a book you loved",
+    "field": "Explaining and persuading",
+    "prompt": "A classmate asks what book they should read next. Recommend one book and convince them to pick it up.",
+    "framework": [
+      "Point: name the book and give your overall verdict",
+      "Reason: why THIS book suits them",
+      "Example: what happens in it (no spoilers) and what struck you most",
+      "Point: close with a direct recommendation"
+    ],
+    "phrases": [
+      "If you only read one book this year, make it...",
+      "What struck me most was...",
+      "It's the kind of book that...",
+      "Trust me, by the second chapter you'll be hooked.",
+      "I cannot recommend it highly enough."
+    ],
+    "nudges": [
+      "What makes this book better than a similar one you did NOT enjoy?",
+      "Who would NOT enjoy this book? Being honest about that makes you sound credible."
+    ],
+    "checklist": [
+      "I stated my main point in the first two sentences",
+      "I gave one concrete example, not vague praise",
+      "I ended by repeating the recommendation"
+    ]
+  },
+  {
+    "id": "s002",
+    "title": "Explain your hobby to a stranger",
+    "field": "Describing processes",
+    "prompt": "Explain your main hobby to someone who has never heard of it. Make them understand why you love it.",
+    "framework": [
+      "Point: name the hobby and one-line summary",
+      "Reason: what you actually do, step by step",
+      "Example: one specific moment that captures why it's special",
+      "Point: invite them to try it"
+    ],
+    "phrases": [
+      "The best way to describe it is...",
+      "Basically, what you do is...",
+      "There's this moment when...",
+      "What keeps me coming back is...",
+      "You should come along once and see."
+    ],
+    "nudges": [
+      "Which step would confuse a beginner most? Simplify your words there.",
+      "What does the hobby teach you that applies to other parts of life?"
+    ],
+    "checklist": [
+      "I avoided jargon, or explained each term I used",
+      "I described the process in a clear order",
+      "I shared one vivid personal moment"
+    ]
+  },
+  {
+    "id": "s003",
+    "title": "Talk about a mistake that taught you something",
+    "field": "Narrative and reflection",
+    "prompt": "Describe a real mistake you made and what it taught you. Be honest — the value is in the lesson.",
+    "framework": [
+      "Point: state the mistake plainly",
+      "Reason: how it happened, in sequence",
+      "Example: the exact moment you realised",
+      "Point: what you do differently now"
+    ],
+    "phrases": [
+      "To my regret, I...",
+      "At the time, I thought...",
+      "Looking back, the turning point was...",
+      "What I learned, above all, is...",
+      "Ever since, I always..."
+    ],
+    "nudges": [
+      "Was the lesson about skill, or about judgement? Say which.",
+      "Could someone else repeat this mistake? Warn them directly."
+    ],
+    "checklist": [
+      "I described the mistake without blaming others",
+      "I showed the timeline clearly",
+      "The lesson is specific and actionable"
+    ]
+  },
+  {
+    "id": "s004",
+    "title": "Agree or disagree: homework should be halved",
+    "field": "Argument and debate",
+    "prompt": "Take a clear position: should homework be reduced by half in schools? Defend your position.",
+    "framework": [
+      "Point: state your position in one sentence",
+      "Reason: your strongest argument, explained",
+      "Example: evidence, experience or observation",
+      "Point: acknowledge the other side, then restate yours"
+    ],
+    "phrases": [
+      "My position on this is clear: ...",
+      "The strongest argument for this is...",
+      "Research from my own experience shows...",
+      "I understand why some people argue that... but...",
+      "On balance, I stand by..."
+    ],
+    "nudges": [
+      "State the OPPOSING argument fairly before knocking it down — that's how strong speakers argue.",
+      "What would change your mind? Saying that makes your position look reasoned, not stubborn."
+    ],
+    "checklist": [
+      "My position is unambiguous",
+      "I presented the other side fairly",
+      "I gave concrete support, not just opinion"
+    ]
+  },
+  {
+    "id": "s005",
+    "title": "Convince your parents to let you take a trip",
+    "field": "Persuasion",
+    "prompt": "Persuade a cautious parent to let you join a week-long trip with friends. Address their real worries.",
+    "framework": [
+      "Point: the request, stated clearly and respectfully",
+      "Reason: why this matters to you",
+      "Example: how you will handle money, safety and contact",
+      "Point: a concrete plan that answers their fears"
+    ],
+    "phrases": [
+      "I'd like to talk about something important to me.",
+      "I understand your concern about...",
+      "Here is my plan for that: ...",
+      "You can reach me anytime because...",
+      "I hope you'll trust me with this."
+    ],
+    "nudges": [
+      "What is the parent's biggest unspoken fear? Name it before they do.",
+      "What compromise would you accept? Offering one shows maturity."
+    ],
+    "checklist": [
+      "I addressed safety and money directly",
+      "My tone stayed respectful even while pushing",
+      "I ended with a clear, small ask"
+    ]
+  },
+  {
+    "id": "s006",
+    "title": "Describe a place that matters to you",
+    "field": "Description",
+    "prompt": "Describe a place that is important to you so vividly that your listener can picture it.",
+    "framework": [
+      "Point: name the place and its meaning in one line",
+      "Reason: what you see, hear and smell there",
+      "Example: one memory that happened there",
+      "Point: why you keep coming back"
+    ],
+    "phrases": [
+      "The first thing you notice is...",
+      "What makes it special isn't the view but...",
+      "Whenever I'm there, ...",
+      "It smells like / sounds like...",
+      "If I close my eyes I can still..."
+    ],
+    "nudges": [
+      "Use at least two senses beyond sight.",
+      "What small detail would only a regular visitor notice? That detail makes the description yours."
+    ],
+    "checklist": [
+      "I used sensory details, not just visual ones",
+      "I included one specific memory",
+      "The meaning of the place is clear by the end"
+    ]
+  },
+  {
+    "id": "s007",
+    "title": "Explain why you admire someone",
+    "field": "Character and values",
+    "prompt": "Talk about a person you admire (family, famous or fictional) and explain what makes them worth admiring.",
+    "framework": [
+      "Point: who they are, in relation to you",
+      "Reason: the quality you admire most",
+      "Example: a moment that showed this quality",
+      "Point: how you try to copy it in your own life"
+    ],
+    "phrases": [
+      "The person I admire most is...",
+      "What sets them apart is...",
+      "There was this one time when...",
+      "Because of them, I try to...",
+      "Their influence shows up in how I..."
+    ],
+    "nudges": [
+      "Admire a quality, not just achievements — kindness beats medals in an explanation.",
+      "Where did you fall short of their example? Honesty strengthens the tribute."
+    ],
+    "checklist": [
+      "I named ONE main quality, not a list",
+      "I gave a specific story, not a summary",
+      "I connected it to my own behaviour"
+    ]
+  },
+  {
+    "id": "s008",
+    "title": "Defend an unpopular opinion",
+    "field": "Argument and composure",
+    "prompt": "Pick an opinion you hold that most people disagree with. Defend it calmly and logically.",
+    "framework": [
+      "Point: the opinion, stated without apology",
+      "Reason: the logic behind it",
+      "Example: a case where it clearly holds",
+      "Point: what you are NOT claiming (limiting the argument)"
+    ],
+    "phrases": [
+      "I know this isn't a popular view, but...",
+      "My reasoning is simple: ...",
+      "Consider the case of...",
+      "I'm not saying... I'm only saying...",
+      "I can accept that reasonable people disagree."
+    ],
+    "nudges": [
+      "The strongest defence is naming the argument's WEAK point yourself.",
+      "Swap 'everyone thinks' for 'many people think' — absolutes invite attack."
+    ],
+    "checklist": [
+      "I stayed calm and logical, not defensive",
+      "I limited my claim to what I can actually defend",
+      "I acknowledged the mainstream view"
+    ]
+  },
+  {
+    "id": "s009",
+    "title": "Explain a trending topic to an elder",
+    "field": "Simplification",
+    "prompt": "Explain something young people know well (a trend, app or phenomenon) to someone much older, without being condescending.",
+    "framework": [
+      "Point: what it is, in one plain sentence",
+      "Reason: what people do with it, day to day",
+      "Example: a story of it in real use",
+      "Point: why it matters, or doesn't"
+    ],
+    "phrases": [
+      "The simplest way to put it is...",
+      "Think of it like..., but online.",
+      "For example, my friend uses it to...",
+      "It sounds trivial, but actually...",
+      "Whether it lasts is anyone's guess."
+    ],
+    "nudges": [
+      "Find one comparison to something from THEIR generation — a bridge, not a lecture.",
+      "Where could this trend go wrong? Elders usually ask; answer first."
+    ],
+    "checklist": [
+      "I used everyday words, no slang left unexplained",
+      "I compared it to something familiar",
+      "I respected both them and the trend"
+    ]
+  },
+  {
+    "id": "s010",
+    "title": "Tell someone their idea won't work",
+    "field": "Diplomatic disagreement",
+    "prompt": "A friend is excited about a plan you believe will fail. Tell them honestly, without crushing their enthusiasm.",
+    "framework": [
+      "Point: acknowledge the idea's real strengths first",
+      "Reason: the specific problem you see",
+      "Example: where the plan breaks down",
+      "Point: a suggestion or condition that keeps their dream alive"
+    ],
+    "phrases": [
+      "I love the energy behind this idea.",
+      "Can I be honest with you about one part?",
+      "My worry is that...",
+      "The numbers / timing just don't work because...",
+      "What if we adjusted it like this..."
+    ],
+    "nudges": [
+      "Critique the plan, not the person — pronouns matter: 'it' not 'you'.",
+      "Offer one genuine strength before the flaw; it buys your honesty a fair hearing."
+    ],
+    "checklist": [
+      "I led with something true and positive",
+      "My criticism was specific, not general",
+      "I ended constructively"
+    ]
+  },
+  {
+    "id": "s011",
+    "title": "Introduce yourself to a new team",
+    "field": "Self-presentation",
+    "prompt": "You're joining a new class, club or team. Introduce yourself in a way people remember.",
+    "framework": [
+      "Point: name, plus one memorable label",
+      "Reason: what you bring, or what you're trying to get better at",
+      "Example: one quick, human detail",
+      "Point: an invitation to talk to you"
+    ],
+    "phrases": [
+      "I'm ..., and I'm the person who...",
+      "Most people know me for...",
+      "A random fact: ...",
+      "What I'm working on this year is...",
+      "Come find me if you want to talk about..."
+    ],
+    "nudges": [
+      "The best introductions include one small flaw or goal — pure confidence is forgettable.",
+      "Choose the ONE thing you want them to remember; cut the rest."
+    ],
+    "checklist": [
+      "I gave one memorable label, not a list",
+      "I included one human detail",
+      "I ended with an invitation"
+    ]
+  },
+  {
+    "id": "s012",
+    "title": "Talk about a news event you care about",
+    "field": "Explaining and analysing",
+    "prompt": "Explain a recent event or issue you care about, and why it deserves attention.",
+    "framework": [
+      "Point: what happened, in one accurate sentence",
+      "Reason: why it matters beyond the headline",
+      "Example: who is affected, concretely",
+      "Point: what should happen next, in your view"
+    ],
+    "phrases": [
+      "The story, in brief, is this: ...",
+      "What the headlines miss is...",
+      "For the people affected, this means...",
+      "It matters because...",
+      "What I'd like to see happen is..."
+    ],
+    "nudges": [
+      "Separate the FACTS from your OPINION explicitly — listeners trust that distinction.",
+      "What is the strongest point on the other side? Mention it once."
+    ],
+    "checklist": [
+      "I separated facts from my opinion",
+      "I said why it matters beyond the headline",
+      "I named one concrete effect on people"
+    ]
+  },
+  {
+    "id": "s013",
+    "title": "Say no without guilt",
+    "field": "Boundaries",
+    "prompt": "Someone you like asks for a big favour you can't give. Refuse kindly, clearly, and without over-apologising.",
+    "framework": [
+      "Point: thank them, then the clear no",
+      "Reason: the honest, brief reason",
+      "Example: what you CAN offer instead",
+      "Point: end warm, door open"
+    ],
+    "phrases": [
+      "Thank you for thinking of me, but I can't.",
+      "The honest reason is...",
+      "What I can do is...",
+      "I hope it goes brilliantly.",
+      "Ask me again next time."
+    ],
+    "nudges": [
+      "One 'sorry' maximum — stacking apologies makes a no sound negotiable.",
+      "Offering a smaller alternative shows care without surrendering."
+    ],
+    "checklist": [
+      "I said the no clearly and early",
+      "I kept the reason brief and honest",
+      "I offered what I could instead"
+    ]
+  },
+  {
+    "id": "s014",
+    "title": "Pitch a solution to a daily annoyance",
+    "field": "Pitching",
+    "prompt": "Pick something that annoys you every week (queue, traffic, mess, spam). Pitch a solution as if to a small investor.",
+    "framework": [
+      "Point: the problem, one vivid sentence",
+      "Reason: who else suffers, how often",
+      "Example: your solution in action",
+      "Point: the first step to build it"
+    ],
+    "phrases": [
+      "Here's a problem we all pretend is normal: ...",
+      "Every single day, ...",
+      "My idea is simple: ...",
+      "Imagine instead...",
+      "Step one would be..."
+    ],
+    "nudges": [
+      "Quantify the annoyance — numbers make problems feel real.",
+      "Why hasn't this been solved already? Have an answer ready."
+    ],
+    "checklist": [
+      "I described the problem vividly in one sentence",
+      "I quantified how many people it affects",
+      "I named the first concrete step"
+    ]
+  },
+  {
+    "id": "s015",
+    "title": "Retell a story from your childhood",
+    "field": "Storytelling",
+    "prompt": "Tell a true story from your childhood with a beginning, middle and end — make it worth hearing.",
+    "framework": [
+      "Point: set the scene in two sentences",
+      "Reason: build up what was normal, then what changed",
+      "Example: the peak moment, slowed down",
+      "Point: the ending, and what it means now"
+    ],
+    "phrases": [
+      "I must have been about... years old.",
+      "Back then, our family...",
+      "Then one day, ...",
+      "I remember every second of what happened next.",
+      "Even now, whenever I..., I think of that day."
+    ],
+    "nudges": [
+      "Slow DOWN at the key moment — pace is a storytelling tool.",
+      "One theme only: a story about everything is a story about nothing."
+    ],
+    "checklist": [
+      "I set the scene in two sentences",
+      "I slowed down at the key moment",
+      "The story has one clear theme"
+    ]
+  },
+  {
+    "id": "s016",
+    "title": "Explain why you chose your path",
+    "field": "Personal narrative",
+    "prompt": "Explain how you chose your course, job or direction — including the options you rejected.",
+    "framework": [
+      "Point: where you are now",
+      "Reason: the options you had",
+      "Example: the moment or person that decided it",
+      "Point: no regrets, or what you'd change"
+    ],
+    "phrases": [
+      "People usually assume I chose this because...; actually...",
+      "At the time, my options were...",
+      "What tipped the balance was...",
+      "I sometimes wonder about the road not taken, but...",
+      "If I had to choose again, ..."
+    ],
+    "nudges": [
+      "Name the option you rejected and WHY — that's where your values show.",
+      "Avoid 'it just happened'; every path has a moment of decision."
+    ],
+    "checklist": [
+      "I named the options I had",
+      "I described the moment that decided it",
+      "I said what I would change or keep"
+    ]
+  },
+  {
+    "id": "s017",
+    "title": "Calm someone down who is upset",
+    "field": "Emotional communication",
+    "prompt": "A friend is panicking before results, an interview or a performance. Talk them down with words that actually help.",
+    "framework": [
+      "Point: acknowledge the feeling first, no fixing",
+      "Reason: reflect their fear back in calmer words",
+      "Example: a time they handled something similar",
+      "Point: one small, immediate next step"
+    ],
+    "phrases": [
+      "It makes complete sense that you feel this way.",
+      "So the fear is that..., right?",
+      "Remember when you..., and it worked out?",
+      "Here's the one next thing: ...",
+      "Whatever happens, I'm here."
+    ],
+    "nudges": [
+      "Order matters: feelings BEFORE solutions. Reversing it feels dismissive.",
+      "Offer one small step, not the whole staircase."
+    ],
+    "checklist": [
+      "I acknowledged the feeling before advising",
+      "I recalled a similar moment they handled",
+      "I offered one small next step"
+    ]
+  },
+  {
+    "id": "s018",
+    "title": "Explain something complex simply",
+    "field": "Simplification",
+    "prompt": "Pick something genuinely complex that you understand (a rule, a technology, a concept). Explain it in under a minute.",
+    "framework": [
+      "Point: what it is, in one sentence a child could follow",
+      "Reason: how it works, using one everyday comparison",
+      "Example: where you see it in real life",
+      "Point: one sentence takeaway"
+    ],
+    "phrases": [
+      "At its core, it's just a way of...",
+      "It's like..., except...",
+      "You see this every time you...",
+      "The whole thing boils down to...",
+      "So if you remember one thing, remember..."
+    ],
+    "nudges": [
+      "Cut every term you can't replace with an everyday word — then explain the few that remain.",
+      "The comparison is the engine: test yours on one imaginary listener."
+    ],
+    "checklist": [
+      "A child could follow my first sentence",
+      "My comparison explains how it works",
+      "I gave one everyday example"
+    ]
+  },
+  {
+    "id": "s019",
+    "title": "Ask for help without feeling small",
+    "field": "Requests",
+    "prompt": "You're stuck on something at work, school or home. Ask a specific person for help in a way that's easy to say yes to.",
+    "framework": [
+      "Point: what you're stuck on, stated plainly",
+      "Reason: what you've already tried",
+      "Example: exactly what help you need, small and specific",
+      "Point: make it easy to decline"
+    ],
+    "phrases": [
+      "Could I borrow twenty minutes of your time?",
+      "I've tried..., but I'm stuck at...",
+      "What I need specifically is...",
+      "You're the best person to ask because...",
+      "If it's a bad time, just say so."
+    ],
+    "nudges": [
+      "Asking for SPECIFIC small help gets better answers than general SOS.",
+      "Saying what you tried proves you're not offloading work."
+    ],
+    "checklist": [
+      "I said exactly what I am stuck on",
+      "I mentioned what I already tried",
+      "My ask is small and specific"
+    ]
+  },
+  {
+    "id": "s020",
+    "title": "Talk about the future without clichés",
+    "field": "Future plans",
+    "prompt": "Describe where you want to be in five years — without 'successful', 'happy' or other empty words.",
+    "framework": [
+      "Point: one concrete picture of an ordinary Tuesday in that future",
+      "Reason: what you'll be able to do that you can't now",
+      "Example: the first milestone, within a year",
+      "Point: what you're willing to trade for it"
+    ],
+    "phrases": [
+      "Picture an ordinary Tuesday in 2031: ...",
+      "By then, I'll finally be able to...",
+      "The first milestone is..., which I can start this month.",
+      "To get there, I'm prepared to give up...",
+      "It's not a dream so much as a plan."
+    ],
+    "nudges": [
+      "Concreteness is everything: a Tuesday beats a vision statement.",
+      "What are you giving up? Every future costs its present."
+    ],
+    "checklist": [
+      "I painted one ordinary Tuesday",
+      "I named something I will be able to do",
+      "I said what I am willing to trade"
+    ]
+  },
+  {
+    "id": "s021",
+    "title": "Give feedback that lands",
+    "field": "Diplomatic communication",
+    "prompt": "A teammate's work has a real weakness. Give feedback they can accept without feeling attacked.",
+    "framework": [
+      "Point: what genuinely works in their work",
+      "Reason: the one thing that would most improve it",
+      "Example: a specific moment in the work",
+      "Point: a question that lets them save face"
+    ],
+    "phrases": [
+      "The strongest part is...",
+      "If I could change one thing, it would be...",
+      "Take paragraph three — what if...",
+      "What was your thinking behind...?",
+      "It's close; one more pass and it's there."
+    ],
+    "nudges": [
+      "ONE improvement at a time; a list feels like a verdict.",
+      "End with a question, not a conclusion — it hands them the pen."
+    ],
+    "checklist": [
+      "I led with what genuinely works",
+      "My improvement is specific and singular",
+      "I ended with a question, not a verdict"
+    ]
+  },
+  {
+    "id": "s022",
+    "title": "Explain a rule you disagree with",
+    "field": "Critical thinking",
+    "prompt": "Name a rule (school, family, work, law) you think is wrong. Explain why — and what rule you'd put in its place.",
+    "framework": [
+      "Point: the rule and your verdict",
+      "Reason: what the rule was meant to do",
+      "Example: where it fails or backfires",
+      "Point: your replacement, and its own risk"
+    ],
+    "phrases": [
+      "The rule exists to..., but in practice...",
+      "It fails whenever...",
+      "My alternative would be...",
+      "The trade-off is that...",
+      "No rule is perfect; the question is which failure you prefer."
+    ],
+    "nudges": [
+      "Steelman the rule first: what problem was it actually solving?",
+      "Every replacement has a cost — naming it makes you a serious thinker."
+    ],
+    "checklist": [
+      "I explained what the rule was for",
+      "I showed where it fails",
+      "My replacement has a named cost"
+    ]
+  },
+  {
+    "id": "s023",
+    "title": "Talk for one minute about nothing",
+    "field": "Fluency under pressure",
+    "prompt": "Pick the most boring object near you. Speak about it for a full minute without stopping. The goal is flow, not wisdom.",
+    "framework": [
+      "Point: name it and claim your territory",
+      "Reason: what it does, where it came from",
+      "Example: one memory or absurd detail",
+      "Point: a closing line, however small"
+    ],
+    "phrases": [
+      "At first glance it's just a..., but...",
+      "Someone designed this. Someone chose its colour.",
+      "It's been in my life longer than...",
+      "It will outlive me, probably.",
+      "And that's more than I ever expected to say about it."
+    ],
+    "nudges": [
+      "The enemy is silence: keep talking, even into dead ends.",
+      "Absurd observations are allowed — enthusiasm beats accuracy here."
+    ],
+    "checklist": [
+      "I kept talking without long pauses",
+      "I found something real to say about the object",
+      "I closed the minute deliberately"
+    ]
+  },
+  {
+    "id": "s024",
+    "title": "Apologise properly",
+    "field": "Repair",
+    "prompt": "You genuinely wronged someone. Apologise in a way that repairs, not defends.",
+    "framework": [
+      "Point: name exactly what you did",
+      "Reason: acknowledge the impact on THEM",
+      "Example: what you'll do to prevent it",
+      "Point: no 'but', no excuses — just the ask"
+    ],
+    "phrases": [
+      "I want to apologise for specifically...",
+      "I can see it made you feel...",
+      "What I should have done is...",
+      "I've already changed...",
+      "I understand if you need time."
+    ],
+    "nudges": [
+      "Kill the word 'but' — everything after it undoes the apology.",
+      "Describe the impact in THEIR terms, not your intentions."
+    ],
+    "checklist": [
+      "I named exactly what I did",
+      "I described the impact on them, not my intent",
+      "I gave no excuses after the apology"
+    ]
+  },
+  {
+    "id": "s025",
+    "title": "Explain why a movie/show moved you",
+    "field": "Emotional articulation",
+    "prompt": "Talk about a film or show that genuinely affected you — and put your finger on WHY it worked.",
+    "framework": [
+      "Point: the film and your honest one-line reaction",
+      "Reason: the specific scene or technique that got you",
+      "Example: describe that moment without spoiling the ending",
+      "Point: what it made you feel about your own life"
+    ],
+    "phrases": [
+      "I finished it and just sat there.",
+      "The scene that undid me was...",
+      "Without spoiling anything, there's a moment where...",
+      "What it's really about is...",
+      "It made me look at my own... differently."
+    ],
+    "nudges": [
+      "Analyse the craft — naming the technique makes emotion sound intelligent.",
+      "One moment, described precisely, beats a whole plot summary."
+    ],
+    "checklist": [
+      "I named the specific scene that moved me",
+      "I identified the technique that did it",
+      "I connected it to my own life"
+    ]
+  },
+  {
+    "id": "s026",
+    "title": "Defend a habit others find strange",
+    "field": "Self-knowledge",
+    "prompt": "You do something most people find odd (early waking, cold showers, writing nightly). Explain it so it sounds sane — because it is.",
+    "framework": [
+      "Point: the habit, stated plainly",
+      "Reason: what problem it solves for you",
+      "Example: a before-and-after of your day",
+      "Point: what you'd tell someone starting it"
+    ],
+    "phrases": [
+      "I know how it sounds, but...",
+      "It started because I needed...",
+      "Before, my mornings were...; now they're...",
+      "If you tried it, start with...",
+      "The strange part is how normal it feels now."
+    ],
+    "nudges": [
+      "Evidence from your own life beats research citations here.",
+      "Admit the cost; a habit with no downside sounds fake."
+    ],
+    "checklist": [
+      "I stated the habit without embarrassment",
+      "I showed a before-and-after",
+      "I admitted one cost of the habit"
+    ]
+  },
+  {
+    "id": "s027",
+    "title": "Explain a memory you'd keep forever",
+    "field": "Articulating values",
+    "prompt": "If you could keep only one memory, which would it be — and why that one?",
+    "framework": [
+      "Point: the memory, in one image",
+      "Reason: what it contains that nothing else does",
+      "Example: the moment itself, in detail",
+      "Point: what it says about what you value"
+    ],
+    "phrases": [
+      "If I had to choose, I'd keep...",
+      "It's not the most exciting memory, but...",
+      "Everything I needed was in that moment: ...",
+      "When I think of it, I can still...",
+      "I suppose it tells you that I value..."
+    ],
+    "nudges": [
+      "Small and specific beats grand — the ordinary reveals more.",
+      "The WHY is the real answer; the memory is just the vehicle."
+    ],
+    "checklist": [
+      "I captured the memory in one image",
+      "I said what makes it irreplaceable",
+      "I named the value it reveals"
+    ]
+  },
+  {
+    "id": "s028",
+    "title": "Talk about money without awkwardness",
+    "field": "Difficult topics",
+    "prompt": "Explain to a friend a money decision you made that they questioned — spending, saving or refusing to spend.",
+    "framework": [
+      "Point: the decision, no embarrassment",
+      "Reason: the value behind it",
+      "Example: what you gave up and what you gained",
+      "Point: what you'd decide again"
+    ],
+    "phrases": [
+      "I know it looked strange when I...",
+      "The value behind it is...",
+      "What I gave up was...; what I got was...",
+      "Money is just..., and I needed...",
+      "I'd make the same call again."
+    ],
+    "nudges": [
+      "State numbers where you can — vagueness creates the awkwardness.",
+      "Own the trade-off: every money choice buys something AND forgoes something."
+    ],
+    "checklist": [
+      "I stated the decision without embarrassment",
+      "I named the value behind it",
+      "I owned the trade-off"
+    ]
+  },
+  {
+    "id": "s029",
+    "title": "Explain silence you regret",
+    "field": "Reflection",
+    "prompt": "Think of a moment you should have spoken up and didn't. Explain what stopped you, and what it cost.",
+    "framework": [
+      "Point: the moment, briefly",
+      "Reason: what exactly held you back",
+      "Example: what happened as a result",
+      "Point: what you'd do now, and what you've practised"
+    ],
+    "phrases": [
+      "The moment I keep replaying is...",
+      "I told myself it wasn't my place, but...",
+      "Afterwards, ...",
+      "What it cost me was...",
+      "Since then, I've..."
+    ],
+    "nudges": [
+      "Name the emotion that blocked you — fear, politeness, doubt? Precision here is power.",
+      "What's ONE sentence you could have said? Rehearse it; you'll need it again."
+    ],
+    "checklist": [
+      "I described the moment honestly",
+      "I named the emotion that blocked me",
+      "I rehearsed the sentence I could have said"
+    ]
+  },
+  {
+    "id": "s030",
+    "title": "Make small talk that goes somewhere",
+    "field": "Conversation",
+    "prompt": "Turn a dead-end small-talk exchange into a real conversation. Show the pivot, not just the opener.",
+    "framework": [
+      "Point: respond to their statement, don't just answer it",
+      "Reason: ask one open question about something THEY care about",
+      "Example: share a small related thing about yourself",
+      "Point: let them talk — end with a question, not a statement"
+    ],
+    "phrases": [
+      "That's interesting — what made you pick that?",
+      "You mentioned...; how did that start?",
+      "Something similar happened to me: ...",
+      "So what's the story there?",
+      "I've wondered about that myself."
+    ],
+    "nudges": [
+      "Answer AND ask: 'Yes — and what about you?' is the engine of conversation.",
+      "The pivot is from facts to feelings: 'What was that like?' beats 'Where was that?'"
+    ],
+    "checklist": [
+      "I responded, not just answered",
+      "I asked one open question about them",
+      "I ended with a question, not a statement"
+    ]
+  }
+]

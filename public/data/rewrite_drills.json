@@ -1,0 +1,182 @@
+[
+  {
+    "id": "r001",
+    "informal": "I wanna go to the mall cos I need to buy some stuff.",
+    "formal": "I would like to go to the mall because I need to buy a few things.",
+    "focus": "wanna → would like to; cos → because"
+  },
+  {
+    "id": "r002",
+    "informal": "Yeah, she's kinda busy right now.",
+    "formal": "Yes, she is rather busy at the moment.",
+    "focus": "kinda → rather; right now → at the moment"
+  },
+  {
+    "id": "r003",
+    "informal": "Can you gimme a hand with this?",
+    "formal": "Could you help me with this, please?",
+    "focus": "gimme a hand → help me"
+  },
+  {
+    "id": "r004",
+    "informal": "He was like, super tired, so he went home early.",
+    "formal": "He was extremely tired, so he went home early.",
+    "focus": "was like → was; super → extremely"
+  },
+  {
+    "id": "r005",
+    "informal": "It's gonna rain later, for sure.",
+    "formal": "It is going to rain later, most likely.",
+    "focus": "gonna → going to; for sure → most likely"
+  },
+  {
+    "id": "r006",
+    "informal": "I dunno what he wants from me.",
+    "formal": "I do not know what he wants from me.",
+    "focus": "dunno → do not know"
+  },
+  {
+    "id": "r007",
+    "informal": "That movie was hella boring ngl.",
+    "formal": "That film was extremely boring, to be honest.",
+    "focus": "hella → extremely; ngl → to be honest"
+  },
+  {
+    "id": "r008",
+    "informal": "She's got a lotta stuff to do today.",
+    "formal": "She has a great deal of work to do today.",
+    "focus": "got → has; a lotta stuff → a great deal of work"
+  },
+  {
+    "id": "r009",
+    "informal": "Me and my friend goes to the gym on Mondays.",
+    "formal": "My friend and I go to the gym on Mondays.",
+    "focus": "Me and my friend → My friend and I; goes → go"
+  },
+  {
+    "id": "r010",
+    "informal": "It don't matter anyway.",
+    "formal": "It does not matter anyway.",
+    "focus": "don't → does not (with 'it')"
+  },
+  {
+    "id": "r011",
+    "informal": "We should of left earlier.",
+    "formal": "We should have left earlier.",
+    "focus": "should of → should have"
+  },
+  {
+    "id": "r012",
+    "informal": "He done really good on the test.",
+    "formal": "He did really well on the test.",
+    "focus": "done → did; good → well"
+  },
+  {
+    "id": "r013",
+    "informal": "There's like a billion people at the sale.",
+    "formal": "There was an enormous crowd at the sale.",
+    "focus": "a billion → an enormous crowd; like → (remove)"
+  },
+  {
+    "id": "r014",
+    "informal": "I'm not really that into sports tbh.",
+    "formal": "I am not particularly interested in sports, to be honest.",
+    "focus": "into → interested in; tbh → to be honest"
+  },
+  {
+    "id": "r015",
+    "informal": "Let me know ASAP cos the boss wants it.",
+    "formal": "Please inform me as soon as possible, because the manager requires it.",
+    "focus": "ASAP → as soon as possible; boss wants it → manager requires it"
+  },
+  {
+    "id": "r016",
+    "informal": "This thing is way more better than the old one.",
+    "formal": "This one is far better than the previous model.",
+    "focus": "more better → better; thing → one"
+  },
+  {
+    "id": "r017",
+    "informal": "We was chilling at his place all weekend.",
+    "formal": "We spent the weekend relaxing at his home.",
+    "focus": "was → were (in informal); chilling → relaxing"
+  },
+  {
+    "id": "r018",
+    "informal": "IDK, maybe just do whatever you want.",
+    "formal": "I am not sure; perhaps you should do whatever you prefer.",
+    "focus": "IDK → I am not sure"
+  },
+  {
+    "id": "r019",
+    "informal": "The teacher ain't gonna like this.",
+    "formal": "The teacher will not be pleased with this.",
+    "focus": "ain't gonna → will not"
+  },
+  {
+    "id": "r020",
+    "informal": "I could care less about the result.",
+    "formal": "I could not care less about the result.",
+    "focus": "could care less → could not care less (the idiom needs the 'not')"
+  },
+  {
+    "id": "r021",
+    "informal": "She's the one what told me about it.",
+    "formal": "She is the one who told me about it.",
+    "focus": "what → who (for people)"
+  },
+  {
+    "id": "r022",
+    "informal": "We gotta hurry up or we'll miss the bus.",
+    "formal": "We have to hurry, or we will miss the bus.",
+    "focus": "gotta → have to"
+  },
+  {
+    "id": "r023",
+    "informal": "It's basically the same thing, pretty much.",
+    "formal": "It is essentially the same thing.",
+    "focus": "pretty much → (remove); basically → essentially"
+  },
+  {
+    "id": "r024",
+    "informal": "He's hella smart but kinda lazy too.",
+    "formal": "He is very intelligent but somewhat lazy as well.",
+    "focus": "hella → very; kinda → somewhat"
+  },
+  {
+    "id": "r025",
+    "informal": "I'm good, thanks. You?",
+    "formal": "I am well, thank you. And you?",
+    "focus": "contractions expanded; You? → And you?"
+  },
+  {
+    "id": "r026",
+    "informal": "They was arguing about money and stuff.",
+    "formal": "They were arguing about money and other matters.",
+    "focus": "was → were; stuff → other matters"
+  },
+  {
+    "id": "r027",
+    "informal": "Gonna grab some food, wanna come?",
+    "formal": "I am going to get some food. Would you like to join me?",
+    "focus": "grab → get; wanna come → would you like to join me"
+  },
+  {
+    "id": "r028",
+    "informal": "That's probs the best option ngl.",
+    "formal": "That is probably the best option, to be honest.",
+    "focus": "probs → probably; ngl → to be honest"
+  },
+  {
+    "id": "r029",
+    "informal": "She don't really like him no more.",
+    "formal": "She does not like him any more.",
+    "focus": "don't → does not; no more → any more (double negative removed)"
+  },
+  {
+    "id": "r030",
+    "informal": "Me and him was talking about you.",
+    "formal": "He and I were talking about you.",
+    "focus": "Me and him → He and I; was → were"
+  }
+]

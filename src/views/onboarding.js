@@ -1,14 +1,16 @@
 /**
- * First sign-in: choose a nickname, bio and avatar.
+ * First sign-in: choose a nickname, bio and avatar (built-in, Google photo,
+ * or your own uploaded picture).
  */
-import { esc, toast, errText, AVATARS, avatarSvg, avatarHtml } from '../lib/ui.js';
+import { esc, toast, errText, AVATARS, avatarSvg, avatarHtml, shrinkImage } from '../lib/ui.js';
 import { createAccount, NICK_RE, S, ensureWeek } from '../lib/session.js';
-import { importV1Progress, hasV1Progress } from './settings.js';
 
 export function renderOnboarding(app, ctx) {
   if (S.profile) { ctx.go('#/'); return; }
   const suggested = (S.user.displayName || '').replace(/[^A-Za-z0-9_]/g, '').slice(0, 20);
   let avatar = S.user.photoURL ? 'google' : 'ink';
+  let photoData = null;
+  let previewEl = null;
 
   app.innerHTML = `
   <div class="enter" style="max-width:720px;margin:0 auto">
@@ -28,11 +30,16 @@ export function renderOnboarding(app, ctx) {
         <textarea id="ob-bio" maxlength="160" rows="2" placeholder="Student, reader, collector of good sentences."></textarea>
       </label>
       <fieldset class="field">
-        <legend class="label">Avatar</legend>
+        <legend class="label">Profile picture</legend>
         <div class="avatar-picker" id="ob-avatars">
           ${S.user.photoURL ? `<button type="button" class="av-opt" data-av="google" aria-label="My Google photo">${avatarHtml({ avatar: 'google', photoURL: S.user.photoURL }, 56)}</button>` : ''}
           ${AVATARS.map((a) => `<button type="button" class="av-opt" data-av="${a}" aria-label="${a} avatar">${avatarSvg(a, 56)}</button>`).join('')}
+          <label class="av-opt upload" id="ob-upload" title="Upload my own picture">
+            <input type="file" accept="image/*" class="visually-hidden">
+            <span class="av-upload-ink">+<small>upload</small></span>
+          </label>
         </div>
+        <small class="muted">Pick a sticker avatar, use your Google photo, or upload your own — it is shrunk to a small thumbnail.</small>
       </fieldset>
       <p class="muted" style="font-size:.85rem;margin:0">Your email address is never shown to other people. By continuing you agree to the <a href="#/guidelines">community guidelines</a> and <a href="#/privacy">privacy note</a>.</p>
       <div class="btn-row">
@@ -42,9 +49,40 @@ export function renderOnboarding(app, ctx) {
     </form>
   </div>`;
 
-  const picks = app.querySelectorAll('.av-opt');
-  const mark = () => picks.forEach((b) => b.classList.toggle('on', b.dataset.av === avatar));
-  picks.forEach((b) => b.addEventListener('click', () => { avatar = b.dataset.av; mark(); }));
+  const picks = app.querySelectorAll('.av-opt[data-av]');
+  const mark = () => {
+    picks.forEach((b) => b.classList.toggle('on', b.dataset.av === avatar));
+    const up = document.getElementById('ob-upload');
+    if (up) up.classList.toggle('on', Boolean(photoData));
+  };
+  picks.forEach((b) => b.addEventListener('click', () => {
+    avatar = b.dataset.av;
+    photoData = null;
+    mark();
+  }));
+
+  document.getElementById('ob-upload').addEventListener('change', async (e) => {
+    const file = e.target.files && e.target.files[0];
+    if (!file) return;
+    const msg = document.getElementById('ob-msg');
+    try {
+      msg.textContent = 'Shrinking image...';
+      photoData = await shrinkImage(file);
+      avatar = 'photo';
+      // Swap the plus sign for the real thumbnail (the input itself stays in place).
+      const thumb = document.getElementById('ob-upload-thumb');
+      const up = document.getElementById('ob-upload');
+      if (!thumb) up.insertAdjacentHTML('beforeend', `<img id="ob-upload-thumb" class="avatar" src="${photoData}" width="56" height="56" alt="My picture">`);
+      else thumb.src = photoData;
+      up.classList.add('has-photo');
+      mark();
+      msg.textContent = '';
+    } catch (err) {
+      msg.textContent = errText(err);
+      e.target.value = '';
+    }
+  });
+
   mark();
 
   document.getElementById('ob-form').addEventListener('submit', async (e) => {
@@ -60,12 +98,12 @@ export function renderOnboarding(app, ctx) {
     btn.disabled = true;
     msg.textContent = 'Saving...';
     try {
-      await createAccount({ nickname, bio, avatar });
+      await createAccount({
+        nickname, bio,
+        avatar: avatar === 'photo' ? 'photo' : avatar,
+        photoData: avatar === 'photo' ? photoData : null
+      });
       ctx.refreshNav();
-      if (hasV1Progress() && window.confirm('We found progress from the earlier version of Quiet Ink in this browser. Add it to your account now?')) {
-        await ensureWeek();
-        await importV1Progress();
-      }
       toast(`Welcome, ${nickname}.`);
       ctx.go('#/');
     } catch (err) {

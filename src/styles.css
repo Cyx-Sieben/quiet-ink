@@ -1162,3 +1162,158 @@ img.avatar { background: var(--grid); }
   .reader { padding: 22px 18px; }
   .fcard { height: 440px; }
 }
+
+/* ================================================== Version 3 additions */
+/* Fill sub-sections, build-a-sentence, phrase library, speaking, warm-up,
+   profile picture upload, shelf, and misc new bits. Reuses the desk theme. */
+
+/* -- Fill the Gap sub-section tiles ---------------------------------- */
+.set-grid { gap: 18px; }
+.set-tile .label { display: block; font-weight: 600; }
+.set-tile .btn.small { margin-top: 8px; }
+
+/* Sentence-length options wrap nicely */
+.options.sentence-options .option { align-items: flex-start; text-align: left; }
+.options.sentence-options .opt-text { white-space: normal; }
+.option .opt-text { flex: 1; min-width: 0; }
+
+/* The "wrong sentence" prompt in Spot & Fix */
+.q-sentence.wrong-sentence {
+  background: repeating-linear-gradient(-45deg, transparent 0 10px, rgba(232, 50, 42, .07) 10px 20px);
+  border: 2px dashed var(--red, #E8322A);
+  border-radius: 10px;
+  padding: 14px 16px;
+}
+
+/* -- Build the Sentence ----------------------------------------------- */
+.build-goal { margin: 8px 0 14px; font-size: 1.05rem; }
+.build-goal .label { display: inline-block; margin-right: 8px; }
+.build-line {
+  min-height: 76px;
+  border-radius: 10px;
+  background: var(--paper, #F2F0EB);
+  border: 2px solid var(--ink-soft, #b9b7b0);
+  padding: 12px 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-content: flex-start;
+  align-items: center;
+}
+.build-line.lined {
+  background-image: repeating-linear-gradient(transparent 0 27px, rgba(20, 20, 20, .12) 27px 28px);
+}
+.word-chip {
+  display: inline-block;
+  padding: 3px 10px;
+  border: 2px solid var(--ink, #141414);
+  border-radius: 8px;
+  background: #fff;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  box-shadow: 2px 2px 0 var(--ink, #141414);
+}
+.word-chip.ok { background: #CDEFD9; border-color: #2c7a4b; }
+.word-chip.bad { background: #FBDCC8; border-color: var(--red, #E8322A); text-decoration: line-through; }
+.build-bank {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px dashed var(--ink-soft, #b9b7b0);
+  min-height: 60px;
+}
+.word-tile {
+  font-family: var(--font-hand, 'Caveat', cursive);
+  font-size: 1.35rem;
+  padding: 4px 14px;
+  border: 2px solid var(--ink, #141414);
+  border-radius: 10px;
+  background: var(--paper, #F2F0EB);
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .08s ease;
+  box-shadow: 2px 2px 0 var(--ink, #141414);
+}
+.word-tile:hover:not(:disabled) { transform: translate(-1px, -1px); box-shadow: 3px 3px 0 var(--ink, #141414); }
+.word-tile:disabled { opacity: .25; cursor: default; box-shadow: none; }
+
+/* -- Phrase Library ---------------------------------------------------- */
+.usage-list, .framework-list {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  line-height: 1.65;
+}
+.usage-list li, .framework-list li { margin: 6px 0; }
+.phrase-bank { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+
+/* -- Speaking Practice ------------------------------------------------- */
+.checklist { display: grid; gap: 10px; margin-top: 8px; }
+.check-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 12px;
+  border: 2px solid var(--ink-soft, #b9b7b0);
+  border-radius: 10px;
+  background: var(--paper, #F2F0EB);
+  cursor: pointer;
+}
+.check-item input { width: 18px; height: 18px; margin-top: 2px; accent-color: var(--blue, #2F5BEA); }
+
+/* -- Warm-up card on the Desk ------------------------------------------ */
+.warmup-card { margin-bottom: 26px; position: relative; }
+.warmup-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* -- Avatar upload ------------------------------------------------------ */
+.av-opt.upload {
+  border: 2px dashed var(--ink-soft, #b9b7b0);
+  border-radius: 14px;
+  width: 64px;
+  height: 64px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background: transparent;
+}
+.av-opt.upload:hover, .av-opt.upload.on { border-color: var(--blue, #2F5BEA); }
+.av-opt.upload.has-photo .av-upload-ink { display: none; }
+.av-upload-ink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--ink, #141414);
+}
+.av-upload-ink small { font-size: .62rem; font-family: var(--font-body); margin-top: 2px; }
+.av-opt.upload #ob-upload-thumb, .av-opt.upload #av-upload-thumb { border-radius: 12px; }
+
+/* -- My Shelf ------------------------------------------------------------ */
+.shelf-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1.5px solid var(--ink-soft, #b9b7b0);
+  border-radius: 10px;
+  background: var(--paper, #F2F0EB);
+}
+.shelf-item .btn-row { margin-left: auto; }
+
+/* -- Misc ---------------------------------------------------------------- */
+.streak-row { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.sticker-row .sticker.flame { display: inline-flex; align-items: center; gap: 6px; }
+.sticker.flame svg { width: 16px; height: 16px; fill: currentColor; }
+.sticker.flame.lit { color: #b4471f; background: #FBDCC8; }
+.sticker.flame.cold { color: #6f6e69; background: #ecebe6; }
+.sticker.flame b { font-family: var(--font-pixel, monospace); }

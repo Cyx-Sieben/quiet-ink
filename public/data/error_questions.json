@@ -1,0 +1,752 @@
+[
+  {
+    "id": "e001",
+    "sentence": "She have been working here since March.",
+    "options": [
+      "She has been working here since March.",
+      "She have worked here since March.",
+      "She been working here since March.",
+      "She has been work here since March."
+    ],
+    "answer": "She has been working here since March.",
+    "error": "have → has",
+    "explanation": "With he, she or it, use 'has', not 'have'. 'She has been working' is the correct present perfect continuous.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e002",
+    "sentence": "I am agree with your opinion.",
+    "options": [
+      "I agree with your opinion.",
+      "I am agreeing with your opinion.",
+      "I am agree to your opinion.",
+      "I agreed with your opinion yesterday."
+    ],
+    "answer": "I agree with your opinion.",
+    "error": "remove 'am'",
+    "explanation": "'Agree' is a verb, not an adjective, so it does not need 'am'. Say 'I agree', never 'I am agree'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e003",
+    "sentence": "He don't like spicy food.",
+    "options": [
+      "He doesn't like spicy food.",
+      "He don't likes spicy food.",
+      "He not like spicy food.",
+      "He didn't liked spicy food."
+    ],
+    "answer": "He doesn't like spicy food.",
+    "error": "don't → doesn't",
+    "explanation": "With he, she or it, the negative of the present simple is 'doesn't', not 'don't'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e004",
+    "sentence": "They is going to the market later.",
+    "options": [
+      "They are going to the market later.",
+      "They be going to the market later.",
+      "They going to the market later.",
+      "They is go to the market later."
+    ],
+    "answer": "They are going to the market later.",
+    "error": "is → are",
+    "explanation": "'They' is plural, so the verb must be 'are'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e005",
+    "sentence": "I went to the store and buy some eggs.",
+    "options": [
+      "I went to the store and bought some eggs.",
+      "I go to the store and bought some eggs.",
+      "I went to the store and buying some eggs.",
+      "I gone to the store and buy some eggs."
+    ],
+    "answer": "I went to the store and bought some eggs.",
+    "error": "buy → bought",
+    "explanation": "When two actions happened in the past in one sentence, keep the tense consistent: 'went' and 'bought'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e006",
+    "sentence": "She is very good in mathematics.",
+    "options": [
+      "She is very good at mathematics.",
+      "She is very good on mathematics.",
+      "She is very good with mathematics.",
+      "She is very good to mathematics."
+    ],
+    "answer": "She is very good at mathematics.",
+    "error": "in → at",
+    "explanation": "The fixed phrase is 'good at' a subject or skill. Compare 'good in bed', 'good for you' — different prepositions change the meaning entirely.",
+    "category": "prepositions",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e007",
+    "sentence": "My father is a honest man.",
+    "options": [
+      "My father is an honest man.",
+      "My father is a honestly man.",
+      "My father is the honest man.",
+      "My father is an honestly man."
+    ],
+    "answer": "My father is an honest man.",
+    "error": "a → an",
+    "explanation": "Use 'an' before a vowel SOUND, not just a vowel letter. 'Honest' starts with a silent 'h', so the first sound is a vowel.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e008",
+    "sentence": "We discussed about the plan yesterday.",
+    "options": [
+      "We discussed the plan yesterday.",
+      "We discussed on the plan yesterday.",
+      "We discussed for the plan yesterday.",
+      "We were discussed the plan yesterday."
+    ],
+    "answer": "We discussed the plan yesterday.",
+    "error": "remove 'about'",
+    "explanation": "'Discuss' already includes the idea of 'about' — you discuss something, not discuss about something. ('Talk about' is fine.)",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e009",
+    "sentence": "The weather is more better today.",
+    "options": [
+      "The weather is better today.",
+      "The weather is more good today.",
+      "The weather is most better today.",
+      "The weather is much more better today."
+    ],
+    "answer": "The weather is better today.",
+    "error": "remove 'more'",
+    "explanation": "'Better' is already a comparative, so 'more better' doubles it up. You can say 'much better' to strengthen it.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e010",
+    "sentence": "I look forward to meet you next week.",
+    "options": [
+      "I look forward to meeting you next week.",
+      "I look forward to meet you soon.",
+      "I am look forward to meeting you next week.",
+      "I looking forward to meet you next week."
+    ],
+    "answer": "I look forward to meeting you next week.",
+    "error": "meet → meeting",
+    "explanation": "After the preposition 'to' in 'look forward to', use the -ing form: 'look forward to meeting'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e011",
+    "sentence": "There is many reasons to learn English.",
+    "options": [
+      "There are many reasons to learn English.",
+      "There is much reasons to learn English.",
+      "There are much reasons to learn English.",
+      "There be many reasons to learn English."
+    ],
+    "answer": "There are many reasons to learn English.",
+    "error": "is → are",
+    "explanation": "'Reasons' is plural, so 'there are' is needed. Match the verb to the noun that follows it.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e012",
+    "sentence": "She said me that she was tired.",
+    "options": [
+      "She told me that she was tired.",
+      "She said to that she was tired.",
+      "She told to me that she was tired.",
+      "She say me that she was tired."
+    ],
+    "answer": "She told me that she was tired.",
+    "error": "said me → told me",
+    "explanation": "You 'tell someone' but 'say something to someone'. 'She said me' is wrong; either 'She told me' or 'She said to me' works.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e013",
+    "sentence": "I am living here since 2015.",
+    "options": [
+      "I have been living here since 2015.",
+      "I am live here since 2015.",
+      "I lived here since 2015 being now.",
+      "I am living here for 2015."
+    ],
+    "answer": "I have been living here since 2015.",
+    "error": "am living → have been living",
+    "explanation": "For something that started in the past and continues now, use the present perfect (continuous): 'I have been living here since 2015'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e014",
+    "sentence": "He suggested me to take a rest.",
+    "options": [
+      "He suggested that I take a rest.",
+      "He suggested me take a rest.",
+      "He suggested me a rest to take.",
+      "He suggested to me take a rest."
+    ],
+    "answer": "He suggested that I take a rest.",
+    "error": "suggested me to → suggested that I",
+    "explanation": "'Suggest' never takes the pattern 'suggest someone to do'. Use 'suggest that someone do something' or 'suggest doing something'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e015",
+    "sentence": "Despite of the rain, we enjoyed the trip.",
+    "options": [
+      "Despite the rain, we enjoyed the trip.",
+      "Despite of the rain, we enjoy the trip.",
+      "Despite the rain, we have enjoyed the trip.",
+      "In despite of the rain, we enjoyed the trip."
+    ],
+    "answer": "Despite the rain, we enjoyed the trip.",
+    "error": "remove 'of'",
+    "explanation": "'Despite' never takes 'of'. 'In spite of' does. So: 'Despite the rain' or 'In spite of the rain'.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e016",
+    "sentence": "If I would have known, I would have come earlier.",
+    "options": [
+      "If I had known, I would have come earlier.",
+      "If I would know, I would have come earlier.",
+      "If I have known, I would come earlier.",
+      "If I had known, I would come earlier."
+    ],
+    "answer": "If I had known, I would have come earlier.",
+    "error": "would have → had",
+    "explanation": "In the if-clause of a third conditional, use the past perfect ('had known'), never 'would have'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e017",
+    "sentence": "The teacher gave us many homeworks.",
+    "options": [
+      "The teacher gave us a lot of homework.",
+      "The teacher gave us many homework.",
+      "The teacher gave us much homeworks.",
+      "The teacher gave us a homework."
+    ],
+    "answer": "The teacher gave us a lot of homework.",
+    "error": "many homeworks → a lot of homework",
+    "explanation": "'Homework' is uncountable, so it has no plural and never takes 'many'. Use 'a lot of homework' or 'much homework'.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e018",
+    "sentence": "I go to home after work every day.",
+    "options": [
+      "I go home after work every day.",
+      "I go to house after work every day.",
+      "I went to home after work every day.",
+      "I go at home after work every day."
+    ],
+    "answer": "I go home after work every day.",
+    "error": "remove 'to'",
+    "explanation": "'Home' works as an adverb in this phrase, so no preposition is needed: 'go home', not 'go to home'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e019",
+    "sentence": "She is married with a doctor.",
+    "options": [
+      "She is married to a doctor.",
+      "She is married of a doctor.",
+      "She married with a doctor.",
+      "She is marry to a doctor."
+    ],
+    "answer": "She is married to a doctor.",
+    "error": "with → to",
+    "explanation": "The correct preposition after 'married' is 'to': 'married to someone'.",
+    "category": "prepositions",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e020",
+    "sentence": "I did not went to the party last night.",
+    "options": [
+      "I did not go to the party last night.",
+      "I did not gone to the party last night.",
+      "I not went to the party last night.",
+      "I do not went to the party last night."
+    ],
+    "answer": "I did not go to the party last night.",
+    "error": "went → go",
+    "explanation": "After 'did' or 'did not', always use the base form of the verb: 'did not go'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e021",
+    "sentence": "Each of the students have a laptop.",
+    "options": [
+      "Each of the students has a laptop.",
+      "Each of the students have laptops.",
+      "Each of the student have a laptop.",
+      "Each the students has a laptop."
+    ],
+    "answer": "Each of the students has a laptop.",
+    "error": "have → has",
+    "explanation": "'Each' is always singular, so it takes 'has'. This is a very common trap because 'students' sits nearby.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e022",
+    "sentence": "She explained me the problem.",
+    "options": [
+      "She explained the problem to me.",
+      "She explained to me the problem slowly.",
+      "She explained me about the problem.",
+      "She explain the problem to me."
+    ],
+    "answer": "She explained the problem to me.",
+    "error": "explained me → explained the problem to me",
+    "explanation": "'Explain' does not take an indirect object. You cannot 'explain someone something' — you explain something TO someone.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e023",
+    "sentence": "I have seen him yesterday at the library.",
+    "options": [
+      "I saw him yesterday at the library.",
+      "I have saw him yesterday at the library.",
+      "I see him yesterday at the library.",
+      "I had seen him yesterday at the library."
+    ],
+    "answer": "I saw him yesterday at the library.",
+    "error": "have seen → saw",
+    "explanation": "The present perfect ('have seen') is never used with a finished past time like 'yesterday'. Use the simple past: 'saw'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e024",
+    "sentence": "Neither the manager nor the workers was informed.",
+    "options": [
+      "Neither the manager nor the workers were informed.",
+      "Neither the manager nor the workers is informed.",
+      "Neither the manager or the workers was informed.",
+      "Neither the manager nor the workers be informed."
+    ],
+    "answer": "Neither the manager nor the workers were informed.",
+    "error": "was → were",
+    "explanation": "With 'neither ... nor', the verb agrees with the nearest subject. 'Workers' is plural, so 'were' is correct.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e025",
+    "sentence": "He is capable to solve this problem.",
+    "options": [
+      "He is capable of solving this problem.",
+      "He is capable to solving this problem.",
+      "He is capable solve this problem.",
+      "He is capable for solving this problem."
+    ],
+    "answer": "He is capable of solving this problem.",
+    "error": "capable to → capable of",
+    "explanation": "The phrase is 'capable of doing' something. Compare 'able to do', which looks similar but takes 'to'.",
+    "category": "prepositions",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e026",
+    "sentence": "This book is more interesting than that one is.",
+    "options": [
+      "This book is more interesting than that one.",
+      "This book is more interesting that that one.",
+      "This book is much interesting than that one.",
+      "This book is interestinger than that one."
+    ],
+    "answer": "This book is more interesting than that one.",
+    "error": "remove trailing 'is'",
+    "explanation": "In modern English, drop the final verb after 'than' when comparing two things directly: 'than that one', not 'than that one is'.",
+    "category": "style",
+    "difficulty": "hard"
+  },
+  {
+    "id": "e027",
+    "sentence": "Hardly he had entered the room when the phone rang.",
+    "options": [
+      "Hardly had he entered the room when the phone rang.",
+      "Hardly he entered the room when the phone had rang.",
+      "Hardly did he enter the room when the phone rang.",
+      "Hardly he has entered the room when the phone rang."
+    ],
+    "answer": "Hardly had he entered the room when the phone rang.",
+    "error": "Hardly he had → Hardly had he",
+    "explanation": "When 'hardly', 'scarcely' or 'no sooner' starts the sentence, the subject and auxiliary verb swap places: 'Hardly HAD he entered'.",
+    "category": "grammar",
+    "difficulty": "hard"
+  },
+  {
+    "id": "e028",
+    "sentence": "The number of students are increasing every year.",
+    "options": [
+      "The number of students is increasing every year.",
+      "The number of students are increase every year.",
+      "A number of students is increasing every year.",
+      "The numbers of students are increasing every year."
+    ],
+    "answer": "The number of students is increasing every year.",
+    "error": "are → is",
+    "explanation": "'The number of' is treated as singular ('is'), while 'a number of' means 'many' and takes a plural verb. This classic trap appears in exams constantly.",
+    "category": "grammar",
+    "difficulty": "hard"
+  },
+  {
+    "id": "e029",
+    "sentence": "I would rather you don't tell anyone about this.",
+    "options": [
+      "I would rather you didn't tell anyone about this.",
+      "I would rather you not tell anyone about this.",
+      "I would rather you don't told anyone about this.",
+      "I would rather you won't tell anyone about this."
+    ],
+    "answer": "I would rather you didn't tell anyone about this.",
+    "error": "don't → didn't",
+    "explanation": "After 'would rather' referring to another person, use the past tense: 'I would rather you didn't'.",
+    "category": "grammar",
+    "difficulty": "hard"
+  },
+  {
+    "id": "e030",
+    "sentence": "He is one of the best player in the team.",
+    "options": [
+      "He is one of the best players in the team.",
+      "He is one of the best player of the team.",
+      "He is one of best players in the team.",
+      "He is the one of the best player in the team."
+    ],
+    "answer": "He is one of the best players in the team.",
+    "error": "player → players",
+    "explanation": "After 'one of the', the noun must be plural: 'one of the best players'. He is one member of a group of best players.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e031",
+    "sentence": "I look forward for your reply.",
+    "options": [
+      "I look forward to your reply.",
+      "I look forward at your reply.",
+      "I am looking forward for your reply.",
+      "I look forward on your reply."
+    ],
+    "answer": "I look forward to your reply.",
+    "error": "for → to",
+    "explanation": "'Look forward to' is a fixed phrase. It is one of the most useful email closings in formal English.",
+    "category": "prepositions",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e032",
+    "sentence": "She had better to see a doctor soon.",
+    "options": [
+      "She had better see a doctor soon.",
+      "She had better to seeing a doctor soon.",
+      "She would better see a doctor soon.",
+      "She has better see a doctor soon."
+    ],
+    "answer": "She had better see a doctor soon.",
+    "error": "remove 'to'",
+    "explanation": "'Had better' is followed directly by the base verb: 'had better see'. Despite the word 'had', it refers to advice about now or the future.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e033",
+    "sentence": "The concert was cancelled because the singer was sick, isn't it?",
+    "options": [
+      "The concert was cancelled because the singer was sick, wasn't it?",
+      "The concert was cancelled because the singer was sick, didn't it?",
+      "The concert was cancelled because the singer was sick, was it?",
+      "The concert was cancelled because the singer was sick, is it?"
+    ],
+    "answer": "The concert was cancelled because the singer was sick, wasn't it?",
+    "error": "isn't it → wasn't it",
+    "explanation": "A question tag matches the main verb in tense and polarity: 'was cancelled ... wasn't it?' Note that 'isn't it' is used very loosely in some dialects, but standard English requires the match.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e034",
+    "sentence": "I am boring in this class.",
+    "options": [
+      "I am bored in this class.",
+      "I am boring of this class.",
+      "I am boring from this class.",
+      "I feel boring in this class."
+    ],
+    "answer": "I am bored in this class.",
+    "error": "boring → bored",
+    "explanation": "'Bored' describes how you feel; 'boring' describes what causes the feeling. If you say 'I am boring', you are saying you are a dull person.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e035",
+    "sentence": "We have been waiting since two hours.",
+    "options": [
+      "We have been waiting for two hours.",
+      "We have been waiting from two hours.",
+      "We are waiting since two hours.",
+      "We have been waiting during two hours."
+    ],
+    "answer": "We have been waiting for two hours.",
+    "error": "since → for",
+    "explanation": "'For' goes with a length of time (two hours), 'since' with a starting point (since 3 p.m.).",
+    "category": "prepositions",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e036",
+    "sentence": "She didn't said anything during the meeting.",
+    "options": [
+      "She didn't say anything during the meeting.",
+      "She didn't says anything during the meeting.",
+      "She not said anything during the meeting.",
+      "She didn't speaking anything during the meeting."
+    ],
+    "answer": "She didn't say anything during the meeting.",
+    "error": "said → say",
+    "explanation": "After 'didn't', use the base form: 'didn't say'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e037",
+    "sentence": "It depends of the weather.",
+    "options": [
+      "It depends on the weather.",
+      "It depends to the weather.",
+      "It is depend on the weather.",
+      "It depends at the weather."
+    ],
+    "answer": "It depends on the weather.",
+    "error": "of → on",
+    "explanation": "The phrase is 'depend on'. 'Depends of' is a direct translation trap from several European languages.",
+    "category": "prepositions",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e038",
+    "sentence": "If it will rain tomorrow, we will cancel the picnic.",
+    "options": [
+      "If it rains tomorrow, we will cancel the picnic.",
+      "If it will rains tomorrow, we will cancel the picnic.",
+      "If it rain tomorrow, we would cancel the picnic.",
+      "If it rained tomorrow, we will cancel the picnic."
+    ],
+    "answer": "If it rains tomorrow, we will cancel the picnic.",
+    "error": "will rain → rains",
+    "explanation": "In a first conditional, the if-clause uses the present simple, never 'will'. The 'will' goes in the result clause.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e039",
+    "sentence": "She has been to Paris last summer.",
+    "options": [
+      "She went to Paris last summer.",
+      "She has gone to Paris last summer.",
+      "She has been to Paris on last summer.",
+      "She was being to Paris last summer."
+    ],
+    "answer": "She went to Paris last summer.",
+    "error": "has been → went",
+    "explanation": "A finished time expression like 'last summer' requires the simple past: 'went'. The present perfect needs an open time frame.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e040",
+    "sentence": "He is interested to learn about history.",
+    "options": [
+      "He is interested in learning about history.",
+      "He is interested to learning about history.",
+      "He is interested on learning about history.",
+      "He is interesting in learning about history."
+    ],
+    "answer": "He is interested in learning about history.",
+    "error": "interested to → interested in",
+    "explanation": "'Interested in' + -ing form is the correct pattern. A person is 'interested'; a book or topic is 'interesting'.",
+    "category": "prepositions",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e041",
+    "sentence": "The informations you gave me were very useful.",
+    "options": [
+      "The information you gave me was very useful.",
+      "The informations you gave me was very useful.",
+      "The information you gave me were very useful.",
+      "The informations you gave me were very useful."
+    ],
+    "answer": "The information you gave me was very useful.",
+    "error": "informations / were → information / was",
+    "explanation": "'Information' is uncountable: no plural, and it takes a singular verb. The same goes for advice, news, research and luggage.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e042",
+    "sentence": "I forgot my phone in the office.",
+    "options": [
+      "I left my phone in the office.",
+      "I forget my phone in the office.",
+      "I forgotten my phone in the office.",
+      "I was forgetting my phone in the office."
+    ],
+    "answer": "I left my phone in the office.",
+    "error": "forgot → left",
+    "explanation": "For leaving something behind in a place, English uses 'left', not 'forgot'. 'I forgot my phone' means you forgot that it exists.",
+    "category": "word choice",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e043",
+    "sentence": "She is used to wake up early.",
+    "options": [
+      "She is used to waking up early.",
+      "She used to waking up early.",
+      "She is use to wake up early.",
+      "She is used to wake up early every day."
+    ],
+    "answer": "She is used to waking up early.",
+    "error": "wake → waking",
+    "explanation": "'Be used to' means 'be accustomed to' and takes the -ing form. Compare 'used to wake up early', which describes a past habit and needs no 'be'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e044",
+    "sentence": "Although it was late, but we decided to continue.",
+    "options": [
+      "Although it was late, we decided to continue.",
+      "Although it was late, so we decided to continue.",
+      "Although it was late, however we decided to continue.",
+      "Although it was late, and we decided to continue."
+    ],
+    "answer": "Although it was late, we decided to continue.",
+    "error": "remove 'but'",
+    "explanation": "In English, one linking word is enough. 'Although' already does the job of 'but', so pairing them is a classic error in spoken and written English.",
+    "category": "style",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e045",
+    "sentence": "Can you borrow me your pen?",
+    "options": [
+      "Can you lend me your pen?",
+      "Can you borrow me your pencil?",
+      "Can you lent me your pen?",
+      "Can you loan me your pen for borrow?"
+    ],
+    "answer": "Can you lend me your pen?",
+    "error": "borrow → lend",
+    "explanation": "The owner 'lends'; the receiver 'borrows'. 'Borrow me' is wrong — you borrow FROM someone.",
+    "category": "word choice",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e046",
+    "sentence": "He speaks English more fluent than me.",
+    "options": [
+      "He speaks English more fluently than me.",
+      "He speaks English more fluent than I.",
+      "He speaks English fluenter than me.",
+      "He speaks English most fluently than me."
+    ],
+    "answer": "He speaks English more fluently than me.",
+    "error": "fluent → fluently",
+    "explanation": "You need an adverb to describe HOW he speaks, and adverbs are compared with 'more': 'more fluently'.",
+    "category": "grammar",
+    "difficulty": "medium"
+  },
+  {
+    "id": "e047",
+    "sentence": "One of my friend lives in Sabah.",
+    "options": [
+      "One of my friends lives in Sabah.",
+      "One of my friend live in Sabah.",
+      "One of my friends live in Sabah.",
+      "One my friends lives in Sabah."
+    ],
+    "answer": "One of my friends lives in Sabah.",
+    "error": "friend → friends",
+    "explanation": "After 'one of', use the plural ('friends'), but the verb stays singular because the subject is 'one': 'one of my friends lives'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e048",
+    "sentence": "I have finished the report yesterday evening.",
+    "options": [
+      "I finished the report yesterday evening.",
+      "I have finish the report yesterday evening.",
+      "I had finished the report yesterday evening.",
+      "I have been finishing the report yesterday evening."
+    ],
+    "answer": "I finished the report yesterday evening.",
+    "error": "have finished → finished",
+    "explanation": "'Yesterday evening' is finished past time, so the simple past is required. Present perfect needs open time like 'this week' or 'recently'.",
+    "category": "grammar",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e049",
+    "sentence": "The meeting is in Monday morning.",
+    "options": [
+      "The meeting is on Monday morning.",
+      "The meeting is at Monday morning.",
+      "The meeting is in Monday at morning.",
+      "The meeting is for Monday morning."
+    ],
+    "answer": "The meeting is on Monday morning.",
+    "error": "in → on",
+    "explanation": "Days and dates take 'on' (on Monday), months and years take 'in' (in May), and clock times take 'at' (at 9 a.m.).",
+    "category": "prepositions",
+    "difficulty": "easy"
+  },
+  {
+    "id": "e050",
+    "sentence": "Everybody in this class speak English very well.",
+    "options": [
+      "Everybody in this class speaks English very well.",
+      "Everybody in this class speaking English very well.",
+      "Everybody in this class are speaking English very well.",
+      "Everybody in this class speak English very good."
+    ],
+    "answer": "Everybody in this class speaks English very well.",
+    "error": "speak → speaks",
+    "explanation": "'Everybody', 'everyone', 'nobody' and 'someone' are grammatically singular and take -s on the verb.",
+    "category": "grammar",
+    "difficulty": "easy"
+  }
+]

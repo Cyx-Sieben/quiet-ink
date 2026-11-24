@@ -1,0 +1,632 @@
+[
+  {
+    "id": "p001",
+    "title": "Break the ice",
+    "field": "Social English",
+    "family": "Ice idioms",
+    "what": [
+      "To break the ice is to say or do something that removes the awkward tension when people first meet, so conversation can start flowing.",
+      "An icebreaker is the question or activity used to do it, and if the mood stays easy you might say the ice is well and truly broken."
+    ],
+    "origin": "The phrase comes from ships. Special vessels called icebreakers were built to smash paths through frozen harbours and sea ice so other ships could pass. The metaphor of 'opening a blocked path' for conversation was first recorded in English in the 16th century, in Sir Thomas North's translation of Plutarch, where a witty remark 'breaketh the ice' for strangers.",
+    "usage": [
+      "Tone: neutral and friendly; perfectly safe in work meetings and social settings.",
+      "The verb form is very common: 'He broke the ice by joking about the weather.'",
+      "Avoid mixing it with 'cut the ice', which is not idiomatic."
+    ],
+    "examples": [
+      "The facilitator broke the ice by asking everyone to share their worst haircut story.",
+      "It's awkward to break the ice in a new class, but a simple 'hi' usually does it.",
+      "She is great at breaking the ice — within two minutes everyone was laughing."
+    ]
+  },
+  {
+    "id": "p002",
+    "title": "Once in a blue moon",
+    "field": "Frequency expressions",
+    "family": "Moon idioms",
+    "what": [
+      "Once in a blue moon means very rarely; almost never.",
+      "It answers 'how often?' — so 'I see them once in a blue moon' means the visits are rare, not regular."
+    ],
+    "origin": "A blue moon is the second full moon in a calendar month, an event that happens roughly every two and a half years. The moon very occasionally does appear bluish — after major volcanic eruptions scattered ash in the atmosphere — and a 1883 eruption of Krakatoa made 'blue moon' a byword for something rare indeed. The modern meaning of 'rarely' was cemented by the 1930s.",
+    "usage": [
+      "Tone: informal to neutral; common in speech and writing.",
+      "It only fits rare events. Do not use it for things that never happen — say 'never' instead.",
+      "Often paired with tenses of habit: 'We used to meet weekly, but now it's once in a blue moon.'"
+    ],
+    "examples": [
+      "He only cooks once in a blue moon, so tonight's dinner was a real treat.",
+      "Once in a blue moon the committee approves a request on the first try.",
+      "I clean my desk once in a blue moon, and today was one of those days."
+    ]
+  },
+  {
+    "id": "p003",
+    "title": "The ball is in your court",
+    "field": "Negotiation and decisions",
+    "family": "Sports metaphors",
+    "what": [
+      "The ball is in your court means it is now your turn to decide or act; the next move belongs to you.",
+      "You typically say it after you have done your part and are waiting for a response."
+    ],
+    "origin": "From tennis and other net sports, where play alternates between courts and the player receiving the ball must hit it back. It crossed from sport into business English in the 20th century and is now a staple of polite follow-up emails.",
+    "usage": [
+      "Tone: neutral; works in professional emails without sounding aggressive.",
+      "It implies you have finished your part — don't use it when you still owe an answer yourself.",
+      "Do not say 'the ball is on your court'; the fixed preposition is 'in'."
+    ],
+    "examples": [
+      "I've sent the revised draft, so the ball is in their court now.",
+      "We made a fair offer — the ball is in your court.",
+      "She hasn't replied to the invitation; the ball is in her court."
+    ]
+  },
+  {
+    "id": "p004",
+    "title": "Bite the bullet",
+    "field": "Courage and difficulty",
+    "family": "Battle metaphors",
+    "what": [
+      "To bite the bullet is to accept something unpleasant that you cannot avoid, and go through with it.",
+      "The emphasis is on bracing yourself and enduring, not on the pain being extreme."
+    ],
+    "origin": "In the days before effective battlefield anaesthesia, wounded soldiers were given a bullet to clench between their teeth during surgery, both to keep them quiet and to give them something to bite down on. Rudyard Kipling used the phrase in 1891, and it spread as the image of stoically facing hardship.",
+    "usage": [
+      "Tone: neutral, slightly informal; fine in most conversations.",
+      "Usually followed by the hard action: 'bite the bullet and apologise'.",
+      "It describes enduring, not complaining — 'stop biting the bullet' is not idiomatic."
+    ],
+    "examples": [
+      "I finally bit the bullet and asked my boss for a raise.",
+      "If the pain continues, you'll have to bite the bullet and see a dentist.",
+      "She bit the bullet, deleted the games from her phone, and started revising."
+    ]
+  },
+  {
+    "id": "p005",
+    "title": "Cost an arm and a leg",
+    "field": "Money expressions",
+    "family": "Body-part idioms",
+    "what": [
+      "If something costs an arm and a leg, it is extremely expensive.",
+      "The variant 'pay an arm and a leg' is used when focusing on the buyer's sacrifice."
+    ],
+    "origin": "Its explosive popularity in mid-20th-century America is often linked to post-war portrait photography: painters charged more for full-body portraits ('including arms and legs') than for head-and-shoulders ones. The phrase itself seems to have emerged around WWII, with one theory tying it to soldiers who literally paid arms and legs in war.",
+    "usage": [
+      "Tone: informal; strong and vivid, best for casual speech or colourful writing.",
+      "Use it for prices that shock you, not merely above-average ones.",
+      "In formal writing, replace with 'extremely expensive' or 'prohibitively costly'."
+    ],
+    "examples": [
+      "Tickets to the final cost an arm and a leg, but it was worth every sen.",
+      "Repairing the gearbox cost us an arm and a leg.",
+      "Eating out every night will cost you an arm and a leg by the end of the month."
+    ]
+  },
+  {
+    "id": "p006",
+    "title": "Under the weather",
+    "field": "Health and wellbeing",
+    "family": "Weather idioms",
+    "what": [
+      "To feel under the weather is to feel slightly ill or unwell, usually not seriously.",
+      "It is a soft, polite way to say you are not at your best — often used at work."
+    ],
+    "origin": "Sailors who felt seasick were sent below deck, out of the weather, to recover — literally 'under the weather' deck or, in another account, under the weather rail. The phrase entered shore-side English in the 19th century as a gentle euphemism for feeling ill.",
+    "usage": [
+      "Tone: neutral; standard and acceptable everywhere, including emails to a boss.",
+      "It implies mild illness; for anything serious, describe it directly.",
+      "British speakers often drop the article: 'feeling a bit under the weather'."
+    ],
+    "examples": [
+      "I'm feeling a bit under the weather, so I'll work from home today.",
+      "She was under the weather all week, but she's recovering now.",
+      "You look under the weather — should I get you some water?"
+    ]
+  },
+  {
+    "id": "p007",
+    "title": "Spill the beans",
+    "field": "Secrets and honesty",
+    "family": "Food idioms",
+    "what": [
+      "To spill the beans is to reveal a secret, often accidentally or after pressure.",
+      "The spill is the betrayal of the secret; it does not mean merely discussing plans openly."
+    ],
+    "origin": "An old voting method used in ancient Greece, according to popular accounts: voters dropped white beans for yes and black for no into a jar, and if the jar tipped over, the result was revealed before the count — the beans were spilled. The phrase in its modern American sense dates to the early 1900s.",
+    "usage": [
+      "Tone: informal; playful, not for solemn or formal contexts.",
+      "Works with both secrets and surprises: 'He spilled the beans about the party.'",
+      "The British alternative 'let the cat out of the bag' means the same thing."
+    ],
+    "examples": [
+      "Don't spill the beans about the surprise — she has no idea.",
+      "Under questioning, the suspect spilled the beans about the plan.",
+      "My little brother spilled the beans that we were moving to Johor."
+    ]
+  },
+  {
+    "id": "p008",
+    "title": "On the fence",
+    "field": "Decisions and opinions",
+    "family": "Position idioms",
+    "what": [
+      "To sit or be on the fence is to avoid committing to either side of a decision or argument.",
+      "Sitting on the fence is usually temporary; the goal is eventually to come down on one side."
+    ],
+    "origin": "From the image of straddling a fence between two properties or two fields — belonging to neither. It appears in American political language from the 1820s, describing voters who refused to declare for either party.",
+    "usage": [
+      "Tone: neutral; common in both casual and workplace discussion.",
+      "Often with 'sit', 'stay' or 'come down': 'Stop sitting on the fence and choose.'",
+      "The fence-sitter is the undecided person: a useful word for meetings."
+    ],
+    "examples": [
+      "I'm still on the fence about the new design — I like parts of both options.",
+      "Two members are on the fence, so the vote could go either way.",
+      "She came down off the fence and finally supported the proposal."
+    ]
+  },
+  {
+    "id": "p009",
+    "title": "Beat around the bush",
+    "field": "Communication style",
+    "family": "Hunting idioms",
+    "what": [
+      "To beat around the bush (British: about) is to avoid the main point, talking around a difficult subject instead of addressing it.",
+      "The direct opposite is 'get to the point' or 'stop beating around the bush'."
+    ],
+    "origin": "Medieval hunters hired beaters to strike bushes with sticks, flushing hidden birds out into the open where the nobles could catch them — a task separate from, and preliminary to, the actual hunt. To beat ONLY around the bush was to do the preliminary noise-making and never get to the real business. The metaphor has been used since the 15th century.",
+    "usage": [
+      "Tone: informal to neutral; recognisable everywhere.",
+      "Almost always used negatively or impatiently: 'Stop beating around the bush.'",
+      "It describes evasion, not politeness — softening language is different from avoiding the point."
+    ],
+    "examples": [
+      "Stop beating around the bush and tell me what you really think.",
+      "He beat around the bush for ten minutes before admitting the mistake.",
+      "She doesn't beat around the bush — her feedback is clear and immediate."
+    ]
+  },
+  {
+    "id": "p010",
+    "title": "A blessing in disguise",
+    "field": "Fortune and misfortune",
+    "family": "Disguise idioms",
+    "what": [
+      "A blessing in disguise is something that looks like bad luck at first but turns out to be good for you.",
+      "The phrase is almost always used in hindsight, after the hidden benefit has appeared."
+    ],
+    "origin": "It grew out of a 17th-century literary tradition of personifying Fortune or Providence dressing blessings in ugly clothes — the earliest clear form appearing in James Hervey's 1738 hymn 'Since all the downward tracts of time', which speaks of blessings in the 'garb' of hardship. Over time the garment became a disguise.",
+    "usage": [
+      "Tone: neutral; equally at home in speech and reflective writing.",
+      "The article 'a' is needed: 'it was a blessing in disguise'.",
+      "Pairs beautifully with narrative arcs: losing the job, meeting the right people afterwards."
+    ],
+    "examples": [
+      "Missing that flight was a blessing in disguise — we met our oldest friend in the airport.",
+      "The restaurant closing was a blessing in disguise; it pushed her to start her own catering business.",
+      "Failing the first interview was a blessing in disguise for him."
+    ]
+  },
+  {
+    "id": "p011",
+    "title": "Burn the midnight oil",
+    "field": "Work and study",
+    "family": "Lamp idioms",
+    "what": [
+      "To burn the midnight oil is to work or study late into the night.",
+      "It describes intentional late effort, not just being awake — lying awake at 2 a.m. doesn't count."
+    ],
+    "origin": "Before electricity, lamps and candles burned lamp-oil. Working after dark literally meant burning more oil than your neighbours. The phrase was popularised in English in the 1630s, and in 1816 the Irish poet Thomas Moore even wrote a song titled 'The Midnight Oil' praising the scholar's lamp.",
+    "usage": [
+      "Tone: neutral to slightly literary; fine in professional contexts.",
+      "Often used with study or deadlines: 'burning the midnight oil before exams'.",
+      "It carries a note of admiration for effort, or a warning of overwork, depending on tone."
+    ],
+    "examples": [
+      "The team burned the midnight oil to ship the release on time.",
+      "I burned the midnight oil for a week straight and still nearly missed the deadline.",
+      "Medical students know all about burning the midnight oil."
+    ]
+  },
+  {
+    "id": "p012",
+    "title": "Give someone the benefit of the doubt",
+    "field": "Trust and judgement",
+    "family": "Legal idioms",
+    "what": [
+      "To give someone the benefit of the doubt is to choose to believe them, or think well of them, when you cannot be sure of the truth.",
+      "It acknowledges genuine uncertainty — it is not the same as believing someone you know is lying."
+    ],
+    "origin": "From criminal law, where a defendant is presumed innocent unless proven guilty — 'the benefit' of any unresolved 'doubt' belongs to the accused. The legal habit of mind moved into everyday fairness about a person's intentions.",
+    "usage": [
+      "Tone: neutral; works in serious and light contexts alike.",
+      "Always 'the doubt', never 'a doubt': the doubt refers to the specific uncertainty at hand.",
+      "Common in relationships and workplaces: trust extended before proof exists."
+    ],
+    "examples": [
+      "She was late, but I gave her the benefit of the doubt — the traffic today is terrible.",
+      "The referee gave the striker the benefit of the doubt and awarded the goal.",
+      "I'll give him the benefit of the doubt this once, but next time I want proof."
+    ]
+  },
+  {
+    "id": "p013",
+    "title": "Hit the nail on the head",
+    "field": "Accuracy and insight",
+    "family": "Carpentry idioms",
+    "what": [
+      "To hit the nail on the head is to describe a situation or problem exactly right, with perfect precision.",
+      "It is high praise for an observation, not just for any correct answer."
+    ],
+    "origin": "Straight from carpentry: a blow on the nail's head drives it in perfectly, while glancing strikes bend it and damage the wood. The metaphor has been used in English since at least the 15th century, appearing in print as early as 1438.",
+    "usage": [
+      "Tone: neutral; appropriate in meetings and essays.",
+      "You can also say someone's criticism or analysis 'hit the nail on the head'.",
+      "Keep 'the' before 'nail': 'hit the nail on the head', never 'hit a nail'."
+    ],
+    "examples": [
+      "You hit the nail on the head — the real problem is our pricing, not the ads.",
+      "Her assessment of the market hit the nail on the head.",
+      "When he said we were overthinking it, he hit the nail on the head."
+    ]
+  },
+  {
+    "id": "p014",
+    "title": "Let sleeping dogs lie",
+    "field": "Conflict and caution",
+    "family": "Animal idioms",
+    "what": [
+      "To let sleeping dogs lie is to avoid restarting an old argument or problem that has quieted down.",
+      "The advice is usually wise: waking the 'dog' brings fresh trouble for no good reason."
+    ],
+    "origin": "It descends from the medieval French proverb 'n'esveillez pas le chien qui dort' — 'do not wake the sleeping dog' — which English adopted by the 13th century. Chaucer uses a version of it in Troilus and Criseyde (1374). The underlying logic, that disturbing a dormant danger invites it to bite, needed no explanation then or now.",
+    "usage": [
+      "Tone: neutral, slightly proverbial; often used as friendly advice.",
+      "It applies to settled conflicts, not ongoing ones you are avoiding out of fear.",
+      "Frequently shortened in speech: 'Maybe just let sleeping dogs lie.'"
+    ],
+    "examples": [
+      "Don't bring up the old disagreement at dinner — let sleeping dogs lie.",
+      "I thought about complaining about last year's roster, then decided to let sleeping dogs lie.",
+      "The manager let sleeping dogs lie rather than reopen the debate."
+    ]
+  },
+  {
+    "id": "p015",
+    "title": "The last straw",
+    "field": "Patience and limits",
+    "family": "Load idioms",
+    "what": [
+      "The last straw (full: the straw that broke the camel's back) is the final small burden that makes an already bad situation unbearable.",
+      "It is the trigger for an outburst, a resignation or a decision — the thing that came after too much."
+    ],
+    "origin": "The image is of loading a camel — an animal famous for carrying heavy burdens — until one extra, feather-light straw breaks its back. It derives from an Arabic proverb about overloading and appeared in English in the mid-1600s as 'the last feather breaks the horse's back' before settling on the camel in Thomas Hood's 1845 poetry.",
+    "usage": [
+      "Tone: neutral; extremely common in complaints and storytelling.",
+      "The 'last' matters: it presupposes earlier burdens. Use it for a sequence, not a single shock.",
+      "The idiom often completes a story: after listing everything, 'that was the last straw'."
+    ],
+    "examples": [
+      "The printer jamming again was the last straw — I finally bought a new one.",
+      "After months of unpaid overtime, the pay cut was the last straw and she resigned.",
+      "His lateness I could accept, but forgetting my birthday was the last straw."
+    ]
+  },
+  {
+    "id": "p016",
+    "title": "Read between the lines",
+    "field": "Communication and inference",
+    "family": "Reading idioms",
+    "what": [
+      "To read between the lines is to understand an unstated meaning — what someone implied but did not write or say.",
+      "The skill is spotting what the silence, the politeness or the careful wording is hiding."
+    ],
+    "origin": "The metaphor plays on lines of text: the meaning is not IN the lines but in the white space BETWEEN them. It became popular in the 19th century, at the same time as telegraphy, when some messages deliberately left things unsaid and readers had to infer the rest — an early form of diplomatic understatement.",
+    "usage": [
+      "Tone: neutral; useful in work, relationships and analysis.",
+      "It implies the writer chose NOT to say something — that's what makes it inference, not misunderstanding.",
+      "Perfect for emails: 'She said she was fine with the schedule, but reading between the lines...'"
+    ],
+    "examples": [
+      "Reading between the lines of his email, the project is in real trouble.",
+      "Her message just said 'ok' — but reading between the lines, she's upset.",
+      "Read between the lines: the silence from the client means the deal is dead."
+    ]
+  },
+  {
+    "id": "p017",
+    "title": "Cut corners",
+    "field": "Work and quality",
+    "family": "Driving idioms",
+    "what": [
+      "To cut corners is to do something the cheap or easy way, skipping proper steps and lowering quality.",
+      "Sometimes it's a smart efficiency — the idiom usually carries criticism."
+    ],
+    "origin": "From driving: to cut a corner is to turn across it rather than follow the road around the curve, saving distance but risking a crash. The driving sense arrived with motoring in the early 20th century; the extended meaning — skipping parts of a proper process — followed almost immediately.",
+    "usage": [
+      "Tone: informal to neutral; commonly critical but can be approving if quality truly doesn't matter.",
+      "Almost always plural: 'cut corners', not 'cut a corner' (the driving sense uses the singular).",
+      "Natural in work reviews: 'The wiring failed because the contractor cut corners.'"
+    ],
+    "examples": [
+      "Don't cut corners on the safety checks — the risk isn't worth the time saved.",
+      "They cut corners on materials, and the furniture fell apart within a year.",
+      "When you're just sketching ideas, cutting corners is fine; the final draft needs care."
+    ]
+  },
+  {
+    "id": "p018",
+    "title": "Get cold feet",
+    "field": "Nerves and commitment",
+    "family": "Temperature idioms",
+    "what": [
+      "To get cold feet is to suddenly lose the courage or confidence to do something you had planned.",
+      "It describes last-minute nerves before a commitment, not a general lack of bravery."
+    ],
+    "origin": "Money, not courage: the phrase first appears in Stephen Bishop's 1851 mining novel Life at the Mines, where men who lost their nerve — and their funds — to gamble were said to have 'cold feet' and could not 'stand up' to play. The chill-feet-equals-fear link may trace to an older Italian image, and the modern wedding-eve sense arrived by the 1890s.",
+    "usage": [
+      "Tone: neutral; light-hearted, never a serious insult.",
+      "Takes the get verb: 'got cold feet', 'getting cold feet'.",
+      "Most natural with big planned moments: weddings, launches, resignations, jumps."
+    ],
+    "examples": [
+      "He got cold feet the night before the wedding and called me at 2 a.m.",
+      "The company got cold feet and pulled out of the merger at the last minute.",
+      "I signed up for the marathon, then got cold feet when I saw the route."
+    ]
+  },
+  {
+    "id": "p019",
+    "title": "In hot water",
+    "field": "Trouble",
+    "family": "Temperature idioms",
+    "what": [
+      "To be in hot water is to be in trouble, especially the kind caused by your own actions.",
+      "It usually means trouble with an authority: a boss, a teacher, the law, a parent."
+    ],
+    "origin": "Being plunged into hot water is painful — and the phrase had a literal side in medieval Europe, where trial by hot water (plunging an arm into boiling water to test guilt) was an actual ordeal. The figurative meaning 'in trouble' was established in English by the 14th century via Chaucer's contemporary John Gower.",
+    "usage": [
+      "Tone: neutral to informal; safe almost everywhere.",
+      "Common patterns: 'get into hot water', 'land in hot water', 'in hot water with someone'.",
+      "Pairs naturally with 'over' + the offence: 'in hot water over the leaked memo'."
+    ],
+    "examples": [
+      "He landed in hot water with the teacher over the missing homework.",
+      "The minister is in hot water after those comments about the budget.",
+      "You'll be in hot water if your parents find out you skipped class."
+    ]
+  },
+  {
+    "id": "p020",
+    "title": "Throw in the towel",
+    "field": "Persistence",
+    "family": "Boxing idioms",
+    "what": [
+      "To throw in the towel is to give up, to admit you cannot win or continue.",
+      "It is a deliberate, visible act of surrender — not quietly drifting away."
+    ],
+    "origin": "Boxing: a fighter's cornerman would literally throw a towel or sponge into the ring to concede the match on his behalf, ending the fight before serious harm. The practice gave English its clearest metaphor for giving up, in use since the early 1900s.",
+    "usage": [
+      "Tone: informal to neutral; vivid and universally understood.",
+      "The British variant is 'chuck in the towel'; the meaning is identical.",
+      "Use it for real abandonment of effort — not for strategic pauses."
+    ],
+    "examples": [
+      "After five years of losses, the founders finally threw in the towel.",
+      "Don't throw in the towel yet — the data shows we're close to a breakthrough.",
+      "She refused to throw in the towel and retook the exam until she passed."
+    ]
+  },
+  {
+    "id": "p021",
+    "title": "A piece of cake",
+    "field": "Difficulty",
+    "family": "Food idioms",
+    "what": [
+      "If a task is a piece of cake, it is very easy — pleasant and requiring little effort.",
+      "The sibling expression 'that takes the cake' means something different: it's the most extreme example of something."
+    ],
+    "origin": "The trail is oddly humble: it likely grew out of the even older 'cakewalk', a 19th-century African-American dance contest where the most elegant couple won a cake — the walking itself was easy, graceful fun. British schoolboy slang of the 1900s sealed 'piece of cake' = easy victory, and RAF pilots spread it worldwide during WWII.",
+    "usage": [
+      "Tone: informal; friendly and relaxed.",
+      "Usually with the verb 'be': 'The exam was a piece of cake.'",
+      "You can also say something is 'cakewalk-easy' or 'not exactly a piece of cake' for the opposite."
+    ],
+    "examples": [
+      "Don't worry about the driving test — parallel parking is a piece of cake once you practise.",
+      "The interview was a piece of cake compared to the written round.",
+      "Learning hiragana was a piece of cake; kanji is another story."
+    ]
+  },
+  {
+    "id": "p022",
+    "title": "Steal someone's thunder",
+    "field": "Attention and credit",
+    "family": "Weather idioms",
+    "what": [
+      "To steal someone's thunder is to take the attention, praise or effect that belonged to them, usually by announcing or doing something first.",
+      "The victim of the theft feels upstaged — their moment deflated."
+    ],
+    "origin": "A rare idiom with a documented birth. In 1704, playwright John Dennis invented a new method of creating stage thunder for his play at the Drury Lane theatre, London. The play flopped and closed, but he later attended a production of Macbeth there and heard his own thunder machine being used. He is reported to have said, 'They will not let my play run, but they steal my thunder!' — and the phrase entered the language.",
+    "usage": [
+      "Tone: neutral; critical of the thief, sympathetic to the victim.",
+      "Metaphor stays whole: 'stole my thunder', 'stealing her thunder'.",
+      "Very common in announcements, launches and family news: the person who reveals your secret before you stole your thunder."
+    ],
+    "examples": [
+      "I was about to announce my engagement, but my sister stole my thunder by revealing hers first.",
+      "The junior analyst stole the director's thunder by presenting the findings before the meeting.",
+      "Don't steal her thunder — let her tell the team about the award herself."
+    ]
+  },
+  {
+    "id": "p023",
+    "title": "Barking up the wrong tree",
+    "field": "Mistakes and direction",
+    "family": "Hunting idioms",
+    "what": [
+      "To be barking up the wrong tree is to pursue a mistaken idea — blaming the wrong person, or looking in the wrong place.",
+      "It is said to the pursuer, usually to redirect their effort."
+    ],
+    "origin": "From raccoon hunting in 19th-century America. Raccoons were hunted with dogs at night; a 'treed' raccoon would climb and hide among branches, and dogs would bark at the base of the tree where they believed it sat. But raccoons cleverly leapt to neighbouring trees, leaving the dogs barking up the wrong tree. The metaphor was in general use by 1832.",
+    "usage": [
+      "Tone: neutral to informal; usable in professional diagnosis.",
+      "Most often in continuous: 'you're barking up the wrong tree'.",
+      "It corrects a specific suspicion or path — perfect for investigations and debugging."
+    ],
+    "examples": [
+      "If you think I leaked the memo, you're barking up the wrong tree.",
+      "The auditors were barking up the wrong tree — the error was in the software, not the accounts.",
+      "We spent weeks blaming the server, but we were barking up the wrong tree all along."
+    ]
+  },
+  {
+    "id": "p024",
+    "title": "Turn a blind eye",
+    "field": "Ethics and choice",
+    "family": "Body idioms",
+    "what": [
+      "To turn a blind eye is to deliberately ignore something you know is wrong or against the rules.",
+      "The blindness is chosen — you saw it, and decided not to act."
+    ],
+    "origin": " Admiral Horatio Nelson, blind in one eye, was sent a signal to withdraw at the Battle of Copenhagen (1801). He put his telescope to his blind eye, said he could see no such signal, and fought on to victory. Whether the story is fully true, it fixed 'turning a blind eye' as the phrase for wilful official non-enforcement.",
+    "usage": [
+      "Tone: neutral; serious register, used in journalism and ethics discussions.",
+      "Keep the adjective 'blind': 'turn a blind eye', not 'turn the blind eye' or 'close a blind eye'.",
+      "It implies knowledge and choice — different from simply not noticing."
+    ],
+    "examples": [
+      "The guard turned a blind eye while the staff used the side entrance.",
+      "Regulators turned a blind eye to the practice for years, and it grew into a scandal.",
+      "We can't keep turning a blind eye to the safety violations in the workshop."
+    ]
+  },
+  {
+    "id": "p025",
+    "title": "Rule of thumb",
+    "field": "Practical judgement",
+    "family": "Measurement idioms",
+    "what": [
+      "A rule of thumb is a practical, approximate method — not exact, but useful for quick judgement.",
+      "Rules of thumb trade precision for speed: good enough to guide, not to guarantee."
+    ],
+    "origin": "Thumb-widths were informal measures for centuries — an inch in many languages is named for a thumb. The English phrase itself first appears in a 1658 sermon about building. One popular but false story claims it came from an old law allowing a man to beat his wife with a stick no thicker than his thumb; this urban legend was attached to the phrase later and has been thoroughly debunked.",
+    "usage": [
+      "Tone: neutral; standard in technical and business speech.",
+      "Often introduced with 'as a rule of thumb' to flag approximation.",
+      "Use it when speed beats precision: estimates, sanity checks, cooking measurements."
+    ],
+    "examples": [
+      "As a rule of thumb, plan for ten minutes of revision per page of notes.",
+      "A good rule of thumb is to save one month's salary before investing.",
+      "By rule of thumb, if the queue is longer than the counter, open another lane."
+    ]
+  },
+  {
+    "id": "p026",
+    "title": "Water under the bridge",
+    "field": "Forgiveness and the past",
+    "family": "River idioms",
+    "what": [
+      "Water under the bridge describes past conflicts or mistakes that are now forgiven or no longer worth arguing about.",
+      "Saying it is a way of closing the subject with peace: the river has carried it away."
+    ],
+    "origin": "The image is of a river flowing past — anything dropped in it is swept beyond recovery. In an older form, 'a lot of water has passed under the bridge' simply meant a lot of time has gone by, a sense still current in British English; the specific forgiveness meaning solidified in the 20th century.",
+    "usage": [
+      "Tone: neutral; often warm, sometimes dismissive — context decides.",
+      "It must be the past: you cannot call an ongoing fight water under the bridge.",
+      "The American variant 'water over the dam' means the same thing."
+    ],
+    "examples": [
+      "Yes, we argued about it, but that's water under the bridge now.",
+      "Whatever happened between our families is water under the bridge.",
+      "He assumed last year's dispute was water under the bridge; she had not forgotten."
+    ]
+  },
+  {
+    "id": "p027",
+    "title": "Practice makes perfect",
+    "field": "Learning",
+    "family": "Proverbs",
+    "what": [
+      "Practice makes perfect is the proverb that repeated exercise of a skill leads to mastery.",
+      "It is encouragement: keep going, because each repetition builds ability."
+    ],
+    "origin": "The idea goes back to the Latin 'usus est magister optimus' — practice is the best teacher. In English it appears in the 1550s in a form closer to 'use makes perfectness', taking its modern shape by the 1600s. The variant 'practice makes the master', common in Spanish-speaking countries, is more forgiving of imperfection.",
+    "usage": [
+      "Tone: neutral; encouraging in classrooms, music, sports, languages.",
+      "Almost always quoted whole, often as reassurance after a mistake.",
+      "Pair it with the counter-truth 'perfect practice makes perfect' — sloppy repetition can also perfect mistakes."
+    ],
+    "examples": [
+      "I missed three shots, but my coach just said practice makes perfect.",
+      "Practice makes perfect: by the fifth essay, the structure felt natural.",
+      "She believes practice makes perfect, so she writes one page every single morning."
+    ]
+  },
+  {
+    "id": "p028",
+    "title": "Actions speak louder than words",
+    "field": "Trust and character",
+    "family": "Proverbs",
+    "what": [
+      "Actions speak louder than words: what people do reveals their true intentions more reliably than what they say.",
+      "It is the standard reply to big promises and fine speeches."
+    ],
+    "origin": "The sentiment is ancient — St. Anthony in the 3rd century is credited with 'let your words teach, but your actions speak' — and appears in English in various forms from the 1500s. Its modern, punchy wording took hold in 18th-century America, notably in a 1736 speech by a Boston politician who used it to expose hollow colonial promises.",
+    "usage": [
+      "Tone: neutral; quotable in essays, speeches and arguments.",
+      "It judges a gap between words and deeds — use it when talk and action diverge.",
+      "Often shortened to 'actions speak louder' in casual speech."
+    ],
+    "examples": [
+      "He promised to cut costs, and then flew first class — actions speak louder than words.",
+      "Don't tell me you care about the environment; show me. Actions speak louder than words.",
+      "Her team trusts her because she works the longest hours — actions speak louder than words."
+    ]
+  },
+  {
+    "id": "p029",
+    "title": "The elephant in the room",
+    "field": "Communication and avoidance",
+    "family": "Animal idioms",
+    "what": [
+      "The elephant in the room is an obvious, serious problem that everyone knows about but nobody wants to mention.",
+      "Addressing it — 'naming the elephant' — is usually the bravest move in the meeting."
+    ],
+    "origin": "In 1814 Ivan Krylov wrote a fable about a man who visits a museum and notices every tiny object but fails to see the elephant. The image of an elephant so huge nobody sees it became the Russian proverb 'the elephant in the room', crossed into English, and was popularised by a 1980s New York Times article about family silence over money troubles.",
+    "usage": [
+      "Tone: neutral; extremely common in business and therapy language.",
+      "It is always a KNOWN issue — the silence is mutual and strategic.",
+      "The fixed form is 'the elephant in the room', sometimes 'in the corner of the room'."
+    ],
+    "examples": [
+      "Everyone knows the product is failing, but nobody will name the elephant in the room.",
+      "Let's address the elephant in the room: our costs are 40 percent above target.",
+      "Her resignation was the elephant in the room at the farewell dinner."
+    ]
+  },
+  {
+    "id": "p030",
+    "title": "Call it a day",
+    "field": "Work and rest",
+    "family": "Time idioms",
+    "what": [
+      "To call it a day is to decide that you have done enough for now and will stop working.",
+      "It carries contentment — the day's work is complete, or complete enough."
+    ],
+    "origin": "A day's work in many trades was an agreed unit — when the day's quota was done, you 'called it a day', announced it as finished. The phrase spread from that labouring usage in the 19th century to all kinds of stopping, including relationships and failed projects.",
+    "usage": [
+      "Tone: neutral; friendly and professional.",
+      "It means stop for now, not necessarily forever — 'call it quits' is the permanent version.",
+      "Common at 5 p.m., after a good writing session, or when progress stalls."
+    ],
+    "examples": [
+      "We've fixed the last bug — let's call it a day.",
+      "I've been at this chapter since breakfast; I think I'll call it a day.",
+      "After trying for two years to keep the shop open, they finally called it a day."
+    ]
+  }
+]

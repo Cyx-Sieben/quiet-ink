@@ -7,7 +7,7 @@ import { esc, toast, errText, binderClip, timerHtml, setTimer, flameBadge } from
 import { now } from '../lib/clock.js';
 import { dayDate, nextWeek } from '../lib/week.js';
 import { FLIP_MS, POINTS, flipPoints, flipOptions, liveStreak } from '../lib/rules.js';
-import { saveWeek, addPoints, completePart, addToList } from '../lib/session.js';
+import { saveWeek, addPoints, completePart, addToList, recordCardResult } from '../lib/session.js';
 
 function head(S, topic, index, total) {
   return `
@@ -187,7 +187,10 @@ export async function renderFlipPlay(app, ctx) {
       document.getElementById('fcard').classList.add('flipped');
       lan.classList.add('swing');
     }, 650);
-    try { await saveWeek(); } catch (err) { toast(errText(err)); }
+    try {
+      await saveWeek();
+      await recordCardResult(flip.topic, i, correct);
+    } catch (err) { toast(errText(err)); }
   }));
 
   function tick() {
@@ -235,9 +238,11 @@ async function finishFlip(app, ctx, timedOut) {
           <span class="sticker ${ok ? 'blue' : 'red'}" style="float:right">${ok ? '✓ Correct' : a ? '✕ Wrong' : '✕ No answer'}</span>
           <h3>${esc(c.term)}</h3>
           <p style="margin:6px 0">${esc(c.meaning)}</p>
+          ${c.examples.map((ex) => `<p class="hand" style="font-size:1.25rem;margin:4px 0">${esc(ex)}</p>`).join('')}
         </article>`;
       }).join('')}
     </section>
+    <p class="on-cloth" style="margin-top:18px;font-size:.9rem">Cards you got wrong will come back in tomorrow's warm-up — and in <a href="#/topics/${flip.topic}" style="color:inherit">past topics</a> any time.</p>
     <div class="btn-row" style="margin-top:24px">
       <a class="btn" href="#/topics/${flip.topic}">Study the cards</a>
       <a class="btn ghost" href="#/">Back to desk</a>

@@ -1,0 +1,402 @@
+[
+  {
+    "id": "b001",
+    "instruction": "Build the sentence: a past habit that has stopped.",
+    "words": ["I", "used", "to", "play", "football", "every", "weekend"],
+    "answer": "I used to play football every weekend",
+    "explanation": "'Used to + verb' describes a habit that was true in the past but is not anymore.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b002",
+    "instruction": "Build the sentence: an action happening right now.",
+    "words": ["She", "is", "writing", "a", "letter", "to", "her", "grandmother"],
+    "answer": "She is writing a letter to her grandmother",
+    "explanation": "The present continuous (is + -ing) describes an action in progress at this moment.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b003",
+    "instruction": "Build the sentence: comparing two things that are equal.",
+    "words": ["This", "coffee", "is", "as", "strong", "as", "the", "one", "yesterday"],
+    "answer": "This coffee is as strong as the one yesterday",
+    "explanation": "'As + adjective + as' makes an equal comparison: 'as strong as'.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b004",
+    "instruction": "Build the sentence: something that has never happened to you.",
+    "words": ["I", "have", "never", "eaten", "durian", "ice", "cream"],
+    "answer": "I have never eaten durian ice cream",
+    "explanation": "'Have never + past participle' describes an experience that has not happened in your life so far.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b005",
+    "instruction": "Build the sentence: a polite request.",
+    "words": ["Could", "you", "open", "the", "window", "please"],
+    "answer": "Could you open the window please",
+    "explanation": "'Could you ...' is a polite request, softer than 'Can you ...'.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b006",
+    "instruction": "Build the sentence: a past action interrupted by another.",
+    "words": ["I", "was", "cooking", "dinner", "when", "the", "phone", "rang"],
+    "answer": "I was cooking dinner when the phone rang",
+    "explanation": "Past continuous (was cooking) for the longer background action, simple past (rang) for the interruption.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b007",
+    "instruction": "Build the sentence: an unreal wish about the present.",
+    "words": ["I", "wish", "I", "had", "more", "free", "time"],
+    "answer": "I wish I had more free time",
+    "explanation": "After 'I wish' about the present, use the past tense (had) to show the situation is unreal.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b008",
+    "instruction": "Build the sentence: something you regret about the past.",
+    "words": ["I", "should", "have", "studied", "harder", "for", "the", "exam"],
+    "answer": "I should have studied harder for the exam",
+    "explanation": "'Should have + past participle' expresses regret about something you did not do.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b009",
+    "instruction": "Build the sentence: a first conditional about tomorrow.",
+    "words": ["If", "it", "rains", "tomorrow", "we", "will", "stay", "home"],
+    "answer": "If it rains tomorrow we will stay home",
+    "explanation": "First conditional: present simple in the if-clause (rains), 'will' in the result clause.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b010",
+    "instruction": "Build the sentence: an imaginary situation about the future.",
+    "words": ["If", "I", "won", "the", "lottery", "I", "would", "travel", "the", "world"],
+    "answer": "If I won the lottery I would travel the world",
+    "explanation": "Second conditional: past tense (won) for the unreal condition, 'would' for the imagined result.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b011",
+    "instruction": "Build the sentence: reported speech about a past promise.",
+    "words": ["He", "said", "he", "would", "call", "me", "that", "evening"],
+    "answer": "He said he would call me that evening",
+    "explanation": "In reported speech, 'will' becomes 'would' and 'this' often becomes 'that'.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b012",
+    "instruction": "Build the sentence: the passive voice about a famous building.",
+    "words": ["The", "Eiffel", "Tower", "was", "built", "in", "1889"],
+    "answer": "The Eiffel Tower was built in 1889",
+    "explanation": "Passive voice: 'was + past participle' when the doer is unknown or unimportant.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b013",
+    "instruction": "Build the sentence: something that has been true since a starting point.",
+    "words": ["We", "have", "lived", "in", "this", "house", "since", "2018"],
+    "answer": "We have lived in this house since 2018",
+    "explanation": "Present perfect with 'since' + a starting point: the situation continues now.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b014",
+    "instruction": "Build the sentence: an action that will be finished before a future time.",
+    "words": ["By", "next", "Friday", "I", "will", "have", "finished", "the", "project"],
+    "answer": "By next Friday I will have finished the project",
+    "explanation": "Future perfect (will have + past participle): completed before a point in the future.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b015",
+    "instruction": "Build the sentence: advice with 'had better'.",
+    "words": ["You", "had", "better", "leave", "now", "or", "you", "will", "miss", "the", "bus"],
+    "answer": "You had better leave now or you will miss the bus",
+    "explanation": "'Had better + base verb' gives strong advice about the near future. No 'to' after it.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b016",
+    "instruction": "Build the sentence: a cause-and-effect link with 'because'.",
+    "words": ["She", "passed", "the", "test", "because", "she", "practised", "every", "day"],
+    "answer": "She passed the test because she practised every day",
+    "explanation": "'Because' introduces the reason. Keep both verbs in the same past timeframe.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b017",
+    "instruction": "Build the sentence: a contrast between two ideas.",
+    "words": ["He", "is", "very", "rich", "but", "he", "lives", "a", "simple", "life"],
+    "answer": "He is very rich but he lives a simple life",
+    "explanation": "'But' joins two clauses that contrast with each other.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b018",
+    "instruction": "Build the sentence: something you are about to do.",
+    "words": ["I", "am", "about", "to", "send", "the", "email"],
+    "answer": "I am about to send the email",
+    "explanation": "'Be about to + verb' means the action will happen very soon.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b019",
+    "instruction": "Build the sentence: a past habit with 'would'.",
+    "words": ["Every", "summer", "we", "would", "drive", "to", "the", "beach"],
+    "answer": "Every summer we would drive to the beach",
+    "explanation": "'Would + verb' can describe repeated past habits, just like 'used to', but never for states.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b020",
+    "instruction": "Build the sentence: an indirect question, polite form.",
+    "words": ["Could", "you", "tell", "me", "where", "the", "station", "is"],
+    "answer": "Could you tell me where the station is",
+    "explanation": "Indirect questions keep normal word order (where the station IS), unlike direct questions (where IS the station).",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b021",
+    "instruction": "Build the sentence: permission in the past.",
+    "words": ["When", "I", "was", "young", "we", "were", "allowed", "to", "stay", "out", "late"],
+    "answer": "When I was young we were allowed to stay out late",
+    "explanation": "'Were allowed to' is the past of 'can' for permission.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b022",
+    "instruction": "Build the sentence: a superlative about a place.",
+    "words": ["This", "is", "the", "most", "beautiful", "beach", "I", "have", "ever", "seen"],
+    "answer": "This is the most beautiful beach I have ever seen",
+    "explanation": "Superlative (the most beautiful) plus 'I have ever seen' makes a strong personal claim.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b023",
+    "instruction": "Build the sentence: purpose with 'so that'.",
+    "words": ["She", "spoke", "slowly", "so", "that", "everyone", "could", "understand"],
+    "answer": "She spoke slowly so that everyone could understand",
+    "explanation": "'So that + could/would' explains the purpose of an action.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b024",
+    "instruction": "Build the sentence: a condition with 'unless'.",
+    "words": ["We", "will", "lose", "the", "game", "unless", "we", "concentrate"],
+    "answer": "We will lose the game unless we concentrate",
+    "explanation": "'Unless' means 'if ... not'. It takes the present tense, like any if-clause.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b025",
+    "instruction": "Build the sentence: something finished a short time ago.",
+    "words": ["I", "have", "just", "finished", "my", "homework"],
+    "answer": "I have just finished my homework",
+    "explanation": "'Have just + past participle' means the action ended moments ago.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b026",
+    "instruction": "Build the sentence: emphasis with 'It was ... that'.",
+    "words": ["It", "was", "my", "sister", "who", "broke", "the", "vase"],
+    "answer": "It was my sister who broke the vase",
+    "explanation": "The cleft sentence 'It was X who/that ...' highlights one part of the sentence.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b027",
+    "instruction": "Build the sentence: an obligation that is not being followed.",
+    "words": ["You", "should", "be", "revising", "instead", "of", "playing", "games"],
+    "answer": "You should be revising instead of playing games",
+    "explanation": "'Should be + -ing' criticises an action that should be happening right now but is not.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b028",
+    "instruction": "Build the sentence: no sooner ... than.",
+    "words": ["No", "sooner", "had", "he", "arrived", "than", "the", "meeting", "started"],
+    "answer": "No sooner had he arrived than the meeting started",
+    "explanation": "'No sooner had + subject + past participle + than' is a formal way to say one thing happened immediately after another.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b029",
+    "instruction": "Build the sentence: an unreal past with the third conditional.",
+    "words": ["If", "we", "had", "left", "earlier", "we", "would", "have", "caught", "the", "train"],
+    "answer": "If we had left earlier we would have caught the train",
+    "explanation": "Third conditional: 'if + past perfect' with 'would have + past participle' for an impossible past change.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b030",
+    "instruction": "Build the sentence: a tag question checking agreement.",
+    "words": ["You", "have", "finished", "your", "assignment", "haven't", "you"],
+    "answer": "You have finished your assignment haven't you",
+    "explanation": "A positive statement takes a negative tag: 'you have ... haven't you'.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b031",
+    "instruction": "Build the sentence: a future arrangement already made.",
+    "words": ["I", "am", "meeting", "the", "manager", "at", "three", "o'clock"],
+    "answer": "I am meeting the manager at three o'clock",
+    "explanation": "Present continuous is used for fixed future appointments.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b032",
+    "instruction": "Build the sentence: a reason with 'because of' + noun.",
+    "words": ["The", "flight", "was", "delayed", "because", "of", "the", "storm"],
+    "answer": "The flight was delayed because of the storm",
+    "explanation": "'Because of' takes a noun (the storm); 'because' takes a full clause (because there was a storm).",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b033",
+    "instruction": "Build the sentence: something that is probably true now.",
+    "words": ["She", "must", "be", "very", "tired", "after", "such", "a", "long", "flight"],
+    "answer": "She must be very tired after such a long flight",
+    "explanation": "'Must be' expresses a confident logical guess about the present.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b034",
+    "instruction": "Build the sentence: a polite offer.",
+    "words": ["Would", "you", "like", "me", "to", "help", "with", "the", "dishes"],
+    "answer": "Would you like me to help with the dishes",
+    "explanation": "'Would you like me to ...' is a natural, polite way to offer help.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b035",
+    "instruction": "Build the sentence: past obligation with 'had to'.",
+    "words": ["When", "I", "worked", "in", "Tokyo", "I", "had", "to", "wake", "up", "at", "five"],
+    "answer": "When I worked in Tokyo I had to wake up at five",
+    "explanation": "'Must' has no past form; use 'had to' for past obligation.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b036",
+    "instruction": "Build the sentence: something that needs doing.",
+    "words": ["My", "hair", "needs", "cutting"],
+    "answer": "My hair needs cutting",
+    "explanation": "After 'need', the -ing form has a passive meaning: 'needs cutting' = 'needs to be cut'.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b037",
+    "instruction": "Build the sentence: expressing preference.",
+    "words": ["I", "would", "rather", "walk", "than", "take", "the", "bus"],
+    "answer": "I would rather walk than take the bus",
+    "explanation": "'Would rather + verb + than + verb' compares two options you prefer between.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b038",
+    "instruction": "Build the sentence: a formal apology.",
+    "words": ["I", "apologise", "for", "not", "replying", "sooner"],
+    "answer": "I apologise for not replying sooner",
+    "explanation": "After 'for' in apologies, use the -ing form: 'for not replying'.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b039",
+    "instruction": "Build the sentence: an action in progress in the past.",
+    "words": ["While", "they", "were", "arguing", "the", "guests", "started", "leaving"],
+    "answer": "While they were arguing the guests started leaving",
+    "explanation": "'While + past continuous' sets the background for a shorter past event.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b040",
+    "instruction": "Build the sentence: an invitation in the future.",
+    "words": ["Would", "you", "like", "to", "join", "us", "for", "dinner", "tonight"],
+    "answer": "Would you like to join us for dinner tonight",
+    "explanation": "'Would you like to ...' is the standard polite invitation formula.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b041",
+    "instruction": "Build the sentence: a quantity expression with an uncountable noun.",
+    "words": ["There", "is", "very", "little", "time", "left"],
+    "answer": "There is very little time left",
+    "explanation": "'Little' goes with uncountable nouns (time), 'few' with countable ones (minutes).",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b042",
+    "instruction": "Build the sentence: someone said something surprising.",
+    "words": ["Not", "only", "did", "she", "win", "but", "she", "also", "broke", "the", "record"],
+    "answer": "Not only did she win but she also broke the record",
+    "explanation": "When 'not only' starts the sentence, invert: 'Not only DID she win'.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b043",
+    "instruction": "Build the sentence: a deduction about the past.",
+    "words": ["The", "roads", "are", "wet", "so", "it", "must", "have", "rained"],
+    "answer": "The roads are wet so it must have rained",
+    "explanation": "'Must have + past participle' is a confident guess about a past event.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b044",
+    "instruction": "Build the sentence: a complaint about an ongoing situation.",
+    "words": ["This", "is", "the", "third", "time", "the", "train", "has", "been", "late", "this", "week"],
+    "answer": "This is the third time the train has been late this week",
+    "explanation": "After 'this is the ... time', use the present perfect: 'has been late'.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b045",
+    "instruction": "Build the sentence: a general truth.",
+    "words": ["Water", "boils", "at", "100", "degrees", "Celsius"],
+    "answer": "Water boils at 100 degrees Celsius",
+    "explanation": "The present simple states facts that are always true.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b046",
+    "instruction": "Build the sentence: a formal request in writing.",
+    "words": ["I", "would", "be", "grateful", "if", "you", "could", "send", "the", "report"],
+    "answer": "I would be grateful if you could send the report",
+    "explanation": "'I would be grateful if you could ...' is one of the politest request forms in written English.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b047",
+    "instruction": "Build the sentence: an action too difficult to do.",
+    "words": ["The", "box", "was", "too", "heavy", "for", "me", "to", "lift"],
+    "answer": "The box was too heavy for me to lift",
+    "explanation": "'Too + adjective + for someone + to + verb' shows something exceeds ability.",
+    "difficulty": "medium"
+  },
+  {
+    "id": "b048",
+    "instruction": "Build the sentence: enough with an adjective.",
+    "words": ["Is", "the", "room", "warm", "enough", "for", "you"],
+    "answer": "Is the room warm enough for you",
+    "explanation": "'Adjective + enough' (warm enough), never 'enough warm', comes after the adjective.",
+    "difficulty": "easy"
+  },
+  {
+    "id": "b049",
+    "instruction": "Build the sentence: what someone is said to be doing.",
+    "words": ["He", "is", "said", "to", "be", "working", "on", "a", "new", "novel"],
+    "answer": "He is said to be working on a new novel",
+    "explanation": "'Is said to be ...' is a formal reporting structure meaning 'people say he is ...'.",
+    "difficulty": "hard"
+  },
+  {
+    "id": "b050",
+    "instruction": "Build the sentence: a memory that keeps returning.",
+    "words": ["I", "keep", "thinking", "about", "what", "she", "said"],
+    "answer": "I keep thinking about what she said",
+    "explanation": "'Keep + -ing' describes an action that repeats annoyingly or persistently.",
+    "difficulty": "easy"
+  }
+]

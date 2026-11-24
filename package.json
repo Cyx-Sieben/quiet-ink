@@ -1,8 +1,8 @@
 {
   "name": "quiet-ink",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "private": true,
-  "description": "Quiet Ink: a social weekly English writing and vocabulary trainer.",
+  "description": "Quiet Ink: a personal daily English habit — grammar, phrases, speaking and writing.",
   "type": "module",
   "scripts": {
     "dev": "vite",

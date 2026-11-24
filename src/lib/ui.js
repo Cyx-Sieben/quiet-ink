@@ -173,10 +173,29 @@ export function avatarSvg(id, size = 44) {
   return `<svg class="avatar" width="${size}" height="${size}" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="16" fill="${bg}"/>${avatarShape(id, fg)}</svg>`;
 }
 
-/** Avatar for any profile-like object { avatar, photoURL }. */
+/** Avatar for any profile-like object { avatar, photoURL, photoData }. */
 export function avatarHtml(p, size = 44) {
+  if (p && p.photoData) {
+    return `<img class="avatar" src="${esc(p.photoData)}" width="${size}" height="${size}" alt="" loading="lazy">`;
+  }
   if (p && p.avatar === 'google' && p.photoURL) {
     return `<img class="avatar" src="${esc(p.photoURL)}" width="${size}" height="${size}" alt="" referrerpolicy="no-referrer" loading="lazy">`;
   }
   return avatarSvg((p && p.avatar) || 'ink', size);
+}
+
+/** Downscale an uploaded image file to a small base64 JPEG (for the profile doc). */
+export async function shrinkImage(file, max = 256, quality = 0.75) {
+  if (!/^image\//.test(file.type)) throw new Error('Please choose an image file.');
+  const bitmap = await createImageBitmap(file);
+  const scale = Math.min(1, max / Math.max(bitmap.width, bitmap.height));
+  const w = Math.round(bitmap.width * scale);
+  const h = Math.round(bitmap.height * scale);
+  const canvas = document.createElement('canvas');
+  canvas.width = w;
+  canvas.height = h;
+  canvas.getContext('2d').drawImage(bitmap, 0, 0, w, h);
+  const dataUrl = canvas.toDataURL('image/jpeg', quality);
+  if (dataUrl.length > 200 * 1024) throw new Error('That image is still too large after resizing. Try a simpler picture.');
+  return dataUrl;
 }

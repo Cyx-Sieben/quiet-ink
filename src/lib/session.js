@@ -3,30 +3,28 @@
  * this week's record. All Firestore paths are defined here.
  *
  * Database structure (see also SETUP.md):
- *   users/{uid}                    public profile: nickname, avatar, points, streaks
+ *   users/{uid}                    public profile: nickname, avatar, photo, points, streaks
  *   users/{uid}/private/state      private progress: correct questions, mistakes, topics, friends, blocks
- *   users/{uid}/weeks/{monday}     one record per week: sets, flip quiz, writing draft, points
+ *   users/{uid}/weeks/{monday}     one record per week: fill sub-parts, flip quiz, phrases, speaking, page, points
  *   usernames/{nickname}           reserves a nickname: { uid }
- *   pieces/{uid_monday}            published weekly pieces (likes and comments are sub-collections)
  *   friendRequests/{from_to}       pending friend requests
  *   friendships/{uidA_uidB}        accepted friendships: { members: [a, b] } (a < b)
- *   reports/{id}                   reported pieces and comments (admins only)
- *   admins/{uid}                   create by hand in the console to make someone an admin
  */
 import {
   doc, getDoc, setDoc, updateDoc, increment, runTransaction, serverTimestamp,
   collection, query, where, getDocs, writeBatch, arrayUnion, arrayRemove, deleteField
 } from 'firebase/firestore';
 import { db } from '../firebase.js';
-import { weekKey } from './week.js';
-import { emptyStreak, completeStreak, repairedStreak } from './rules.js';
+import { weekKey, dayKey } from './week.js';
+import {
+  emptyStreak, completeStreak, repairedStreak, emptyDayStreak, completeDayStreak, setWarmupHooks
+} from './rules.js';
 
 export const S = {
   user: null, // Firebase auth user
   profile: null, // users/{uid}
   priv: null, // users/{uid}/private/state
-  isAdmin: false,
-  data: null, // { questions, topics, prompts }
+  data: null, // { questions, errorQuestions, builds, topics, prompts, phrases, speaking, rewrites }
   weekKey: null,
   week: null // users/{uid}/weeks/{weekKey}
 };
@@ -34,52 +32,58 @@ export const S = {
 export const userRef = (uid = S.user.uid) => doc(db, 'users', uid);
 export const privRef = (uid = S.user.uid) => doc(db, 'users', uid, 'private', 'state');
 export const weekRef = (wk, uid = S.user.uid) => doc(db, 'users', uid, 'weeks', wk);
-export const pieceId = (uid, wk) => `${uid}_${wk}`;
 export const pairId = (a, b) => (a < b ? `${a}_${b}` : `${b}_${a}`);
 
 export function defaultWeek() {
   return {
-    fill: { sets: [], active: null },
+    fill: {
+      classic: { sets: [], active: null },
+      error: { sets: [], active: null },
+      build: { sets: [], active: null }
+    },
     flip: null,
+    phrases: null,
+    speak: null,
     page: null,
-    points: { fill: 0, flip: 0, page: 0 }
+    warmups: [],
+    points: { fill: 0, flip: 0, phrases: 0, speak: 0, page: 0, warmup: 0 }
   };
 }
 
 export function defaultStreaks() {
-  return { fill: emptyStreak(), flip: emptyStreak(), page: emptyStreak() };
+  return {
+    fill: emptyStreak(), flip: emptyStreak(), phrases: emptyStreak(),
+    speak: emptyStreak(), page: emptyStreak()
+  };
 }
 
 export function defaultPriv() {
   return {
     grammarCorrect: [], mistakes: {}, flipCompleted: [],
-    friendIds: [], blocked: [], hidden: [], hiddenComments: [],
-    v1Imported: false, firstWeek: weekKey()
+    friendIds: [], blocked: [], v1Imported: false, firstWeek: weekKey(),
+    daily: emptyDayStreak()
   };
 }
 
-/** Load profile, private state and admin flag after sign-in. */
+/** Load profile and private state after sign-in. */
 export async function loadAccount(user) {
   S.user = user;
   const [p, q] = await Promise.all([getDoc(userRef()), getDoc(privRef())]);
   S.profile = p.exists() ? { uid: user.uid, ...p.data() } : null;
   S.priv = q.exists() ? { ...defaultPriv(), ...q.data() } : null;
-  S.isAdmin = false;
-  if (S.profile) {
-    try { S.isAdmin = (await getDoc(doc(db, 'admins', user.uid))).exists(); } catch (e) { S.isAdmin = false; }
-  }
   S.week = null;
   S.weekKey = null;
+  if (S.priv) setWarmupHooks({ mistakes: S.priv.mistakes, flipCompleted: S.priv.flipCompleted });
 }
 
 export function clearAccount() {
-  Object.assign(S, { user: null, profile: null, priv: null, isAdmin: false, week: null, weekKey: null });
+  Object.assign(S, { user: null, profile: null, priv: null, week: null, weekKey: null });
 }
 
 export const NICK_RE = /^[A-Za-z0-9_]{3,20}$/;
 
 /** Create the account documents. The nickname is reserved in the same transaction. */
-export async function createAccount({ nickname, bio, avatar }) {
+export async function createAccount({ nickname, bio, avatar, photoData }) {
   const uid = S.user.uid;
   const lower = nickname.toLowerCase();
   await runTransaction(db, async (tx) => {
@@ -90,6 +94,7 @@ export async function createAccount({ nickname, bio, avatar }) {
     tx.set(userRef(uid), {
       nickname, nicknameLower: lower, bio, avatar,
       photoURL: S.user.photoURL || null,
+      photoData: photoData || null,
       createdAt: serverTimestamp(),
       totalPoints: 0,
       weekPoints: { week: null, value: 0 },
@@ -102,7 +107,7 @@ export async function createAccount({ nickname, bio, avatar }) {
   await loadAccount(S.user);
 }
 
-/** Change nickname: reserve the new one, release the old one, update own pieces. */
+/** Change nickname: reserve the new one and release the old one. */
 export async function changeNickname(nickname) {
   const uid = S.user.uid;
   const lower = nickname.toLowerCase();
@@ -121,31 +126,15 @@ export async function changeNickname(nickname) {
   }
   S.profile.nickname = nickname;
   S.profile.nicknameLower = lower;
-  await updateOwnPieces({ authorNick: nickname });
 }
 
 export async function updateProfile(fields) {
   await updateDoc(userRef(), fields);
   Object.assign(S.profile, fields);
-  if ('avatar' in fields || 'photoURL' in fields) {
-    await updateOwnPieces({ authorAvatar: S.profile.avatar, authorPhoto: S.profile.photoURL || null });
-  }
 }
 
 export async function updatePriv(fields) {
   await updateDoc(privRef(), fields);
-}
-
-/** Apply a change to every piece this user has published. */
-export async function updateOwnPieces(fieldsOrFn) {
-  const snap = await getDocs(query(collection(db, 'pieces'), where('uid', '==', S.user.uid)));
-  if (snap.empty) return;
-  const batch = writeBatch(db);
-  snap.docs.forEach((d) => {
-    const fields = typeof fieldsOrFn === 'function' ? fieldsOrFn(d.data()) : fieldsOrFn;
-    if (fields) batch.update(d.ref, fields);
-  });
-  await batch.commit();
 }
 
 /* ------------------------------------------------------------------ Weeks */
@@ -154,21 +143,45 @@ export async function ensureWeek() {
   if (S.week && S.weekKey === W) return S.week;
   const snap = await getDoc(weekRef(W));
   S.weekKey = W;
-  S.week = snap.exists() ? { ...defaultWeek(), ...snap.data() } : defaultWeek();
-  if (!S.week.points) S.week.points = { fill: 0, flip: 0, page: 0 };
+  const saved = snap.exists() ? snap.data() : {};
+  S.week = deepMerge(defaultWeek(), saved);
+  // Migrate a v2 fill shape (sets/active) into the v3 sub-part shape.
+  if (saved.fill && saved.fill.sets && !saved.fill.classic) {
+    S.week.fill = {
+      classic: { sets: saved.fill.sets || [], active: saved.fill.active || null },
+      error: { sets: [], active: null },
+      build: { sets: [], active: null }
+    };
+  }
   return S.week;
+}
+
+/** Plain deep merge for plain objects (week docs are JSON-like). */
+function deepMerge(base, saved) {
+  const out = Array.isArray(base) ? base.slice() : { ...base };
+  if (!saved || typeof saved !== 'object') return out;
+  for (const [k, v] of Object.entries(saved)) {
+    if (v && typeof v === 'object' && !Array.isArray(v) && out[k] && typeof out[k] === 'object' && !Array.isArray(out[k])) {
+      out[k] = deepMerge(out[k], v);
+    } else {
+      out[k] = v;
+    }
+  }
+  return out;
 }
 
 export async function saveWeek() {
   await setDoc(weekRef(S.weekKey), S.week);
 }
 
+const PART_KEYS = ['fill', 'flip', 'phrases', 'speak', 'page', 'warmup'];
+
 /** Add points for a part and update the public totals. */
 export async function addPoints(part, pts) {
   if (!pts) return;
   S.week.points[part] = (S.week.points[part] || 0) + pts;
   await saveWeek();
-  const weekTotal = S.week.points.fill + S.week.points.flip + S.week.points.page;
+  const weekTotal = PART_KEYS.reduce((sum, k) => sum + (S.week.points[k] || 0), 0);
   S.profile.totalPoints = (S.profile.totalPoints || 0) + pts;
   S.profile.weekPoints = { week: S.weekKey, value: weekTotal };
   await updateDoc(userRef(), { totalPoints: increment(pts), weekPoints: { week: S.weekKey, value: weekTotal } });
@@ -189,6 +202,20 @@ export async function useRepair(part) {
   S.profile.streaks[part] = next;
   S.profile.repairUsed = true;
   S.profile.repair = repair;
+}
+
+/* ------------------------------------------------------------------ Daily streak */
+/** Record today's warm-up: points + day streak, idempotent per day. */
+export async function completeWarmup(pts) {
+  const D = dayKey();
+  if (S.week.warmups.includes(D)) return false;
+  S.week.warmups.push(D);
+  await saveWeek();
+  await addPoints('warmup', pts);
+  const next = completeDayStreak(S.priv.daily, D);
+  S.priv.daily = next;
+  await updatePriv({ daily: next });
+  return true;
 }
 
 /* ------------------------------------------------------------------ Progress helpers */
@@ -224,23 +251,44 @@ export async function removeFromList(field, value) {
   await updatePriv({ [field]: arrayRemove(value) });
 }
 
+/** Record flashcard review results for the warm-up mastery tracking. */
+export async function recordCardResult(topicIndex, cardIndex, correct) {
+  const key = `cardStats.${topicIndex}.${cardIndex}`;
+  const cur = (S.priv.cardStats && S.priv.cardStats[topicIndex] && S.priv.cardStats[topicIndex][cardIndex]) || { right: 0, wrong: 0 };
+  const next = correct ? { right: cur.right + 1, wrong: cur.wrong } : { right: cur.right, wrong: cur.wrong + 1 };
+  if (!S.priv.cardStats) S.priv.cardStats = {};
+  if (!S.priv.cardStats[topicIndex]) S.priv.cardStats[topicIndex] = {};
+  S.priv.cardStats[topicIndex][cardIndex] = next;
+  await updatePriv({ [key]: next });
+}
+
 /* ------------------------------------------------------------------ Friends sync
- * friendIds (private) lists who may read this user's friends-only pieces. It is
- * copied onto each piece so the security rules can check it.
+ * friendIds (private) lists your confirmed friends, used by the leaderboard.
  */
 export async function setFriendIds(ids) {
   const clean = Array.from(new Set(ids)).filter((x) => !S.priv.blocked.includes(x)).sort();
-  const same = clean.length === S.priv.friendIds.length && clean.every((x, i) => x === S.priv.friendIds.slice().sort()[i]);
   S.priv.friendIds = clean;
-  if (same) return;
   await updatePriv({ friendIds: clean });
-  await updateOwnPieces((p) => ({ friendIds: p.visibility === 'private' ? [] : clean }));
+  return clean;
 }
 
 /** Rebuild friendIds from the friendships collection (picks up changes made by friends). */
 export async function reconcileFriends() {
   const snap = await getDocs(query(collection(db, 'friendships'), where('members', 'array-contains', S.user.uid)));
   const ids = snap.docs.map((d) => d.data().members.find((m) => m !== S.user.uid)).filter(Boolean);
-  await setFriendIds(ids);
-  return ids;
+  return setFriendIds(ids);
+}
+
+/* ------------------------------------------------------------------ Past writings */
+/** All past finished weekly pages, newest first, for "My Shelf". */
+export async function pastPages() {
+  const snap = await getDocs(collection(db, 'users', S.user.uid, 'weeks'));
+  const pages = [];
+  snap.docs.forEach((d) => {
+    const w = d.data();
+    if (w.page && w.page.published && w.page.draft) {
+      pages.push({ weekKey: d.id, ...w.page });
+    }
+  });
+  return pages.sort((a, b) => (a.weekKey < b.weekKey ? 1 : -1));
 }
