@@ -40,11 +40,14 @@ export function onAuthStateChanged(auth, cb) {
 }
 
 export async function signInWithPopup() {
-  const name = window.prompt('Mock sign-in (no real Google account is used).\nType any name to sign in as that test user:', 'Aisha');
+  let name = null;
+  try {
+    name = window.prompt('Mock sign-in (no real Google account is used).\nType any name to sign in as that test user:', 'Aisha');
+  } catch (e) { /* prompt unavailable (some embedded browsers) */ }
   if (!name) {
-    const err = new Error('Popup closed');
-    err.code = 'auth/popup-closed-by-user';
-    throw err;
+    // Prompt blocked or cancelled: fall back to the default test user so the
+    // mock stays usable in embedded/automated browsers.
+    name = 'Aisha';
   }
   authSingleton.currentUser = makeUser(name.trim());
   try { localStorage.setItem(USER_KEY, JSON.stringify({ displayName: name.trim() })); } catch (e) { /* ignore */ }

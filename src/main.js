@@ -1,6 +1,6 @@
 /**
- * Quiet Ink v2: entry point, authentication and router.
- * Routes use the URL hash (#/fill, #/read ...) so every page works on any static host.
+ * Quiet Ink v3: entry point, authentication and router.
+ * Routes use the URL hash (#/fill, #/phrases ...) so every page works on any static host.
  */
 import './styles.css';
 import { onAuthStateChanged, signInWithPopup, signOut } from 'firebase/auth';
@@ -13,14 +13,13 @@ import { renderLanding, renderDashboard } from './views/home.js';
 import { renderOnboarding } from './views/onboarding.js';
 import { renderFill, renderFillPlay } from './views/fill.js';
 import { renderFlip, renderFlipPlay } from './views/flip.js';
+import { renderPhrases } from './views/phrases.js';
+import { renderSpeaking } from './views/speaking.js';
 import { renderWrite } from './views/page.js';
-import { renderReadingRoom, renderPiece, renderTopic } from './views/read.js';
 import { renderProfile } from './views/profile.js';
 import { renderFriends } from './views/friends.js';
-import { renderNewsstand } from './views/newsstand.js';
 import { renderMistakes, renderPastTopics, renderTopicReview } from './views/archive.js';
 import { renderSettings } from './views/settings.js';
-import { renderAdmin } from './views/admin.js';
 import { renderPrivacy, renderGuidelines, renderSetupNeeded } from './views/static.js';
 
 const app = document.getElementById('app');
@@ -30,15 +29,25 @@ let authReady = false;
 
 /* ---------------------------------------------------------------- data */
 async function loadData() {
-  const names = ['grammar_questions', 'flashcard_topics', 'writing_prompts'];
-  const [questions, topics, prompts] = await Promise.all(
-    names.map(async (n) => {
-      const res = await fetch(`/data/${n}.json`);
-      if (!res.ok) throw new Error(`Could not load /data/${n}.json (${res.status})`);
-      return res.json();
-    })
-  );
-  return { questions, topics, prompts };
+  const names = [
+    'grammar_questions', 'error_questions', 'sentence_build', 'flashcard_topics',
+    'writing_prompts', 'phrases', 'speaking_prompts', 'rewrite_drills'
+  ];
+  const parts = await Promise.all(names.map(async (n) => {
+    const res = await fetch(`/data/${n}.json`);
+    if (!res.ok) throw new Error(`Could not load /data/${n}.json (${res.status})`);
+    return res.json();
+  }));
+  return {
+    questions: parts[0],
+    errorQuestions: parts[1],
+    builds: parts[2],
+    topics: parts[3],
+    prompts: parts[4],
+    phrases: parts[5],
+    speaking: parts[6],
+    rewrites: parts[7]
+  };
 }
 
 /* ---------------------------------------------------------------- auth actions */
@@ -59,8 +68,6 @@ export async function doSignOut() {
 function renderNav() {
   if (!S.profile) {
     nav.innerHTML = `
-      <a href="#/read" data-nav="read">Reading Room</a>
-      <a href="#/newsstand" data-nav="newsstand">Newsstand</a>
       ${S.user ? '' : '<button class="btn small" id="nav-signin">Sign in with Google</button>'}`;
     const b = document.getElementById('nav-signin');
     if (b) b.addEventListener('click', signIn);
@@ -68,11 +75,11 @@ function renderNav() {
   }
   nav.innerHTML = `
     <a href="#/" data-nav="home">Desk</a>
-    <a href="#/fill" data-nav="fill">Fill the Gap</a>
-    <a href="#/flip" data-nav="flip">Word Flip</a>
+    <a href="#/fill" data-nav="fill">Fill</a>
+    <a href="#/flip" data-nav="flip">Flip</a>
+    <a href="#/phrases" data-nav="phrases">Phrases</a>
+    <a href="#/speaking" data-nav="speaking">Speak</a>
     <a href="#/page" data-nav="page">Write</a>
-    <a href="#/read" data-nav="read">Read</a>
-    <a href="#/newsstand" data-nav="newsstand">News</a>
     <a href="#/friends" data-nav="friends">Friends</a>
     <a href="#/@${esc(S.profile.nickname)}" data-nav="me" class="nav-me" aria-label="My profile">${avatarHtml(S.profile, 26)}<span>${esc(S.profile.nickname)}</span></a>
     <a href="#/settings" data-nav="settings" aria-label="Settings">⚙</a>`;
@@ -91,22 +98,19 @@ const routes = [
   [/^\/?$/, 'home', false, (ctx) => (S.profile ? renderDashboard(app, ctx) : renderLanding(app, ctx))],
   [/^\/welcome\/?$/, '', 'user', (ctx) => renderOnboarding(app, ctx)],
   [/^\/fill\/?$/, 'fill', true, (ctx) => renderFill(app, ctx)],
-  [/^\/fill\/play\/?$/, 'fill', true, (ctx) => renderFillPlay(app, ctx)],
+  [/^\/fill\/play\/?$/, 'fill', true, (ctx) => renderFillPlay(app, ctx, 'classic')],
+  [/^\/fill\/play\/(classic|error|build)\/?$/, 'fill', true, (ctx, m) => renderFillPlay(app, ctx, m[1])],
   [/^\/flip\/?$/, 'flip', true, (ctx) => renderFlip(app, ctx)],
   [/^\/flip\/play\/?$/, 'flip', true, (ctx) => renderFlipPlay(app, ctx)],
+  [/^\/phrases\/?$/, 'phrases', true, (ctx) => renderPhrases(app, ctx)],
+  [/^\/speaking\/?$/, 'speaking', true, (ctx) => renderSpeaking(app, ctx)],
   [/^\/page\/?$/, 'page', true, (ctx) => renderWrite(app, ctx)],
-  [/^\/read\/?$/, 'read', false, (ctx) => renderReadingRoom(app, ctx, 'week')],
-  [/^\/read\/(week|latest|friends|topics|search)\/?$/, 'read', false, (ctx, m) => renderReadingRoom(app, ctx, m[1])],
-  [/^\/read\/topic\/([\w-]+)\/?$/, 'read', false, (ctx, m) => renderTopic(app, ctx, m[1])],
-  [/^\/p\/([\w-]+)\/?$/, 'read', false, (ctx, m) => renderPiece(app, ctx, m[1])],
   [/^\/@([A-Za-z0-9_]+)\/?$/, 'me', false, (ctx, m) => renderProfile(app, ctx, m[1])],
   [/^\/friends\/?$/, 'friends', true, (ctx) => renderFriends(app, ctx)],
-  [/^\/newsstand\/?$/, 'newsstand', false, (ctx) => renderNewsstand(app, ctx)],
   [/^\/mistakes\/?$/, 'fill', true, (ctx) => renderMistakes(app, ctx)],
   [/^\/topics\/?$/, 'flip', true, (ctx) => renderPastTopics(app, ctx)],
   [/^\/topics\/(\d+)\/?$/, 'flip', true, (ctx, m) => renderTopicReview(app, ctx, Number(m[1]))],
   [/^\/settings\/?$/, 'settings', true, (ctx) => renderSettings(app, ctx)],
-  [/^\/admin\/?$/, '', true, (ctx) => renderAdmin(app, ctx)],
   [/^\/privacy\/?$/, '', false, (ctx) => renderPrivacy(app, ctx)],
   [/^\/guidelines\/?$/, '', false, (ctx) => renderGuidelines(app, ctx)]
 ];
@@ -166,7 +170,7 @@ function renderSignInWall() {
   <div class="paper spiral notice enter" style="text-align:center">
     <span class="hand">members only</span>
     <p class="pixel-title" style="margin:10px 0">Sign in to continue</p>
-    <p class="lead">Your weekly tasks, points and streaks are saved to your account.</p>
+    <p class="lead">Your daily warm-ups, weekly tasks, points and streaks are saved to your account.</p>
     <button class="btn" id="wall-signin">Sign in with Google</button>
   </div>`;
   document.getElementById('wall-signin').addEventListener('click', signIn);

@@ -1,13 +1,12 @@
 /**
- * Public profile: a writer's ID badge, their streaks and their published pages.
+ * Public profile: a writer's ID badge, their streaks and points.
  */
-import { collection, query, where, orderBy, limit, getDocs } from 'firebase/firestore';
+import { collection, query, where, limit, getDocs } from 'firebase/firestore';
 import { db } from '../firebase.js';
 import { esc, toast, errText, avatarHtml, flameBadge } from '../lib/ui.js';
 import { weekKey, stamp } from '../lib/week.js';
-import { PARTS, liveStreak } from '../lib/rules.js';
+import { PARTS, liveStreak, liveDayStreak } from '../lib/rules.js';
 import { statusWith, sendRequest, cancelRequest, acceptRequest, declineRequest, removeFriend, blockUser, unblockUser } from '../lib/friends.js';
-import { pieceCard } from './read.js';
 
 export async function renderProfile(app, ctx, nick) {
   const { S } = ctx;
@@ -18,7 +17,7 @@ export async function renderProfile(app, ctx, nick) {
     if (snap.empty) throw new Error('none');
     user = { uid: snap.docs[0].id, ...snap.docs[0].data() };
   } catch (err) {
-    app.innerHTML = '<div class="paper notice"><p class="pixel-title">Writer not found</p><p><a href="#/read">Back to the Reading Room</a></p></div>';
+    app.innerHTML = '<div class="paper notice"><p class="pixel-title">Writer not found</p><p><a href="#/friends">Find writers</a></p></div>';
     return;
   }
   const me = S.user && S.profile ? S.user.uid : null;
@@ -45,42 +44,17 @@ export async function renderProfile(app, ctx, nick) {
         </div>
       </div>
       <div class="paper plain profile-side">
-        <span class="label">Weekly streaks</span>
+        <span class="label">Streaks</span>
         <div class="streak-list">
+          <div class="streak-row"><span>Daily warm-up</span>${flameBadge(liveDayStreak(user.daily, weekKey()), { rot: '0deg' })}<span class="muted" style="font-size:.8rem">best ${(user.daily && user.daily.best) || 0}</span></div>
           ${Object.entries(PARTS).map(([k, v]) => `<div class="streak-row"><span>${v.name}</span>${flameBadge(liveStreak(user.streaks && user.streaks[k], W), { rot: '0deg' })}<span class="muted" style="font-size:.8rem">best ${(user.streaks && user.streaks[k] && user.streaks[k].best) || 0}</span></div>`).join('')}
         </div>
         <div class="btn-row" id="actions" style="margin-top:18px">${actionButtons(status, mine, Boolean(me))}</div>
       </div>
     </section>
-    <div class="reading-column">
-      <h2 class="label on-cloth section-label">${mine ? 'My pages' : `Pages by ${esc(user.nickname)}`}</h2>
-      <div id="plist"><p class="on-cloth">Loading...</p></div>
-    </div>
   </div>`;
 
   wireActions(app, ctx, user);
-
-  try {
-    let items = [];
-    const col = collection(db, 'pieces');
-    if (mine) {
-      items = (await getDocs(query(col, where('uid', '==', user.uid), orderBy('createdAt', 'desc'), limit(100)))).docs;
-    } else {
-      const pub = await getDocs(query(col, where('uid', '==', user.uid), where('visibility', '==', 'public'), orderBy('createdAt', 'desc'), limit(100)));
-      items = pub.docs;
-      if (status === 'friends') {
-        const fr = await getDocs(query(col, where('friendIds', 'array-contains', me), where('uid', '==', user.uid), where('visibility', '==', 'friends'), orderBy('createdAt', 'desc'), limit(100)));
-        items = items.concat(fr.docs);
-      }
-    }
-    const pieces = items.map((d) => ({ id: d.id, ...d.data() }))
-      .sort((a, b) => (b.createdAt && b.createdAt.toMillis ? b.createdAt.toMillis() : 0) - (a.createdAt && a.createdAt.toMillis ? a.createdAt.toMillis() : 0));
-    document.getElementById('plist').innerHTML = pieces.length
-      ? `<div class="piece-list">${pieces.map((p) => pieceCard(p, { showAuthor: false })).join('')}</div>`
-      : '<div class="paper plain notice"><span class="hand">no pages yet</span></div>';
-  } catch (err) {
-    document.getElementById('plist').innerHTML = `<div class="paper plain notice"><p>${esc(errText(err))}</p></div>`;
-  }
 }
 
 function actionButtons(status, mine, signedIn) {
@@ -108,7 +82,7 @@ function wireActions(app, ctx, user) {
         await removeFriend(user.uid); toast('Friend removed.');
       }
       if (act === 'block') {
-        if (!window.confirm(`Block ${user.nickname}? They will not be able to send you requests, and you will not see their pages or comments.`)) return;
+        if (!window.confirm(`Block ${user.nickname}? They will not be able to send you requests.`)) return;
         await blockUser(user.uid); toast('Blocked.');
       }
       if (act === 'unblock') { await unblockUser(user.uid); toast('Unblocked.'); }

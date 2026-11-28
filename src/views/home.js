@@ -1,24 +1,26 @@
 /**
- * Landing page (signed out) and the Desk dashboard (signed in).
+ * Landing page (signed out) and the Desk dashboard (signed in),
+ * including the daily two-minute warm-up.
  */
-import { esc, binderClip, typewriter, squiggle, ORN, flameBadge, toast, errText } from '../lib/ui.js';
-import { weekRange, msUntilReset, formatCountdown, weeksBetween } from '../lib/week.js';
-import { SETS_PER_WEEK, PARTS, liveStreak, canRepair, conceptOfWeek } from '../lib/rules.js';
-import { useRepair } from '../lib/session.js';
+import { esc, binderClip, typewriter, squiggle, ORN, flameBadge, toast, errText, shuffle } from '../lib/ui.js';
+import { now } from '../lib/clock.js';
+import { weekRange, dayKey, msUntilReset, formatCountdown, weeksBetween, dayDate, nextWeek } from '../lib/week.js';
+import { PARTS, POINTS, liveStreak, liveDayStreak, canRepair, conceptOfWeek, phraseOfWeek, promptOfWeek, warmupOfDay, FILL_PARTS } from '../lib/rules.js';
+import { useRepair, completeWarmup, markCorrect, recordMistake, recordCardResult } from '../lib/session.js';
 
 export function renderLanding(app, ctx) {
   app.innerHTML = `
   <div class="enter">
     <section class="hero">
       <div class="paper spiral hero-paper">
-        <span class="label">Weekly English practice</span>
+        <span class="label">Daily English practice</span>
         <div><span class="hand">hi, writer</span></div>
         <h1 class="display hero-title">Quiet<br>Ink</h1>
         ${squiggle()}
-        <p class="lead" style="margin-top:14px">Three small tasks a week: choose the right word, learn ten new phrases, and write a page worth sharing. Keep a streak for each one, and practise with friends.</p>
+        <p class="lead" style="margin-top:14px">A two-minute warm-up every day, five small tasks a week: sharpen your grammar three ways, collect phrases, practise how you speak, and write a page worth keeping. Make it part of your routine.</p>
         <div class="btn-row" style="margin-top:18px">
           <button class="btn" id="land-signin">Sign in with Google</button>
-          <a class="btn ghost" href="#/read">Browse the Reading Room</a>
+          <a class="btn ghost" href="#/friends">How friends work</a>
         </div>
       </div>
       <div class="hero-side">
@@ -29,7 +31,7 @@ export function renderLanding(app, ctx) {
           ${typewriter()}
         </div>
         <div class="sticker-row">
-          ${flameBadge(4, { label: 'Fill', rot: '-3deg' })}
+          ${flameBadge(4, { label: 'Daily', rot: '-3deg' })}
           ${flameBadge(2, { label: 'Flip', rot: '2deg' })}
           ${flameBadge(7, { label: 'Page', rot: '-1deg' })}
         </div>
@@ -39,14 +41,23 @@ export function renderLanding(app, ctx) {
     <section class="board">
       <div class="clip-top">${binderClip()}</div>
       <div class="grid-3">
-        ${partIntro('Part one', 'Fill the Gap', 'Five sets of five sentences each week. Two minutes per question. Pick the word that makes the sentence right.')}
+        ${partIntro('Every day', 'The Warm-Up', 'Two minutes: one gap question, one card to recall, one sentence to say better. Keeps the habit alive between the weekly tasks.')}
+        ${partIntro('Part one', 'Fill the Gap', 'Three sets a week: the classic gap game, an error hunt, and building a sentence from scattered words.')}
         ${partIntro('Part two', 'Word Flip', 'Ten phrases on one theme. Choose the right meaning against a five-minute clock, then flip the card to learn it.')}
-        ${partIntro('Part three', 'The Weekly Page', 'One shared concept for everyone. Write as much as you like and publish it to your profile.')}
+      </div>
+    </section>
+
+    <section class="board" style="margin-top:26px">
+      <div class="clip-top">${binderClip()}</div>
+      <div class="grid-3">
+        ${partIntro('Part three', 'Phrase Library', 'One idiom or expression a week: what it means, where it came from, and how to use it properly.')}
+        ${partIntro('Part four', 'Speaking Practice', 'A weekly talking point with a clear answer shape, a phrase bank and self-review — for the way you talk.')}
+        ${partIntro('Part five', 'The Weekly Page', 'One shared concept for everyone. Write as much as you like, keep it on your shelf, export to Google Docs.')}
       </div>
     </section>
 
     <section class="band torn-both" aria-hidden="true">
-      <div class="band-inner"><div class="band-giant">Read. Write. Repeat.<span class="orn">✸ ✦ ♣</span></div></div>
+      <div class="band-inner"><div class="band-giant">Write. Speak. Repeat.<span class="orn">✸ ✦ ♣</span></div></div>
     </section>
   </div>`;
   document.getElementById('land-signin').addEventListener('click', ctx.signIn);
@@ -64,14 +75,18 @@ function partIntro(label, title, text) {
 export function renderDashboard(app, ctx) {
   const { S, data } = ctx;
   const W = S.weekKey;
+  const D = dayKey();
   const week = S.week;
   const p = S.profile;
   const weekNo = weeksBetween(S.priv.firstWeek || W, W) + 1;
 
-  // Part 1
-  const setsDone = week.fill.sets.length;
-  const fillDone = setsDone >= SETS_PER_WEEK;
-  const dots = Array.from({ length: SETS_PER_WEEK }, (_, i) => `<span class="dot ${i < setsDone ? 'on' : ''}"></span>`).join('');
+  const dayStreak = liveDayStreak(S.priv.daily, D);
+  const warmupDone = week.warmups.includes(D);
+
+  // Part 1: three sub-sections
+  const fillKeys = Object.values(FILL_PARTS).map((part) => week.fill[part.key]);
+  const fillDone = fillKeys.filter((s) => s.sets.length).length;
+  const fillAllDone = fillDone === fillKeys.length;
 
   // Part 2
   const tIndex = week.flip ? week.flip.topic : S.priv.flipCompleted.length;
@@ -79,25 +94,34 @@ export function renderDashboard(app, ctx) {
   const flipDone = Boolean(week.flip && week.flip.done);
 
   // Part 3
+  const phrase = phraseOfWeek(data.phrases, W);
+  const phraseDone = Boolean(week.phrases && week.phrases.read);
+
+  // Part 4
+  const speakPrompt = promptOfWeek(data.speaking, W);
+  const speakDone = Boolean(week.speak && week.speak.reviewed);
+
+  // Part 5
   const concept = conceptOfWeek(data.prompts, W);
   const pageDone = Boolean(week.page && week.page.published);
 
-  const total = week.points.fill + week.points.flip + week.points.page;
+  const total = ['fill', 'flip', 'phrases', 'speak', 'page', 'warmup'].reduce((n, k) => n + (week.points[k] || 0), 0);
   const repairable = Object.keys(PARTS).filter((k) => canRepair(p, k, W));
 
-  const card = (key, label, title, desc, status, statusCls, extra, btn) => `
+  const card = (key, label, title, desc, status, statusCls, btn) => `
     <article class="paper part-card">
       <div class="clip-mini">${binderClip()}</div>
       <div class="part-top"><span class="label">${label}</span>${flameBadge(liveStreak(p.streaks[key], W), { rot: '3deg' })}</div>
       <h2 class="pixel-title">${esc(title)}</h2>
       <p class="grow muted">${desc}</p>
-      ${extra || ''}
       <div class="sticker-row">
         <span class="sticker ${statusCls}">${status}</span>
-        <span class="sticker ink" style="--rot:2deg">+${week.points[key]} pts</span>
+        <span class="sticker ink" style="--rot:2deg">+${week.points[key] || 0} pts</span>
       </div>
       ${btn}
     </article>`;
+
+  const warmup = warmupOfDay(D, data);
 
   app.innerHTML = `
   <div class="enter">
@@ -133,9 +157,25 @@ export function renderDashboard(app, ctx) {
         <div class="paper plain">
           <span class="label">Your streaks</span>
           <div class="streak-list">
+            <div class="streak-row"><span>Daily warm-up</span>${dayFlame(dayStreak)}<span class="muted" style="font-size:.8rem">best ${(S.priv.daily && S.priv.daily.best) || 0}</span></div>
             ${Object.entries(PARTS).map(([k, v]) => `<div class="streak-row"><span>${v.name}</span>${flameBadge(liveStreak(p.streaks[k], W), { rot: '0deg' })}<span class="muted" style="font-size:.8rem">best ${p.streaks[k].best || 0}</span></div>`).join('')}
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="paper spiral warmup-card">
+      <span class="tape"></span>
+      <div class="warmup-head">
+        <span class="label">Today's warm-up · 2 minutes</span>
+        ${flameBadge(dayStreak, { label: 'Daily', rot: '2deg' })}
+      </div>
+      <p class="lead" style="margin:8px 0 14px">One gap question, one card to recall, one sentence to say better. That's all — the daily thread that keeps English in your routine.</p>
+      <div class="btn-row">
+        ${warmupDone
+          ? '<span class="sticker mint">✓ Done today — come back tomorrow</span>'
+          : '<button class="btn" id="warmup-start">Start today\'s warm-up</button>'}
+        <span class="muted" style="font-size:.85rem;align-self:center">+${POINTS.warmup} pts a day</span>
       </div>
     </section>
 
@@ -143,27 +183,38 @@ export function renderDashboard(app, ctx) {
       <div class="clip-top">${binderClip()}</div>
       <div class="grid-3">
         ${card('fill', 'Part one', 'Fill the Gap',
-          'Five sets of five questions. Two minutes per question.',
-          fillDone ? 'All sets done' : week.fill.active ? 'Set in progress' : `${setsDone} of ${SETS_PER_WEEK} sets`,
-          fillDone ? 'blue' : 'mint',
-          `<div class="dots" aria-label="${setsDone} of 5 sets done">${dots}</div>`,
-          `<a class="btn" href="#/fill">${fillDone ? 'Review' : week.fill.active ? 'Resume set' : 'Open'}</a>`)}
+          `Three sets: Classic, Spot &amp; Fix, Build the Sentence. ${fillAllDone ? 'All three done this week.' : `${fillDone} of 3 done.`}`,
+          fillAllDone ? 'All sets done' : week.fill.classic.active || week.fill.error.active || week.fill.build.active ? 'Set in progress' : 'Ready',
+          fillAllDone ? 'blue' : 'mint',
+          `<a class="btn" href="#/fill">${fillAllDone ? 'Review' : 'Open'}</a>`)}
         ${card('flip', `Part two / Topic ${tIndex + 1}`, 'Word Flip',
           topic ? `This week: <strong>${esc(topic.title)}</strong>. Ten cards, five minutes.` : 'You have finished every topic.',
           flipDone ? `Done: ${week.flip.score}/${week.flip.total}` : week.flip ? 'Quiz in progress' : 'Ready',
-          flipDone ? 'blue' : 'lilac', '',
+          flipDone ? 'blue' : 'lilac',
           `<a class="btn" href="#/flip">${flipDone ? 'Review cards' : 'Open'}</a>`)}
-        ${card('page', 'Part three', 'The Weekly Page',
+        ${card('phrases', 'Part three', 'Phrase Library',
+          phrase ? `This week: <strong>${esc(phrase.title)}</strong>.` : '',
+          phraseDone ? '✓ Read this week' : 'New phrase waiting',
+          phraseDone ? 'blue' : 'peach',
+          `<a class="btn" href="#/phrases">${phraseDone ? 'Read again' : 'Read'}</a>`)}
+        ${card('speak', 'Part four', 'Speaking Practice',
+          speakPrompt ? `This week: <strong>${esc(speakPrompt.title)}</strong>.` : '',
+          speakDone ? '✓ Done' : week.speak && week.speak.draft ? 'Draft saved' : 'New prompt waiting',
+          speakDone ? 'blue' : 'mint',
+          `<a class="btn" href="#/speaking">${speakDone ? 'Read my answer' : 'Open'}</a>`)}
+        ${card('page', 'Part five', 'The Weekly Page',
           concept ? `This week's concept: <strong>${esc(concept.name)}</strong>.` : '',
-          pageDone ? 'Published' : week.page && week.page.draft ? 'Draft saved' : 'Open',
-          pageDone ? 'blue' : 'peach', '',
+          pageDone ? 'Finished — on your shelf' : week.page && week.page.draft ? 'Draft saved' : 'Open',
+          pageDone ? 'blue' : 'peach',
           `<a class="btn" href="#/page">${pageDone ? 'View my page' : 'Start writing'}</a>`)}
+        ${`<article class="paper part-card">
+            <div class="clip-mini">${binderClip()}</div>
+            <div class="part-top"><span class="label">Friends</span></div>
+            <h2 class="pixel-title">Writing Circle</h2>
+            <p class="grow muted">Practise together: leaderboard, requests and progress.</p>
+            <a class="btn ghost" href="#/friends">Open</a>
+          </article>`}
       </div>
-    </section>
-
-    <section class="grid-2" style="margin-top:30px">
-      <a class="paper plain link-card" href="#/read"><span class="label">Community</span><span class="pixel-title" style="font-size:1.6rem">Reading Room</span><span class="muted">Read this week's pages from other writers.</span></a>
-      <a class="paper plain link-card" href="#/friends"><span class="label">Friends</span><span class="pixel-title" style="font-size:1.6rem">Leaderboard</span><span class="muted">See how your friends are doing this week.</span></a>
     </section>
   </div>`;
 
@@ -179,9 +230,160 @@ export function renderDashboard(app, ctx) {
     });
   });
 
+  const start = document.getElementById('warmup-start');
+  if (start) start.addEventListener('click', () => renderWarmup(app, ctx, warmup));
+
   const timer = setInterval(() => {
     const el = document.getElementById('countdown');
     if (el) el.textContent = formatCountdown(msUntilReset());
   }, 30000);
   return () => clearInterval(timer);
+}
+
+function dayFlame(count) {
+  return `<span class="sticker flame ${count > 0 ? 'lit' : 'cold'}" style="--rot:0deg" title="daily streak">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2c1 3.5-1.5 5-1.5 7.5 0 1.4 1 2.5 2.3 2.5 1.6 0 2.4-1.3 2.2-3 2.3 1.7 3.5 4.2 3.5 6.5A6.5 6.5 0 0 1 12 22a6.5 6.5 0 0 1-6.5-6.5C5.5 10.5 12 7.5 12 2z"/></svg>
+    <b>${count}</b><span>${count === 1 ? 'day' : 'days'}</span>
+  </span>`;
+}
+
+/* ------------------------------------------------------------------ Warm-up flow */
+function renderWarmup(app, ctx, warmup) {
+  const { S, data } = ctx;
+  const steps = [];
+  if (warmup.gap) steps.push({ type: 'gap', item: warmup.gap });
+  if (warmup.card) steps.push({ type: 'card', item: warmup.card });
+  if (warmup.rewrite) steps.push({ type: 'rewrite', item: warmup.rewrite });
+  if (!steps.length) {
+    app.innerHTML = '<div class="paper notice"><p class="pixel-title">Warm-up not ready</p><p>Finish a Word Flip topic first, or check the content files.</p></div>';
+    return;
+  }
+  let i = 0;
+
+  const paint = () => {
+    const step = steps[i];
+    const label = `Warm-up · step ${i + 1} of ${steps.length}`;
+    if (step.type === 'gap') return paintGap(step.item, label);
+    if (step.type === 'card') return paintCard(step.item, label);
+    return paintRewrite(step.item, label);
+  };
+
+  const finish = async () => {
+    try {
+      const awarded = await completeWarmup(POINTS.warmup);
+      toast(awarded ? `Warm-up done: +${POINTS.warmup} pts. Day streak: ${(S.priv.daily.current) || 1}.` : 'Warm-up already recorded today.');
+    } catch (err) { toast(errText(err)); }
+    // The warm-up renders in-place on the #/ route, so re-render instead of
+    // navigating (the hash is already #/ and would not fire a hashchange).
+    ctx.rerender();
+  };
+
+  const nextStep = () => {
+    i += 1;
+    if (i < steps.length) paint();
+    else finish();
+  };
+
+  function paintGap(q, label) {
+    const opts = shuffle(q.options);
+    app.innerHTML = `
+    <div class="question-page enter">
+      <header class="page-head compact"><span class="label">${label}</span><span class="sticker lilac">Quick gap</span></header>
+      <section class="paper spiral">
+        <p class="q-sentence">${esc(q.sentence).replace(/____/g, '<span class="blank" id="blank">&nbsp;?&nbsp;</span>')}</p>
+        <div class="options">
+          ${opts.map((opt, k) => `<button class="option" data-opt="${esc(opt)}" style="--rot:${['-1.2deg', '0.9deg', '-0.7deg', '0.6deg'][k % 4]}"><span class="key">${'ABCD'[k]}</span><span class="opt-text">${esc(opt)}</span><span class="mark"></span></button>`).join('')}
+        </div>
+        <div id="feedback" aria-live="polite"></div>
+      </section>
+    </div>`;
+    const buttons = Array.from(app.querySelectorAll('.option'));
+    buttons.forEach((b) => b.addEventListener('click', async () => {
+      const correct = b.dataset.opt === q.answer;
+      buttons.forEach((x) => {
+        x.disabled = true;
+        if (x.dataset.opt === q.answer) { x.classList.add('correct'); x.querySelector('.mark').textContent = '✓'; }
+        else if (x === b) { x.classList.add('wrong'); x.querySelector('.mark').textContent = '✕'; }
+        else x.classList.add('faded');
+      });
+      const blank = document.getElementById('blank');
+      if (blank) { blank.textContent = q.answer; blank.classList.add(correct ? 'right' : 'wrong'); }
+      try {
+        if (correct) await markCorrect(q.id);
+        else await recordMistake(q.id, b.dataset.opt);
+      } catch (e) { /* non-fatal */ }
+      document.getElementById('feedback').innerHTML = `
+        <div class="explain lined ${correct ? 'good' : 'bad'}">
+          <span class="hand ${correct ? '' : 'red'}">${correct ? '✓ Correct!' : '✕ The green one is right.'}</span>
+          <p style="margin:0">${esc(q.explanation)}</p>
+          <div class="btn-row" style="margin-top:14px"><button class="btn" id="next">Next</button></div>
+        </div>`;
+      document.getElementById('next').addEventListener('click', nextStep);
+    }));
+  }
+
+  function paintCard(card, label) {
+    const topicIndex = Math.max(0, (S.priv.flipCompleted || []).slice(-1)[0] || 0);
+    app.innerHTML = `
+    <div class="question-page enter">
+      <header class="page-head compact"><span class="label">${label}</span><span class="sticker mint">Card recall</span></header>
+      <section class="paper spiral" style="text-align:center">
+        <p class="lead" style="margin:10px 0">What does <strong>${esc(card.term)}</strong> mean?</p>
+        <div class="meaning-options" style="justify-content:center">
+          <button class="btn" id="reveal">Flip the card</button>
+        </div>
+        <div id="feedback" aria-live="polite"></div>
+      </section>
+    </div>`;
+    document.getElementById('reveal').addEventListener('click', async () => {
+      // Self-graded: did you know it?
+      app.querySelector('#feedback').innerHTML = `
+        <div class="explain lined good" style="text-align:left">
+          <p class="serif" style="font-size:1.15rem;margin:0 0 6px"><strong>${esc(card.term)}</strong> — ${esc(card.meaning)}</p>
+          ${card.examples.map((ex) => `<p class="hand" style="font-size:1.2rem;margin:4px 0">${esc(ex)}</p>`).join('')}
+          <p style="margin:10px 0 0">Did you know it before flipping?</p>
+          <div class="btn-row" style="margin-top:10px">
+            <button class="btn small" id="knew">Yes, I knew it</button>
+            <button class="btn ghost small" id="didnt">Not really</button>
+          </div>
+        </div>`;
+      const record = async (knew) => {
+        try { await recordCardResult(topicIndex, card._index || 0, knew); } catch (e) { /* non-fatal */ }
+        nextStep();
+      };
+      document.getElementById('knew').addEventListener('click', () => record(true));
+      document.getElementById('didnt').addEventListener('click', () => record(false));
+    });
+  }
+
+  function paintRewrite(drill, label) {
+    app.innerHTML = `
+    <div class="question-page enter">
+      <header class="page-head compact"><span class="label">${label}</span><span class="sticker peach">Say it better</span></header>
+      <section class="paper spiral">
+        <p class="lead" style="margin:10px 0">Rewrite this casually-spoken sentence in clearer, more polished English:</p>
+        <p class="q-sentence wrong-sentence" style="font-size:1.2rem">"${esc(drill.informal)}"</p>
+        <textarea id="rw" class="editor lined" rows="3" placeholder="Type your improved version..." style="min-height:90px"></textarea>
+        <div class="btn-row" style="margin-top:14px">
+          <button class="btn" id="check">Check my version</button>
+        </div>
+        <div id="feedback" aria-live="polite"></div>
+      </section>
+    </div>`;
+    document.getElementById('check').addEventListener('click', () => {
+      const val = document.getElementById('rw').value.trim();
+      if (!val) { toast('Type your version first.'); return; }
+      document.getElementById('feedback').innerHTML = `
+        <div class="explain lined good">
+          <span class="hand">A polished version</span>
+          <p class="serif" style="font-size:1.1rem;margin:6px 0">"${esc(drill.formal)}"</p>
+          <p style="margin:0"><strong>Focus:</strong> ${esc(drill.focus)}</p>
+          <p class="muted" style="margin:8px 0 0;font-size:.9rem">Compare it with yours. No score here — noticing the difference is the exercise.</p>
+          <div class="btn-row" style="margin-top:14px"><button class="btn" id="next">Finish warm-up</button></div>
+        </div>`;
+      document.getElementById('next').addEventListener('click', nextStep);
+    });
+  }
+
+  paint();
 }

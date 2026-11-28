@@ -3,7 +3,7 @@
  * version when offline. It always tries the network first, so updates appear
  * as soon as you are online. Firebase and /api requests are never cached.
  */
-const CACHE = 'quietink-v2';
+const CACHE = 'quietink-v3';
 
 self.addEventListener('install', () => self.skipWaiting());
 self.addEventListener('activate', (event) => {

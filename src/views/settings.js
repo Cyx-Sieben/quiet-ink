@@ -1,17 +1,15 @@
 /**
- * Settings: profile, theme, data download, import from Version 1, sign out and account deletion.
+ * Settings: profile (with picture upload), theme, data download, sign out
+ * and account deletion.
  */
 import {
-  collection, collectionGroup, doc, getDoc, getDocs, setDoc, deleteDoc, query, where, serverTimestamp
+  collection, doc, getDoc, getDocs, deleteDoc, query, where
 } from 'firebase/firestore';
 import { deleteUser, reauthenticateWithPopup, signOut } from 'firebase/auth';
 import { db, auth, googleProvider } from '../firebase.js';
-import { esc, toast, errText, AVATARS, avatarSvg, avatarHtml, countWords } from '../lib/ui.js';
-import {
-  S, NICK_RE, changeNickname, updateProfile, updatePriv, userRef, privRef, pieceId, saveWeek
-} from '../lib/session.js';
+import { esc, toast, errText, AVATARS, avatarSvg, avatarHtml, shrinkImage } from '../lib/ui.js';
+import { S, NICK_RE, changeNickname, updateProfile, userRef, privRef } from '../lib/session.js';
 
-const V1_KEY = 'quietink.v1';
 const THEME_KEY = 'quietink.theme';
 
 function getTheme() {
@@ -24,69 +22,19 @@ function setTheme(t) {
   try { if (t === 'auto') localStorage.removeItem(THEME_KEY); else localStorage.setItem(THEME_KEY, t); } catch (e) { /* ignore */ }
 }
 
-/* ------------------------------------------------------------ Version 1 import */
-function readV1() {
-  try { return JSON.parse(localStorage.getItem(V1_KEY) || 'null'); } catch (e) { return null; }
-}
-
-export function hasV1Progress() {
-  const v1 = readV1();
-  return Boolean(v1 && v1.version === 1 && S.priv && !S.priv.v1Imported);
-}
-
-export async function importV1Progress(v1 = readV1()) {
-  if (!v1 || v1.version !== 1) throw new Error('No Version 1 progress found.');
-  const correct = Array.from(new Set([...(S.priv.grammarCorrect || []), ...((v1.grammar && v1.grammar.correct) || [])]));
-  const mistakes = { ...(S.priv.mistakes || {}) };
-  Object.entries((v1.grammar && v1.grammar.mistakes) || {}).forEach(([id, m]) => {
-    mistakes[id] = { count: m.count || 1, last: Date.parse(m.last) || Date.now(), choice: m.choice || null };
-  });
-  const flips = Array.from(new Set([...(S.priv.flipCompleted || []), ...((v1.flash && v1.flash.completed) || [])])).sort((a, b) => a - b);
-  await updatePriv({ grammarCorrect: correct, mistakes, flipCompleted: flips, v1Imported: true });
-  Object.assign(S.priv, { grammarCorrect: correct, mistakes, flipCompleted: flips, v1Imported: true });
-
-  // Old reflections become private pieces on the profile.
-  const prompts = S.data.prompts;
-  let imported = 0;
-  for (const [wk, w] of Object.entries(v1.weeks || {})) {
-    const r = w.reflection;
-    if (!r || !r.submitted || !r.text) continue;
-    const id = pieceId(S.user.uid, wk);
-    if (wk === S.weekKey && S.week && S.week.page && S.week.page.published) continue; // already published this week
-    const exists = await getDoc(doc(db, 'pieces', id)).catch(() => null);
-    if (exists && exists.exists()) continue;
-    const concept = prompts.find((p) => p.id === r.id);
-    await setDoc(doc(db, 'pieces', id), {
-      uid: S.user.uid, authorNick: S.profile.nickname, authorAvatar: S.profile.avatar || 'ink', authorPhoto: S.profile.photoURL || null,
-      title: concept ? concept.name : 'Reflection', text: r.text, words: countWords(r.text),
-      conceptId: concept ? concept.id : 'w000', conceptName: concept ? concept.name : 'Reflection',
-      weekKey: wk, visibility: 'private', friendIds: [], createdAt: serverTimestamp()
-    });
-    if (wk === S.weekKey && S.week) {
-      // A Version 1 reflection from this week counts as this week's page (no extra points).
-      S.week.page = { conceptId: concept ? concept.id : 'w000', title: concept ? concept.name : 'Reflection', draft: r.text, words: countWords(r.text), visibility: 'private', published: true, deleted: false, imported: true };
-      await saveWeek();
-    }
-    imported += 1;
-  }
-  toast(`Imported earlier progress${imported ? ` and ${imported} reflection${imported > 1 ? 's' : ''} (kept private)` : ''}.`);
-}
-
 /* ------------------------------------------------------------ data download */
 async function downloadMyData() {
   const uid = S.user.uid;
-  const [profile, priv, weeks, pieces] = await Promise.all([
+  const [profile, priv, weeks] = await Promise.all([
     getDoc(userRef()), getDoc(privRef()),
-    getDocs(collection(db, 'users', uid, 'weeks')),
-    getDocs(query(collection(db, 'pieces'), where('uid', '==', uid)))
+    getDocs(collection(db, 'users', uid, 'weeks'))
   ]);
   const ts = (v) => JSON.parse(JSON.stringify(v, (k, x) => (x && typeof x.toMillis === 'function' ? new Date(x.toMillis()).toISOString() : x)));
   const out = {
     exportedAt: new Date().toISOString(),
     profile: ts(profile.data()),
     progress: ts(priv.data()),
-    weeks: Object.fromEntries(weeks.docs.map((d) => [d.id, ts(d.data())])),
-    pieces: pieces.docs.map((d) => ({ id: d.id, ...ts(d.data()) }))
+    weeks: Object.fromEntries(weeks.docs.map((d) => [d.id, ts(d.data())]))
   };
   const blob = new Blob([JSON.stringify(out, null, 2)], { type: 'application/json' });
   const url = URL.createObjectURL(blob);
@@ -104,16 +52,6 @@ async function deleteEverything(progress) {
   const uid = S.user.uid;
   const del = async (ref) => { try { await deleteDoc(ref); } catch (e) { /* keep going */ } };
   const docsOf = async (q) => { try { return (await getDocs(q)).docs; } catch (e) { return []; } };
-
-  progress('Deleting your pages...');
-  for (const p of await docsOf(query(collection(db, 'pieces'), where('uid', '==', uid)))) {
-    for (const c of await docsOf(collection(db, 'pieces', p.id, 'comments'))) await del(c.ref);
-    for (const l of await docsOf(collection(db, 'pieces', p.id, 'likes'))) await del(l.ref);
-    await del(p.ref);
-  }
-  progress('Deleting your comments and likes...');
-  for (const c of await docsOf(query(collectionGroup(db, 'comments'), where('uid', '==', uid)))) await del(c.ref);
-  for (const l of await docsOf(query(collectionGroup(db, 'likes'), where('uid', '==', uid)))) await del(l.ref);
 
   progress('Removing friends...');
   for (const f of await docsOf(query(collection(db, 'friendships'), where('members', 'array-contains', uid)))) await del(f.ref);
@@ -144,6 +82,7 @@ async function deleteEverything(progress) {
 export function renderSettings(app, ctx) {
   const p = S.profile;
   let avatar = p.avatar || 'ink';
+  let photoData = p.photoData || null;
   const theme = getTheme();
 
   app.innerHTML = `
@@ -158,10 +97,14 @@ export function renderSettings(app, ctx) {
         <span class="label">Profile</span>
         <label class="field"><span class="label">Nickname</span><input id="nick" maxlength="20" value="${esc(p.nickname)}"></label>
         <label class="field"><span class="label">Bio</span><textarea id="bio" maxlength="160" rows="2">${esc(p.bio || '')}</textarea></label>
-        <fieldset class="field"><legend class="label">Avatar</legend>
+        <fieldset class="field"><legend class="label">Profile picture</legend>
           <div class="avatar-picker">
             ${p.photoURL ? `<button type="button" class="av-opt" data-av="google" aria-label="My Google photo">${avatarHtml({ avatar: 'google', photoURL: p.photoURL }, 52)}</button>` : ''}
             ${AVATARS.map((a) => `<button type="button" class="av-opt" data-av="${a}" aria-label="${a} avatar">${avatarSvg(a, 52)}</button>`).join('')}
+            <label class="av-opt upload ${photoData ? 'has-photo' : ''}" id="av-upload" title="Upload my own picture">
+              <input type="file" accept="image/*" class="visually-hidden">
+              ${photoData ? `<img id="av-upload-thumb" class="avatar" src="${photoData}" width="52" height="52" alt="My picture">` : `<span class="av-upload-ink">+<small>upload</small></span>`}
+            </label>
           </div>
         </fieldset>
         <div class="btn-row"><button class="btn" type="submit">Save profile</button><span id="pmsg" class="muted" role="alert"></span></div>
@@ -182,27 +125,47 @@ export function renderSettings(app, ctx) {
         <p style="margin-top:10px">Your progress is saved to your account automatically. You can download a copy of everything at any time.</p>
         <div class="btn-row">
           <button class="btn ghost" id="dl">Download my data</button>
-          ${readV1() && !S.priv.v1Imported ? '<button class="btn ghost" id="v1">Import Version 1 progress from this browser</button>' : ''}
-          <label class="btn ghost" for="v1file" style="cursor:pointer">Import a Version 1 backup file</label>
-          <input type="file" id="v1file" accept="application/json,.json" class="visually-hidden">
-          ${S.isAdmin ? '<a class="btn ghost" href="#/admin">Admin: reports</a>' : ''}
           <button class="btn ghost" id="signout">Sign out</button>
         </div>
       </section>
 
       <section class="paper plain">
         <span class="label">Delete account</span>
-        <p style="margin-top:10px">This permanently deletes your profile, progress, streaks, pages, comments, likes and friendships. Download your data first if you want to keep anything.</p>
+        <p style="margin-top:10px">This permanently deletes your profile, progress, streaks and friendships. Download your data first if you want to keep anything.</p>
         <button class="btn danger" id="delete">Delete my account</button>
         <p id="delmsg" class="muted" role="status"></p>
       </section>
     </div>
   </div>`;
 
-  const picks = app.querySelectorAll('.av-opt');
+  const picks = app.querySelectorAll('.av-opt[data-av]');
   const mark = () => picks.forEach((b) => b.classList.toggle('on', b.dataset.av === avatar));
-  picks.forEach((b) => b.addEventListener('click', () => { avatar = b.dataset.av; mark(); }));
-  mark();
+  picks.forEach((b) => b.addEventListener('click', () => {
+    avatar = b.dataset.av;
+    photoData = null;
+    mark();
+  }));
+
+  document.getElementById('av-upload').addEventListener('change', async (e) => {
+    const file = e.target.files && e.target.files[0];
+    if (!file) return;
+    const msg = document.getElementById('pmsg');
+    try {
+      msg.textContent = 'Shrinking image...';
+      photoData = await shrinkImage(file);
+      avatar = 'photo';
+      const up = document.getElementById('av-upload');
+      const thumb = document.getElementById('av-upload-thumb');
+      if (!thumb) up.insertAdjacentHTML('beforeend', `<img id="av-upload-thumb" class="avatar" src="${photoData}" width="52" height="52" alt="My picture">`);
+      else thumb.src = photoData;
+      up.classList.add('has-photo');
+      mark();
+      msg.textContent = 'Press "Save profile" to keep this picture.';
+    } catch (err) {
+      msg.textContent = errText(err);
+      e.target.value = '';
+    }
+  });
 
   document.getElementById('pform').addEventListener('submit', async (e) => {
     e.preventDefault();
@@ -213,7 +176,10 @@ export function renderSettings(app, ctx) {
     msg.textContent = 'Saving...';
     try {
       if (nick !== p.nickname) await changeNickname(nick);
-      await updateProfile({ bio, avatar });
+      const fields = { bio, avatar };
+      if (avatar === 'photo' && photoData) fields.photoData = photoData;
+      if (avatar !== 'photo') fields.photoData = null;
+      await updateProfile(fields);
       msg.textContent = 'Saved.';
       ctx.refreshNav();
     } catch (err) { msg.textContent = errText(err); }
@@ -222,22 +188,6 @@ export function renderSettings(app, ctx) {
   document.getElementById('theme').addEventListener('change', (e) => { setTheme(e.target.value); toast('Theme updated.'); });
   document.getElementById('dl').addEventListener('click', async () => {
     try { await downloadMyData(); } catch (err) { toast(errText(err)); }
-  });
-  const v1 = document.getElementById('v1');
-  if (v1) v1.addEventListener('click', async () => {
-    if (!window.confirm('Add the Version 1 progress saved in this browser to your account?')) return;
-    try { await importV1Progress(); ctx.rerender(); } catch (err) { toast(errText(err)); }
-  });
-  document.getElementById('v1file').addEventListener('change', async (e) => {
-    const file = e.target.files && e.target.files[0];
-    if (!file) return;
-    try {
-      const obj = JSON.parse(await file.text());
-      if (!obj || obj.version !== 1 || typeof obj.weeks !== 'object') throw new Error('This is not a Quiet Ink Version 1 backup file.');
-      if (!window.confirm('Add the progress and reflections from this Version 1 backup to your account?')) return;
-      await importV1Progress(obj);
-      ctx.rerender();
-    } catch (err) { toast(errText(err)); } finally { e.target.value = ''; }
   });
   document.getElementById('signout').addEventListener('click', async () => { await signOut(auth); ctx.go('#/'); });
 

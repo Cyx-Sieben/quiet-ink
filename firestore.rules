@@ -7,14 +7,10 @@ service cloud.firestore {
 
     function signedIn() { return request.auth != null; }
     function isMe(uid) { return signedIn() && request.auth.uid == uid; }
-    function isAdmin() { return signedIn() && exists(/databases/$(database)/documents/admins/$(request.auth.uid)); }
     function str(v, max) { return v is string && v.size() <= max; }
-
-    // ---------------------------------------------------------------- admins
-    // Create admins/{uid} by hand in the Firebase console. Nobody can write it from the app.
-    match /admins/{uid} {
-      allow read: if isMe(uid);
-      allow write: if false;
+    function photoOk(data) {
+      return !(('photoData' in data) && data.photoData != null
+        && (!(data.photoData is string) || data.photoData.size() > 200000));
     }
 
     // ---------------------------------------------------------------- nicknames
@@ -39,6 +35,7 @@ service cloud.firestore {
         && str(request.resource.data.nickname, 20)
         && request.resource.data.nicknameLower == request.resource.data.nickname.lower()
         && str(request.resource.data.bio, 160)
+        && photoOk(request.resource.data)
         && ownsNickname(request.resource.data);
       allow delete: if isMe(uid);
 
@@ -81,80 +78,6 @@ service cloud.firestore {
         && pair == request.resource.data.members[0] + '_' + request.resource.data.members[1]
         && receivedRequest(request.resource.data.members[0], request.resource.data.members[1]);
       allow delete: if signedIn() && request.auth.uid in resource.data.members;
-      allow update: if false;
-    }
-
-    // ---------------------------------------------------------------- published pieces
-    // id = {uid}_{monday}, so each writer has at most one piece per week.
-    // friendIds is a copy of the writer's friend list, used for "Friends only" pieces.
-    function canReadPiece(p) {
-      return p.visibility == 'public'
-        || (signedIn() && p.uid == request.auth.uid)
-        || (signedIn() && p.visibility != 'private' && request.auth.uid in p.friendIds)
-        || isAdmin();
-    }
-
-    function validPiece(d) {
-      return d.keys().hasOnly(['uid', 'authorNick', 'authorAvatar', 'authorPhoto', 'title', 'text', 'words', 'conceptId', 'conceptName', 'weekKey', 'visibility', 'friendIds', 'createdAt'])
-        && str(d.title, 150)
-        && str(d.text, 200000)
-        && d.words is int
-        && d.visibility in ['public', 'friends', 'private']
-        && d.friendIds is list;
-    }
-
-    match /pieces/{pieceId} {
-      allow read: if canReadPiece(resource.data);
-      allow create: if signedIn()
-        && request.resource.data.uid == request.auth.uid
-        && pieceId == request.auth.uid + '_' + request.resource.data.weekKey
-        && validPiece(request.resource.data);
-      // After publishing, only visibility, sharing list and author display details may change.
-      allow update: if signedIn()
-        && resource.data.uid == request.auth.uid
-        && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['visibility', 'friendIds', 'authorNick', 'authorAvatar', 'authorPhoto'])
-        && validPiece(request.resource.data);
-      allow delete: if (signedIn() && resource.data.uid == request.auth.uid) || isAdmin();
-
-      function pieceOwner() {
-        return get(/databases/$(database)/documents/pieces/$(pieceId)).data.uid;
-      }
-
-      match /likes/{likerUid} {
-        allow read: if true;
-        allow create: if isMe(likerUid) && request.resource.data.uid == likerUid;
-        allow delete: if isMe(likerUid) || (signedIn() && pieceOwner() == request.auth.uid);
-      }
-
-      match /comments/{commentId} {
-        allow read: if canReadPiece(get(/databases/$(database)/documents/pieces/$(pieceId)).data);
-        allow create: if signedIn()
-          && request.resource.data.uid == request.auth.uid
-          && str(request.resource.data.text, 1000)
-          && request.resource.data.text.size() > 0
-          && str(request.resource.data.nick, 20)
-          && canReadPiece(get(/databases/$(database)/documents/pieces/$(pieceId)).data);
-        allow delete: if signedIn() && (resource.data.uid == request.auth.uid || pieceOwner() == request.auth.uid || isAdmin());
-        allow update: if false;
-      }
-    }
-
-    // Lets a user find their own comments and likes everywhere (used when deleting an account).
-    match /{path=**}/comments/{commentId} {
-      allow read: if signedIn() && resource.data.uid == request.auth.uid;
-    }
-    match /{path=**}/likes/{likerUid} {
-      allow read: if signedIn() && resource.data.uid == request.auth.uid;
-    }
-
-    // ---------------------------------------------------------------- reports
-    match /reports/{reportId} {
-      allow create: if signedIn()
-        && request.resource.data.reporterUid == request.auth.uid
-        && request.resource.data.type in ['piece', 'comment']
-        && str(request.resource.data.reason, 80)
-        && str(request.resource.data.note, 300);
-      allow read, delete: if isAdmin();
       allow update: if false;
     }
   }
